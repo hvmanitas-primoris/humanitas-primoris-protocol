@@ -12,11 +12,11 @@ This repository contains the source code and translations for the Humanitas Prim
 
 This site is cloud-balanced for resilience and censorship resistance. If one access point is unavailable, please try another.
 
-- GitHub Pages: https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/
+- GitHub Pages: [https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/](https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/)
 
-- Codeberg Pages: https://hvmanitas-primoris.codeberg.page/
+- Codeberg Pages: [https://hvmanitas-primoris.codeberg.page/](https://hvmanitas-primoris.codeberg.page/hvmanitas-primoris/)
 
-- Cloudflare Pages: https://humanitas-primoris-protocol.pages.dev/
+- Cloudflare Pages: [https://humanitas-primoris-protocol.pages.dev/](https://hvmanitas-primoris.pages.dev/)
 
 
 
