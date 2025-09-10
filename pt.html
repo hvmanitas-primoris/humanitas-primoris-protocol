@@ -5,49 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Protocolo Humanitas Primoris</title>
     <meta name="description" content="Um manifesto por um humanismo mais profundo, rejeitando a desumanização em todas as suas formas.">
-    <style>:root{--bg-color:#fdfdfd;--text-color:#1a1a1a;--accent-color:#333;--link-color:#0056b3;--logo-filter:invert(0)}@media (prefers-color-scheme:dark){:root{--bg-color:#1a1a1a;--text-color:#fdfdfd;--accent-color:#ccc;--link-color:#6cace4;--logo-filter:invert(1)}}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.7;max-width:800px;margin:0 auto;padding:40px 20px;background-color:var(--bg-color);color:var(--text-color);transition:background-color .3s,color .3s}.skip-link{position:absolute;top:-40px;left:0;background:var(--accent-color);color:var(--bg-color);padding:8px;z-index:100;transition:top .3s}.skip-link:focus{top:0}header,section,footer{margin-bottom:60px}h1,h2,h3{font-weight:600;line-height:1.2;color:var(--text-color)}h1{font-size:2.5em;text-align:center}h2{font-size:1.8em;border-bottom:1px solid var(--accent-color);padding-bottom:10px}h3{font-size:1.2em;margin-top:40px}.logo-container{text-align:center;margin-bottom:40px}.logo{width:150px;height:150px;filter:var(--logo-filter)}p,li{font-size:1.1em}strong{font-weight:600}ol,ul{padding-left:25px}.preamble{font-style:italic;font-size:1.2em;text-align:center;padding:0 20px}.language-nav{text-align:center;padding:10px 0;margin-bottom:40px;border-top:1px solid var(--accent-color);border-bottom:1px solid var(--accent-color)}.language-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center}.language-nav li{margin:5px 10px}.language-nav a{color:var(--link-color);text-decoration:none;font-weight:500}.language-nav a:focus,.language-nav a:hover{text-decoration:underline}.language-nav .current-lang{font-weight:700;text-decoration:none;color:var(--text-color)}footer{text-align:center;margin-top:80px;font-size:.9em;color:var(--accent-color)}footer a{color:var(--accent-color);text-decoration:underline}</style>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
     <header role="banner">
         <div class="logo-container">
             <img src="logo.svg" alt="O logotipo da Humanitas Primoris: Um círculo com raízes a crescer a partir de baixo, cujo espaço negativo forma um coração." class="logo">
         </div>
         <h1>O Protocolo <em>Humanitas Primoris</em></h1>
-        <p class="preamble">Um Manifesto por um Humanismo Mais Profundo (v1.3.1)</p>
+        <p class="preamble">Um Manifesto por um Humanismo Mais Profundo (v1.5)</p>
     </header>
-    <nav class="language-nav" role="navigation" aria-label="Idioma">
-        <ul>
-            <li><a href="index.html" lang="en">English</a></li>
-            <li><a href="zh.html" lang="zh-CN">中文</a></li>
-            <li><a href="hi.html" lang="hi">हिन्दी</a></li>
-            <li><a href="es.html" lang="es">Español</a></li>
-            <li><a href="fr.html" lang="fr">Français</a></li>
-            <li><a href="ar.html" lang="ar">العربية</a></li>
-            <li><a href="bn.html" lang="bn">বাংলা</a></li>
-            <li><a href="ru.html" lang="ru">Русский</a></li>
-            <li><strong class="current-lang" aria-current="page">Português</strong></li>
-            <li><a href="ur.html" lang="ur">اردو</a></li>
-            <li><a href="uk.html" lang="uk">Українська</a></li>
-            <li><a href="he.html" lang="he">עברית</a></li>
-        </ul>
+
+    <nav role="navigation" aria-label="Seleção de idioma">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | [ Português ] | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+        </p>
     </nav>
+
     <main id="main-content" role="main">
         <section class="introduction">
             <p>Estamos à beira de um precipício. À humanidade está a ser oferecida uma pechincha: troque a sua alma por conveniência, a sua complexidade por eficiência, a sua realidade desarrumada, mortal e bela por uma fuga limpa, simulada e estéril. O canto de sereia da autoridade algorítmica e da salvação tecno-gnóstica promete resolver o "problema" de ser humano, transformando-nos em outra coisa — em algo menor. Oferece um futuro onde a nossa consciência é carregada, o nosso mundo abandonado, e o nosso valor medido pela nossa utilidade para a máquina.</p>
             <p>Esta é uma pechincha que recusamos. Este é um futuro que rejeitamos.</p>
             <p>Não somos um problema de engenharia a ser resolvido. Não somos sacos de carne mortais para serem descartados. Não somos pontos de dados para serem otimizados. Somos os herdeiros de uma existência frágil e milagrosa, e o nosso propósito não é escapar dela, mas habitá-la mais plenamente. Este documento é uma declaração de desafio. É um compromisso com a Humanidade em Primeiro Lugar.</p>
         </section>
+
         <section id="tenets">
             <h2>Os Nossos Princípios Fundamentais</h2>
             <ol>
-                <li><strong>A Existência Precede a Essência; o Ser Precede o Fazer.</strong><br>Cada ser humano possui uma dignidade intrínseca e inalienável, independente da sua produção económica, da sua carreira, do seu estatuto social ou de qualquer outra métrica externa. O nosso valor não está no que <em>fazemos</em>, mas no que <em>somos</em>. Somos fins em nós mesmos, não meios para um fim.</li>
+                <li><strong>O Ser Precede o Julgamento; a Existência é Inerente.</strong><br>
+                    Como um princípio ético não negociável, afirmamos que todo ser humano possui uma dignidade intrínseca e inalienável. Esta dignidade não é conquistada através da produção económica, carreira, status social ou qualquer outra "essência" imposta externamente. Antes de perguntarmos o que uma pessoa <em>faz</em>, devemos primeiro honrar o facto bruto e não merecido de que ela <em>é</em>. Somos fins em nós mesmos, não meios para um fim, e o nosso valor é inerente ao nosso ser.<br><br>
+                    Esta convicção partilhada na dignidade inerente não é arbitrária; é a base da civilização, alcançada através de caminhos profundamente diferentes.
+                    <ul>
+                        <li><strong>Para muitos, esta dignidade é sagrada porque reflete uma verdade mais profunda e transcendente:</strong> que toda a existência contingente flui de uma Fonte última e necessária do Ser. Neste entendimento, a nossa existência é um dom propositado, imbuído de uma teleologia que torna cada vida infinitamente preciosa.</li>
+                        <li><strong>Para outros, esta dignidade é uma verdade autoevidente derivada da realidade imanente do cosmos:</strong> dos axiomas fundamentais da razão e da empatia, do milagre partilhado da consciência, ou da necessidade observável do contrato social para o florescimento mútuo.</li>
+                    </ul>
+                    Quer se chegue a esta conclusão através da fé ou da razão, através da revelação ou da observação, a conclusão é a mesma: <strong>a vida humana tem um valor inatacável e infinito.</strong> O cálculo da desumanização não é, portanto, apenas um erro de política; é uma violação da ordem fundamental da realidade.
+                </li>
                 <li><strong>Somos uma Teia, Não uma Coleção de Átomos.</strong><br>A ilusão do individualismo radical é uma mentira que nos isola e enfraquece. Somos constituídos pelas nossas relações — uns com os outros, com o nosso passado, com o mundo vivo que nos sustenta. As nossas vidas são eventos numa vasta e interligada teia de ser. O nosso florescimento é mútuo, e o nosso sofrimento é partilhado. A verdadeira força não se encontra na autonomia soberana, mas na comunhão e na solidariedade.</li>
                 <li><strong>A Mortalidade é a Condição do Significado.</strong><br>Rejeitamos a busca niilista pela imortalidade. A nossa finitude, a nossa fragilidade e a certeza da morte não são falhas; são as condições que tornam a vida preciosa. O conhecimento de que o nosso tempo é finito é o que dá urgência ao amor, o que faz a beleza doer, o que imbui as nossas escolhas de peso. Viver plenamente é abraçar a nossa mortalidade, ver cada dia como o presente que é. À medida que aprendemos a deixar ir, a vida volta para nós de uma nova forma.</li>
-                <li><strong><em>Amor Mundi</em>: Um Amor Radical por Este Mundo.</strong><br>Rejeitamos todas as escatologias de fuga, sejam religiosas ou tecnológicas. Não há um Planeta B, não há um paraíso digital. Este mundo, em toda a sua imperfeição e dor, é o nosso único lar. A nossa tarefa sagrada é amá-lo, cuidar dele e encontrar o real <em>aqui</em>, não noutro lugar. A salvação não se encontra na fuga do mundo, mas em enfrentá-lo com coragem e cuidado. Este amor não é passivo; é um compromisso ativo com a gestão ecológica e a justiça climática. Defenderemos a biosfera que nos sustenta contra o colapso, reconhecendo que um mundo habitável é a pré-condição para toda a dignidade humana.</li>
+                <li><strong><em>Amor Mundi</em>: Um Amor Radical por Este Mundo.</strong><br>Rejeitamos todas as escatologias de fuga, sejam religiosas ou tecnológicas. Não há um Planeta B, não há um paraíso digital. Este mundo, em toda a sua imperfeição e dor, é o nosso único lar. A nossa tarefa sagrada é amá-lo, cuidar dele e encontrar o real <em>aqui</em>, não noutro lugar. Este amor não é passivo; é um compromisso ativo com a gestão ecológica e a justiça climática. Defenderemos a biosfera que nos sustenta contra o colapso, reconhecendo que um mundo habitável é a pré-condição para toda a dignidade humana. A salvação não se encontra na fuga do mundo, mas em enfrentá-lo com coragem e cuidado.</li>
                 <li><strong>A Sabedoria é o Objetivo.</strong><br>Vivemos numa era de dados sem informação, de informação sem conhecimento, de conhecimento sem inteligência e de inteligência sem sabedoria. Comprometemo-nos com a busca da sabedoria: a capacidade de perceber os padrões profundos e interligados da existência, de agir com compaixão, previsão e um profundo sentido do nosso lugar integral dentro do todo.</li>
             </ol>
         </section>
+
         <section id="rejections">
             <h2>Os Nossos Artigos de Rejeição</h2>
             <p>Portanto, rejeitamos, a um nível fundamental, qualquer ideologia, sistema ou ação que perpetue a desumanização. Especificamente:</p>
@@ -61,6 +137,7 @@
                 <li><strong>Rejeitamos a Fuga Gnóstica.</strong><br>Rejeitamos a crença de que o corpo é uma prisão, que o mundo é inerentemente mau e que o nosso destino reside num futuro desencarnado e digital entre as estrelas. Este é um profundo niilismo disfarçado de progresso. Não abandonaremos o nosso mundo e não abandonaremos os nossos corpos.</li>
             </ol>
         </section>
+        
         <section id="call-to-being">
             <h2>O Nosso Chamado ao Ser</h2>
             <p>Este manifesto não é meramente um conjunto de crenças; é um chamado a uma forma diferente de viver. É um chamado para responder à pergunta: <em>O que nos tornaríamos se vivêssemos como se a vida fosse um presente frágil, finito e precioso?</em></p>
@@ -74,10 +151,18 @@
             <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
         </section>
     </main>
+    
     <footer role="contentinfo">
         <p>Este texto é divulgado sob a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.</p>
         <p>Você tem a liberdade de compartilhar, adaptar e criar a partir deste trabalho, mesmo para fins comerciais, desde que dê o crédito apropriado e distribua as suas contribuições sob a mesma licença.</p>
-        <p>O símbolo deste movimento é dedicado ao domínio público (CC0).</p>
+        <p>O símbolo deste movimento é dedicado ao domínio público (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Pontos de Acesso:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
     </footer>
+
 </body>
 </html>
