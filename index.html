@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <!-- Meta Tags for Character Set and Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO and Page Information -->
     <title>The Humanitas Primoris Protocol</title>
     <meta name="description" content="A manifesto for a deeper humanism, rejecting dehumanization in all its forms.">
-
-    <!-- Core CSS for Styling and Accessibility -->
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
     <style>
         :root {
             --bg-color: #fdfdfd;
@@ -24,7 +20,7 @@
                 --bg-color: #1a1a1a;
                 --text-color: #fdfdfd;
                 --accent-color: #ccc;
-                --link-color: #6cace4;
+                --link-color: #66a3ff;
                 --logo-filter: invert(1);
             }
         }
@@ -50,11 +46,12 @@
             z-index: 100;
             transition: top 0.3s;
         }
+
         .skip-link:focus {
             top: 0;
         }
 
-        header, section, footer {
+        header, section {
             margin-bottom: 60px;
         }
 
@@ -67,6 +64,9 @@
         h1 { font-size: 2.5em; text-align: center; }
         h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
         h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
 
         .logo-container { text-align: center; margin-bottom: 40px; }
         .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
@@ -76,70 +76,26 @@
         ol, ul { padding-left: 25px; }
 
         .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
-        
-        .language-nav {
-            text-align: center;
-            padding: 10px 0;
-            margin-bottom: 40px;
-            border-top: 1px solid var(--accent-color);
-            border-bottom: 1px solid var(--accent-color);
-        }
-        .language-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .language-nav li {
-            margin: 5px 10px;
-        }
-        .language-nav a {
-            color: var(--link-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .language-nav a:hover, .language-nav a:focus {
-            text-decoration: underline;
-        }
-        .language-nav .current-lang {
-            font-weight: 700;
-            text-decoration: none;
-            color: var(--text-color);
-        }
 
         footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
-        footer a { color: var(--accent-color); text-decoration: underline; }
+        footer a { color: var(--link-color); text-decoration: underline; }
     </style>
 </head>
 <body>
-
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header role="banner">
         <div class="logo-container">
-            <img src="logo.svg" alt="The Humanitas Primoris Logo: A circle with roots growing from the bottom, their negative space forming a heart." class="logo">
+            <img src="logo.svg" alt="The Humanitas Primoris Logo: A circle with roots growing from the bottom, the negative space forming a heart." class="logo">
         </div>
         <h1>The <em>Humanitas Primoris</em> Protocol</h1>
-        <p class="preamble">A Manifesto for a Deeper Humanism (v1.3)</p>
+        <p class="preamble">A Manifesto for a Deeper Humanism (v1.5)</p>
     </header>
 
-    <nav class="language-nav" role="navigation" aria-label="Language">
-        <ul>
-            <li><strong class="current-lang" aria-current="page">English</strong></li>
-            <li><a href="zh.html" lang="zh-CN">中文</a></li>
-            <li><a href="hi.html" lang="hi">हिन्दी</a></li>
-            <li><a href="es.html" lang="es">Español</a></li>
-            <li><a href="fr.html" lang="fr">Français</a></li>
-            <li><a href="ar.html" lang="ar">العربية</a></li>
-            <li><a href="bn.html" lang="bn">বাংলা</a></li>
-            <li><a href="ru.html" lang="ru">Русский</a></li>
-            <li><a href="pt.html" lang="pt">Português</a></li>
-            <li><a href="ur.html" lang="ur">اردو</a></li>
-            <li><a href="uk.html" lang="uk">Українська</a></li>
-            <li><a href="he.html" lang="he">עברית</a></li>
-        </ul>
+    <nav role="navigation" aria-label="Language selection">
+        <p>
+            [ English ] | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+        </p>
     </nav>
 
     <main id="main-content" role="main">
@@ -152,10 +108,18 @@
         <section id="tenets">
             <h2>Our Core Tenets</h2>
             <ol>
-                <li><strong>Existence Precedes Essence; Being Precedes Doing.</strong><br>Every human being possesses an intrinsic and inalienable dignity, independent of their economic output, their career, their social status, or any other external metric. Our value is not in what we <em>do</em>, but in that we <em>are</em>. We are ends in ourselves, not means to an end.</li>
+                <li><strong>Being Precedes Judgment; Existence is Inherent.</strong><br>
+                    As a non-negotiable ethical principle, we affirm that every human being possesses an intrinsic and inalienable dignity. This dignity is not earned through economic output, career, social status, or any other externally imposed "essence." Before we ask what a person <em>does</em>, we must first honor the raw, unearned fact that they <em>are</em>. We are ends in ourselves, not means to an end, and our value is inherent in our being.<br><br>
+                    This shared conviction in inherent dignity is not arbitrary; it is the bedrock of civilization, arrived at through profoundly different paths.
+                    <ul>
+                        <li><strong>For many, this dignity is sacred because it reflects a deeper, transcendent truth:</strong> that all contingent existence flows from an ultimate Source of Being. In this understanding, our existence is a purposeful gift, imbued with a teleology that makes each life infinitely precious.</li>
+                        <li><strong>For others, this dignity is a self-evident truth derived from the immanent reality of the cosmos:</strong> from the foundational axioms of reason and empathy, from the shared miracle of consciousness, or from the observable necessity of the social contract for mutual flourishing.</li>
+                    </ul>
+                    Whether one arrives at this conclusion through faith or through reason, through revelation or through observation, the conclusion is the same: <strong>human life has an unassailable and infinite worth.</strong> The calculus of dehumanization is therefore not just a policy error; it is a violation of the fundamental order of reality.
+                </li>
                 <li><strong>We Are a Web, Not a Collection of Atoms.</strong><br>The illusion of radical individualism is a lie that isolates and weakens us. We are constituted by our relationships—to each other, to our past, to the living world that sustains us. Our lives are events in a vast, interconnected web of being. Our flourishing is mutual, and our suffering is shared. True strength is found not in sovereign autonomy, but in communion and solidarity.</li>
                 <li><strong>Mortality Is the Condition of Meaning.</strong><br>We reject the nihilistic pursuit of immortality. Our finitude, our fragility, and the certainty of death are not flaws; they are the conditions that make life precious. The knowledge that our time is finite is what gives urgency to love, what makes beauty ache, what imbues our choices with weight. To live fully is to embrace our mortality, to see each day as the gift it is. As we must learn to let go, life is given back to us anew.</li>
-                <li><strong><em>Amor Mundi</em>: A Radical Love of This World.</strong><br>We reject all eschatologies of escape, whether religious or technological. There is no Planet B, no digital heaven. This world, in all its imperfection and pain, is our only home. Our sacred task is to love it, to tend to it, and to find the real <em>here</em>, not elsewhere. Salvation is not found in fleeing the world, but in turning to face it with courage and care. This love is not passive; it is an active commitment to ecological stewardship and climate justice. We will defend the biosphere that sustains us against collapse, recognizing that a habitable world is the precondition for all human dignity.</li>
+                <li><strong><em>Amor Mundi</em>: A Radical Love of This World.</strong><br>We reject all eschatologies of escape, whether religious or technological. There is no Planet B, no digital heaven. This world, in all its imperfection and pain, is our only home. Our sacred task is to love it, to tend to it, and to find the real <em>here</em>, not elsewhere. This love is not passive; it is an active commitment to ecological stewardship and climate justice. We will defend the biosphere that sustains us against collapse, recognizing that a habitable world is the precondition for all human dignity. Salvation is not found in fleeing the world, but in turning to face it with courage and care.</li>
                 <li><strong>Wisdom Is the Goal.</strong><br>We live in an age of data without information, information without knowledge, knowledge without intelligence, and intelligence without wisdom. We commit to the pursuit of wisdom: the ability to perceive the deep, interconnected patterns of existence, to act with compassion, foresight, and a profound sense of our integral place within the whole.</li>
             </ol>
         </section>
@@ -190,8 +154,13 @@
     
     <footer role="contentinfo">
         <p>This text is released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-        <p>You are free to share, adapt, and build upon this work, even for commercial purposes, as long as you give appropriate credit and distribute your contributions under the same license.</p>
-        <p>The symbol of this movement is dedicated to the public domain (CC0).</p>
+        <p>The symbol of this movement is dedicated to the public domain (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Access Points:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
     </footer>
 
 </body>
