@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ht" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwotokòl Humanitas Primoris</title>
+    <meta name="description" content="Yon manisfè pou yon imanitè ki pi pwofon, ki rejte dezimanizasyon nan tout fòm li yo.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1aa;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ale nan kontni prensipal la</a>
+
+    <header role="banner">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Logo Humanitas Primoris: Yon sèk ki gen rasin k ap grandi anba li, espas negatif la fòme yon kè." class="logo">
+        </div>
+        <h1>Pwotokòl <em>Humanitas Primoris</em></h1>
+        <p class="preamble">Yon Manifès pou yon Imanitè ki pi Pwofon (Vèsyon 1.5.2)</p>
+    </header>
+
+    <nav role="navigation" aria-label="Seleksyon lang">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+            <br>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | [ Kreyòl ayisyen ] | <a href="qu.html">Runasimi</a>
+        </p>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="introduction">
+            <p>Nou kanpe sou bò yon falèz. Yo ofri limanite yon piyay: chanje nanm ou pou konvenyans, konpleksite ou pou efikasite, reyalite ou ki sal, mòtèl ak bèl pou yon chape ki pwòp, simulation ak esteril. Chante sirèn otorite algoritmik ak delivrans tekno-gnostik la pwomèt pou rezoud "pwoblèm" pou nou moun lè li transfòme nou an yon lòt bagay—yon bagay ki pi piti. Li ofri yon avni kote konsyans nou telechaje, mond nou an abandone, epi valè nou mezire pa itilite nou pou machin nan.</p>
+            <p>Se yon piyay nou refize. Se yon avni nou rejte.</p>
+            <p>Nou pa yon pwoblèm jeni pou rezoud. Nou pa yon sak vyann mòtèl pou nou jete. Nou pa yon pwen done pou nou optimize. Nou se eritye yon egzistans frajil ak mirakile, e objektif nou se pa chape anba li, men se pou nou viv ladan l pi totalman. Dokiman sa a se yon deklarasyon defi. Se yon angajman pou Limanite an Premye.</p>
+        </section>
+
+        <section id="tenets">
+            <h2>Prensip Fondamantal Nou yo</h2>
+            <ol>
+                 <li><strong>Leta anvan jijman; Egzistans se Nannan.</strong><br>
+                    Kòm yon prensip etik ki pa negosyab, nou afime ke chak moun gen yon diyite intrinsèk ak inalienab. Diyite sa a pa touche atravè pwodiksyon ekonomik, karyè, estati sosyal, oswa nenpòt lòt "sans" ki enpoze soti deyò. Anvan nou mande kisa yon moun <em>fè</em>, nou dwe premye onore reyalite brit, san merite ke li <em>egziste</em>. Nou se yon fen nan tèt nou, pa yon mwayen pou yon fen, e valè nou nannan nan leta nou.<br><br>
+                    Konviksyon pataje sa a nan diyite nannan pa abitrè; se fondasyon sivilizasyon an, yo rive jwenn li atravè chemen pwofondman diferan.
+                    <ul>
+                        <li><strong>Pou anpil moun, diyite sa a sakre paske li reflete yon verite pi pwofon, transandan:</strong> ke tout egzistans kontenjan soti nan yon Sous final ak nesesè pou Leta. Nan konpreyansyon sa a, egzistans nou se yon kado ki gen objektif, ki gen yon teleoloji ki fè chak lavi gen yon valè enfini.</li>
+                        <li><strong>Pou lòt moun, diyite sa a se yon verite evidan ki soti nan reyalite imanan kosmos la:</strong> soti nan aksyòm fondamantal rezon ak anpati, soti nan mirak pataje konsyans, oswa soti nan nesesite obsèvab kontra sosyal la pou pwospere ansanm.</li>
+                    </ul>
+                    Kit yon moun rive nan konklizyon sa a atravè lafwa oswa atravè rezon, atravè revelasyon oswa atravè obsèvasyon, konklizyon an se menm bagay la: <strong>lavi moun gen yon valè inebranlab ak enfini.</strong> Kalkil dezimanizasyon an se poutèt sa se pa sèlman yon erè politik; se yon vyolasyon lòd fondamantal reyalite a.
+                </li>
+                <li><strong>Nou se yon Twal, pa yon Koleksyon Atom.</strong><br>Ilizyon endividyalis radikal la se yon manti ki izole ak febli nou. Nou fòme pa relasyon nou yo—youn ak lòt, ak pase nou, ak mond vivan ki soutni nou. Lavi nou se evènman nan yon gwo twal egzistans ki konekte. Pwosperite nou se mityèl, e soufrans nou pataje. Vrè fòs pa jwenn nan otonomi souveren, men nan kominyon ak solidarite.</li>
+                <li><strong>Mòtalite se Kondisyon Siyifikasyon an.</strong><br>Nou rejte rechèch nilis pou imòtalite. Finitid nou, frajilite nou, ak sètitid lanmò se pa defo; se kondisyon ki fè lavi a presye. Konesans ke tan nou an limite se sa ki bay lanmou ijans, se sa ki fè bote a fè mal, se sa ki bay chwa nou yo pwa. Viv totalman se anbrase mòtalite nou, se wè chak jou kòm kado li ye a. Pandan n ap aprann lage priz, lavi a tounen vin jwenn nou yon lòt jan.</li>
+                <li><strong><em>Amor Mundi</em>: Yon Lanmou Radikal pou Mond Sa a.</strong><br>Nou rejte tout eskatoloji chape, kit yo relijye oswa teknolojik. Pa gen Planèt B, pa gen paradi dijital. Mond sa a, nan tout enpèfeksyon ak doulè li, se sèl kay nou. Travay sakre nou se renmen li, pran swen li, epi jwenn reyalite a <em>isit la</em>, pa yon lòt kote. Delivrans pa jwenn nan chape anba mond lan, men nan fè fas ak li avèk kouraj ak swen. Lanmou sa a pa pasif; se yon angajman aktif pou jerans ekolojik ak jistis klimatik. Nou pral defann byosfè ki soutni nou an kont efondreman, rekonèt ke yon mond abitab se prekondisyon pou tout diyite moun.</li>
+                <li><strong>Sajès se Objektif la.</strong><br>Nou ap viv nan yon epòk done san enfòmasyon, enfòmasyon san konesans, konesans san entèlijans, ak entèlijans san sajès. Nou angaje nou nan rechèch sajès: kapasite pou nou wè modèl pwofon, konekte egzistans lan, pou nou aji avèk konpasyon, prevwayans, ak yon sans pwofon de plas entegral nou nan tout la.</li>
+            </ol>
+        </section>
+
+        <section id="rejections">
+            <h2>Atik Rejè Nou yo</h2>
+            <p>Se poutèt sa, nou rejte, nan yon nivo fondamantal, nenpòt ideyoloji, sistèm oswa aksyon ki pèpetre dezimanizasyon. Espesyalman:</p>
+            <ol>
+                <li><strong>Nou Rejte Kalkil Dezimanizasyon an.</strong><br>Valè yon lavi moun se enfini e li pa ka antre nan okenn ekwasyon politik oswa ekonomik. Nenpòt politik, sistèm oswa ideyoloji ki trete lavi moun kòm jete, ki ba yo yon valè inegal, oswa ki aksepte soufrans kèk moun kòm yon pri nesesè pou konfò lòt moun, se yon abominasyon. Y ap demoute epi rejte yon kalkil dezimanizasyon konsa avèk prejije ekstrèm.</li>
+                <li><strong>Nou Rejte Tout Politik Divizyon ak Pite.</strong><br>Nou kondane epi opoze tout tantativ pou divize limanite kont tèt li sou baz karakteristik imyab ras, etnisite, sèks, seksyalite, oswa idantite seksyèl, oswa sou sikonstans orijin yon moun. Rasis, seksis, omofobi, transfobi, ak ksenofobi se zouti vye pou dezimanizasyon. Yo se anatèm pou mouvman sa a. Limanite pataje nou an se sèl tribi nou.</li>
+                <li><strong>Nou Rejte Tirani Travay Dezimanizan.</strong><br>Yon "travay" ki touye lespri a, ki toufe kreyativite, oswa ki pa sèvi okenn objektif pi lwen pase pwòp pèpetiyasyon li, se yon fòm vyolans. Nou rejte egzistans "travay initil" sa yo. Nou rejte estrikti jesyon ki kreye ti feyodalite, ki siveye ak mikwojere, epi ki trete moun kòm resous ranplasab. Travay ta dwe yon sous objektif, atizana, ak sèvis, pa yon obligasyon ki kraze nanm pou siviv.</li>
+                <li><strong>Nou Rejte Idolatri Algoritm nan.</strong><br>Nou refize pou nou pwograme pa sistèm ki fèt pou eksplwate feblès sikolojik nou yo pou pwofi oswa kontwòl. Nou rejte "otoritaris algoritmik" ak rediksyon eksperyans moun nan mezi kantitatif. Nou pral goumen pou kenbe jijman moun, anpati, ak sajès nan sant lavi sosyal, politik, ak pèsonèl nou.</li>
+                <li><strong>Nou Rejte Politik Manti.</strong><br>Verite ak bòn fwa se fondasyon koneksyon moun. Se poutèt sa, nou pral aktivman demoute, avèk prejije, tout mekanis manti ekspre ki korode konfyans piblik la ak manipile konpreyansyon. Sa gen ladan pwopagann leta, astroturfing antrepriz, kreyasyon agiman moun pay, ak nenpòt lòt efò pou kache reyalite nan sèvis yon ajanda ki travay kont enterè komen limanite.</li>
+                <li><strong>Nou Rejte Itilizasyon Lafwa kòm Zam.</strong><br>Nou fè distenksyon ant espirityalite ki afime lavi ak sa ki chèche kontwole li. Lafwa pèsonèl, relijyon, ak espirityalite, lè yo mennen nan pi gwo konpasyon ak yon lanmou pi pwofon pou mond lan (<em>amor mundi</em>), se chemen valab pou sajès. Sepandan, nou rejte avèk fòs epi n ap travay aktivman pou demoute itilizasyon nenpòt kwayans kòm yon zam. Sa gen ladan: fondamantalis relijye ki ankouraje vyolans legal oswa fizik; enstitisyon ki itilize lafwa kòm yon boukliye pou kache abi ak koripsyon; ak rechèch pou privilèj espesyal, echapatwa taks, oswa pouvwa politik ki elve yon doktrin pi wo pase byen komen an. Yon kwayans ki pa ka viv ansanm ak lòt moun san yo pa chèche domine oswa diminye yo se pa lafwa; se tirani.</li>
+                <li><strong>Nou Rejte Chape Gnostik la.</strong><br>Nou rejte kwayans ke kò a se yon prizon, ke mond lan se natirèlman move, e ke desten nou chita nan yon avni dezenkanne, dijital pami zetwal yo. Sa a se yon nilis pwofon ki degize an pwogrè. Nou pap abandone mond nou an, e nou pap abandone kò nou yo.</li>
+            </ol>
+        </section>
+        
+        <section id="call-to-being">
+            <h2>Apèl Nou pou Nou Egziste</h2>
+            <p>Manifès sa a se pa sèlman yon seri kwayans; se yon apèl pou yon fason diferan pou viv. Se yon apèl pou reponn kesyon an: <em>Kisa nou t ap devni si nou te viv tankou si lavi a te yon kado frajil, fini, ak presye?</em></p>
+            <ul>
+                <li><strong>Nou pral pratike espwa defyan.</strong> Espwa se pa yon optimis pasif; se yon zak rebelyon kont dezespwa. Nou defye trajectoire mond lan lè nou ensiste sou posiblite yon mond miyò.</li>
+                <li><strong>Nou pral kiltive koneksyon.</strong> Nou pral bay priyorite prezans reyèl, ankanne youn ak lòt olye de entèraksyon medyatize, vityèl. Nou pral koute pwofondman epi pale onètman.</li>
+                <li><strong>Nou pral chèche yon objektif, pa sèlman yon anplwa.</strong> Nou pral onore atizana, sèvis, ak nenpòt travay ki afime lavi ak diyite. Nou pral sipòte estrikti, tankou koperativ ak biznis lokal, ki mete byennèt moun anvan pwofi.</li>
+                <li><strong>Nou pral viv kòm mòtèl.</strong> Nou pap pran demen pou akeri. Nou pral jwenn bote nan sa ki frajil, sa ki efemè, ak sa ki enpafè.</li>
+            </ul>
+            <p>Nou chwazi lit sal, konplike, ak bèl pou nou moun. Nou chwazi mond sa a. Nou chwazi youn lòt.</p>
+            <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>Tèks sa a pibliye anba <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Lisans Creative Commons Attribution-ShareAlike 4.0 Entènasyonal</a>.</p>
+        <p>Ou lib pou pataje, adapte, ak bati sou travay sa a, menm pou rezon komèsyal, toutotan ou bay kredi apwopriye epi distribye kontribisyon ou yo anba menm lisans lan.</p>
+        <p>Senbòl mouvman sa a dedye a domèn piblik la (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Pwen Aksè:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
+    </footer>
+
+</body>
+</html>
