@@ -5,79 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Protocolo Humanitas Primoris</title>
     <meta name="description" content="Un manifiesto por un humanismo más profundo, que rechaza la deshumanización en todas sus formas.">
-    <style>:root{--bg-color:#fdfdfd;--text-color:#1a1a1a;--accent-color:#333;--link-color:#0056b3;--logo-filter:invert(0)}@media (prefers-color-scheme:dark){:root{--bg-color:#1a1a1a;--text-color:#fdfdfd;--accent-color:#ccc;--link-color:#6cace4;--logo-filter:invert(1)}}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.7;max-width:800px;margin:0 auto;padding:40px 20px;background-color:var(--bg-color);color:var(--text-color);transition:background-color .3s,color .3s}.skip-link{position:absolute;top:-40px;left:0;background:var(--accent-color);color:var(--bg-color);padding:8px;z-index:100;transition:top .3s}.skip-link:focus{top:0}header,section,footer{margin-bottom:60px}h1,h2,h3{font-weight:600;line-height:1.2;color:var(--text-color)}h1{font-size:2.5em;text-align:center}h2{font-size:1.8em;border-bottom:1px solid var(--accent-color);padding-bottom:10px}h3{font-size:1.2em;margin-top:40px}.logo-container{text-align:center;margin-bottom:40px}.logo{width:150px;height:150px;filter:var(--logo-filter)}p,li{font-size:1.1em}strong{font-weight:600}ol,ul{padding-left:25px}.preamble{font-style:italic;font-size:1.2em;text-align:center;padding:0 20px}.language-nav{text-align:center;padding:10px 0;margin-bottom:40px;border-top:1px solid var(--accent-color);border-bottom:1px solid var(--accent-color)}.language-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center}.language-nav li{margin:5px 10px}.language-nav a{color:var(--link-color);text-decoration:none;font-weight:500}.language-nav a:focus,.language-nav a:hover{text-decoration:underline}.language-nav .current-lang{font-weight:700;text-decoration:none;color:var(--text-color)}footer{text-align:center;margin-top:80px;font-size:.9em;color:var(--accent-color)}footer a{color:var(--accent-color);text-decoration:underline}</style>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <header role="banner">
         <div class="logo-container">
-            <img src="logo.svg" alt="El logo de Humanitas Primoris: Un círculo con raíces que crecen desde la parte inferior, cuyo espacio negativo forma un corazón." class="logo">
+            <img src="logo.svg" alt="El logo de Humanitas Primoris: Un círculo con raíces que crecen desde abajo, cuyo espacio negativo forma un corazón." class="logo">
         </div>
         <h1>El Protocolo <em>Humanitas Primoris</em></h1>
-        <p class="preamble">Un Manifiesto por un Humanismo Más Profundo (v1.3.1)</p>
+        <p class="preamble">Un Manifiesto por un Humanismo Más Profundo (v1.5)</p>
     </header>
-    <nav class="language-nav" role="navigation" aria-label="Idioma">
-        <ul>
-            <li><a href="index.html" lang="en">English</a></li>
-            <li><a href="zh.html" lang="zh-CN">中文</a></li>
-            <li><a href="hi.html" lang="hi">हिन्दी</a></li>
-            <li><strong class="current-lang" aria-current="page">Español</strong></li>
-            <li><a href="fr.html" lang="fr">Français</a></li>
-            <li><a href="ar.html" lang="ar">العربية</a></li>
-            <li><a href="bn.html" lang="bn">বাংলা</a></li>
-            <li><a href="ru.html" lang="ru">Русский</a></li>
-            <li><a href="pt.html" lang="pt">Português</a></li>
-            <li><a href="ur.html" lang="ur">اردو</a></li>
-            <li><a href="uk.html" lang="uk">Українська</a></li>
-            <li><a href="he.html" lang="he">עברית</a></li>
-        </ul>
+
+    <nav role="navigation" aria-label="Selección de idioma">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | [ Español ] | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+        </p>
     </nav>
+
     <main id="main-content" role="main">
         <section class="introduction">
-            <p>Nos encontramos en un precipicio. A la humanidad se le ofrece un trato: cambiar tu alma por conveniencia, tu complejidad por eficiencia, tu desordenada, mortal y hermosa realidad por un escape limpio, simulado y estéril. El canto de sirena de la autoridad algorítmica y la salvación tecno-gnóstica promete resolver el "problema" de ser humano transformándonos en otra cosa, en algo inferior. Ofrece un futuro donde nuestra conciencia es cargada a la red, nuestro mundo es abandonado y nuestro valor se mide por nuestra utilidad para la máquina.</p>
-            <p>Este es un trato que rehusamos. Este es un futuro que rechazamos.</p>
-            <p>No somos un problema de ingeniería por resolver. No somos sacos de carne mortales de los que deshacerse. No somos puntos de datos para ser optimizados. Somos los herederos de una existencia frágil y milagrosa, y nuestro propósito no es escapar de ella, sino habitarla más plenamente. Este documento es una declaración de desafío. Es un compromiso con la Humanidad Primero.</p>
+            <p>Nos encontramos al borde de un precipicio. A la humanidad se le ofrece un trato: cambiar tu alma por conveniencia, tu complejidad por eficiencia, tu realidad desordenada, mortal y hermosa por un escape limpio, simulado y estéril. El canto de sirena de la autoridad algorítmica y la salvación tecno-gnóstica promete resolver el "problema" de ser humano transformándonos en otra cosa, en algo inferior. Ofrece un futuro donde nuestra conciencia es subida a la red, nuestro mundo abandonado, y nuestro valor medido por nuestra utilidad para la máquina.</p>
+            <p>Este es un trato que rechazamos. Este es un futuro que rechazamos.</p>
+            <p>No somos un problema de ingeniería que deba ser resuelto. No somos sacos de carne mortales de los que haya que deshacerse. No somos puntos de datos que deban ser optimizados. Somos los herederos de una existencia frágil y milagrosa, y nuestro propósito no es escapar de ella, sino habitarla más plenamente. Este documento es una declaración de desafío. Es un compromiso con la Humanidad Primero.</p>
         </section>
+
         <section id="tenets">
             <h2>Nuestros Principios Fundamentales</h2>
             <ol>
-                <li><strong>La Existencia Precede a la Esencia; el Ser Precede al Hacer.</strong><br>Cada ser humano posee una dignidad intrínseca e inalienable, independiente de su producción económica, su carrera, su estatus social o cualquier otra métrica externa. Nuestro valor no reside en lo que <em>hacemos</em>, sino en que <em>somos</em>. Somos fines en nosotros mismos, no medios para un fin.</li>
-                <li><strong>Somos una Red, no una Colección de Átomos.</strong><br>La ilusión del individualismo radical es una mentira que nos aísla y debilita. Estamos constituidos por nuestras relaciones: entre nosotros, con nuestro pasado, con el mundo vivo que nos sostiene. Nuestras vidas son eventos en una vasta red interconectada de ser. Nuestro florecimiento es mutuo, y nuestro sufrimiento es compartido. La verdadera fuerza no se encuentra en la autonomía soberana, sino en la comunión y la solidaridad.</li>
-                <li><strong>La Mortalidad es la Condición del Significado.</strong><br>Rechazamos la búsqueda nihilista de la inmortalidad. Nuestra finitud, nuestra fragilidad y la certeza de la muerte no son defectos; son las condiciones que hacen que la vida sea preciosa. El saber que nuestro tiempo es finito es lo que da urgencia al amor, lo que hace que la belleza duela, lo que imbuye nuestras elecciones de peso. Vivir plenamente es abrazar nuestra mortalidad, ver cada día como el regalo que es. Al aprender a soltar, la vida nos es devuelta de una forma nueva.</li>
-                <li><strong><em>Amor Mundi</em>: Un Amor Radical por Este Mundo.</strong><br>Rechazamos todas las escatologías de escape, ya sean religiosas o tecnológicas. No hay un Planeta B, no hay un paraíso digital. Este mundo, con toda su imperfección y dolor, es nuestro único hogar. Nuestra tarea sagrada es amarlo, cuidarlo y encontrar lo real <em>aquí</em>, no en otro lugar. La salvación no se encuentra en huir del mundo, sino en enfrentarlo con coraje y cuidado. Este amor no es pasivo; es un compromiso activo con la gestión ecológica y la justicia climática. Defenderemos la biosfera que nos sostiene contra el colapso, reconociendo que un mundo habitable es la precondición para toda la dignidad humana.</li>
-                <li><strong>La Sabiduría es la Meta.</strong><br>Vivimos en una era de datos sin información, de información sin conocimiento, de conocimiento sin inteligencia y de inteligencia sin sabiduría. Nos comprometemos a la búsqueda de la sabiduría: la capacidad de percibir los patrones profundos e interconectados de la existencia, de actuar con compasión, previsión y un profundo sentido de nuestro lugar integral dentro del todo.</li>
+                <li><strong>El Ser precede al Juicio; la Existencia es Inherente.</strong><br>
+                    Como principio ético innegociable, afirmamos que todo ser humano posee una dignidad intrínseca e inalienable. Esta dignidad no se gana a través de la producción económica, la carrera profesional, el estatus social o cualquier otra "esencia" impuesta externamente. Antes de preguntar qué <em>hace</em> una persona, debemos primero honrar el hecho crudo y no ganado de que <em>es</em>. Somos fines en nosotros mismos, no medios para un fin, y nuestro valor es inherente a nuestro ser.<br><br>
+                    Esta convicción compartida en la dignidad inherente no es arbitraria; es el cimiento de la civilización, alcanzado a través de caminos profundamente diferentes.
+                    <ul>
+                        <li><strong>Para muchos, esta dignidad es sagrada porque refleja una verdad más profunda y trascendente:</strong> que toda existencia contingente fluye de una Fuente última y necesaria del Ser. En esta comprensión, nuestra existencia es un don con propósito, imbuido de una teleología que hace que cada vida sea infinitamente preciosa.</li>
+                        <li><strong>Para otros, esta dignidad es una verdad autoevidente derivada de la realidad inmanente del cosmos:</strong> de los axiomas fundacionales de la razón y la empatía, del milagro compartido de la conciencia, o de la necesidad observable del contrato social para el florecimiento mutuo.</li>
+                    </ul>
+                    Ya sea que uno llegue a esta conclusión a través de la fe o de la razón, a través de la revelación o de la observación, la conclusión es la misma: <strong>la vida humana tiene un valor inexpugnable e infinito.</strong> El cálculo de la deshumanización no es, por lo tanto, solo un error de política; es una violación del orden fundamental de la realidad.
+                </li>
+                <li><strong>Somos una Red, no una Colección de Átomos.</strong><br>La ilusión del individualismo radical es una mentira que nos aísla y nos debilita. Estamos constituidos por nuestras relaciones: entre nosotros, con nuestro pasado, con el mundo vivo que nos sustenta. Nuestras vidas son eventos en una vasta e interconectada red de ser. Nuestro florecimiento es mutuo, y nuestro sufrimiento es compartido. La verdadera fuerza no se encuentra en la autonomía soberana, sino en la comunión y la solidaridad.</li>
+                <li><strong>La Mortalidad es la Condición del Significado.</strong><br>Rechazamos la búsqueda nihilista de la inmortalidad. Nuestra finitud, nuestra fragilidad y la certeza de la muerte no son defectos; son las condiciones que hacen que la vida sea preciosa. El conocimiento de que nuestro tiempo es finito es lo que da urgencia al amor, lo que hace que la belleza duela, lo que imbuye nuestras elecciones de peso. Vivir plenamente es abrazar nuestra mortalidad, ver cada día como el regalo que es. A medida que aprendemos a soltar, la vida nos es devuelta de una nueva manera.</li>
+                <li><strong><em>Amor Mundi</em>: Un Amor Radical por Este Mundo.</strong><br>Rechazamos todas las escatologías de escape, ya sean religiosas o tecnológicas. No hay un Planeta B, no hay un paraíso digital. Este mundo, con toda su imperfección y dolor, es nuestro único hogar. Nuestra tarea sagrada es amarlo, cuidarlo y encontrar lo real <em>aquí</em>, no en otro lugar. Este amor no es pasivo; es un compromiso activo con la gestión ecológica y la justicia climática. Defenderemos la biosfera que nos sustenta contra el colapso, reconociendo que un mundo habitable es la precondición para toda dignidad humana. La salvación no se encuentra en huir del mundo, sino en enfrentarlo con valentía y cuidado.</li>
+                <li><strong>La Sabiduría es el Objetivo.</strong><br>Vivimos en una era de datos sin información, de información sin conocimiento, de conocimiento sin inteligencia y de inteligencia sin sabiduría. Nos comprometemos con la búsqueda de la sabiduría: la capacidad de percibir los patrones profundos e interconectados de la existencia, de actuar con compasión, previsión y un profundo sentido de nuestro lugar integral dentro del todo.</li>
             </ol>
         </section>
+
         <section id="rejections">
             <h2>Nuestros Artículos de Rechazo</h2>
             <p>Por lo tanto, rechazamos, a un nivel fundamental, cualquier ideología, sistema o acción que perpetúe la deshumanización. Específicamente:</p>
             <ol>
-                <li><strong>Rechazamos el Cálculo de la Deshumanización.</strong><br>El valor de una vida humana es infinito y no puede ser introducido en ninguna ecuación política o económica. Cualquier política, sistema o ideología que trate las vidas humanas como desechables, que les asigne un valor desigual o que acepte el sufrimiento de algunos como un costo necesario para la comodidad de otros, es una abominación. Tal cálculo de deshumanización será desmantelado y desestimado con extremo prejuicio.</li>
+                <li><strong>Rechazamos el Cálculo de la Deshumanización.</strong><br>El valor de una vida humana es infinito y no puede ser introducido en ninguna ecuación política o económica. Cualquier política, sistema o ideología que trate las vidas humanas como desechables, que les asigne un valor desigual, o que acepte el sufrimiento de algunos como un costo necesario para la comodidad de otros, es una abominación. Dicho cálculo de la deshumanización será desmantelado y desestimado con extremo prejuicio.</li>
                 <li><strong>Rechazamos Todas las Políticas de División y Pureza.</strong><br>Condenamos y nos oponemos a todos y cada uno de los intentos de dividir a la humanidad contra sí misma basándose en las características inmutables de raza, etnia, sexo, sexualidad o identidad de género, o en las circunstancias del origen de cada uno. El racismo, el sexismo, la homofobia, la transfobia y la xenofobia son viles herramientas de deshumanización. Son un anatema para este movimiento. Nuestra humanidad compartida es nuestra única tribu.</li>
                 <li><strong>Rechazamos la Tiranía del Trabajo Deshumanizante.</strong><br>Un "trabajo" que mata el espíritu, sofoca la creatividad o no sirve a ningún propósito más allá de su propia perpetuación es una forma de violencia. Rechazamos la existencia de tales "trabajos de mierda". Rechazamos las estructuras de gestión que crean pequeños feudos, que vigilan y microgestionan, y que tratan a las personas como recursos fungibles. El trabajo debe ser una fuente de propósito, oficio y servicio, no una obligación aplastante para la supervivencia.</li>
                 <li><strong>Rechazamos la Idolatría del Algoritmo.</strong><br>Nos negamos a ser programados por sistemas diseñados para explotar nuestras debilidades psicológicas con fines de lucro o control. Rechazamos el "autoritarismo algorítmico" y la reducción de la experiencia humana a métricas cuantificables. Lucharemos por mantener el juicio humano, la empatía y la sabiduría en el centro de nuestras vidas sociales, políticas y personales.</li>
-                <li><strong>Rechazamos las Políticas del Engaño.</strong><br>La verdad y la buena fe son la base de la conexión humana. Por lo tanto, desmantelaremos activamente, con prejuicio, todos los mecanismos de engaño deliberado que corroen la confianza pública y manipulan el entendimiento. Esto incluye la propaganda estatal, el astroturfing corporativo, la creación de argumentos de hombre de paja y cualquier otro esfuerzo por oscurecer la realidad al servicio de una agenda que va en contra del interés común de la humanidad.</li>
+                <li><strong>Rechazamos las Políticas del Engaño.</strong><br>La verdad y la buena fe son el cimiento de la conexión humana. Por lo tanto, desmantelaremos activamente, con prejuicio, todos los mecanismos de engaño deliberado que corroen la confianza pública y manipulan la comprensión. Esto incluye la propaganda estatal, el astroturfing corporativo, la creación de argumentos de hombre de paja y cualquier otro esfuerzo por oscurecer la realidad al servicio de una agenda que va en contra del interés común de la humanidad.</li>
                 <li><strong>Rechazamos la Instrumentalización de la Fe.</strong><br>Distinguimos entre la espiritualidad que afirma la vida y la que busca controlarla. La fe personal, la religión y la espiritualidad, cuando conducen a una mayor compasión y a un amor más profundo por el mundo (<em>amor mundi</em>), son caminos válidos hacia la sabiduría. Sin embargo, rechazamos vehementemente y trabajaremos activamente para desmantelar el uso de cualquier credo como un arma. Esto incluye: el fundamentalismo religioso que incita a la violencia legal o física; las instituciones que usan la fe como un escudo para ocultar abusos y corrupción; y la búsqueda de privilegios especiales, lagunas fiscales o poder político que eleva una doctrina por encima del bien común. Una creencia que no puede coexistir con otras sin buscar dominarlas o disminuirlas no es fe; es tiranía.</li>
-                <li><strong>Rechazamos el Escape Gnóstico.</strong><br>Rechazamos la creencia de que el cuerpo es una prisión, que el mundo es inherentemente malo y que nuestro destino yace en un futuro incorporeo y digital entre las estrellas. Este es un profundo nihilismo disfrazado de progreso. No abandonaremos nuestro mundo, y no abandonaremos nuestros cuerpos.</li>
+                <li><strong>Rechazamos la Fuga Gnóstica.</strong><br>Rechazamos la creencia de que el cuerpo es una prisión, que el mundo es inherentemente malo y que nuestro destino reside en un futuro desencarnado y digital entre las estrellas. Este es un profundo nihilismo disfrazado de progreso. No abandonaremos nuestro mundo y no abandonaremos nuestros cuerpos.</li>
             </ol>
         </section>
+
         <section id="call-to-being">
             <h2>Nuestra Llamada al Ser</h2>
-            <p>Este manifiesto no es meramente un conjunto de creencias; es una llamada a una forma diferente de vivir. Es una llamada a responder la pregunta: <em>¿En qué nos convertiríamos si viviéramos como si la vida fuera un regalo frágil, finito y precioso?</em></p>
+            <p>Este manifiesto no es meramente un conjunto de creencias; es una llamada a una forma diferente de vivir. Es una llamada a responder a la pregunta: <em>¿En qué nos convertiríamos si viviéramos como si la vida fuera un don frágil, finito y precioso?</em></p>
             <ul>
                 <li><strong>Practicaremos la esperanza desafiante.</strong> La esperanza no es un optimismo pasivo; es un acto de rebelión contra la desesperación. Desafiamos la trayectoria del mundo insistiendo en la posibilidad de uno mejor.</li>
-                <li><strong>Cultivaremos la conexión.</strong> Priorizaremos la presencia real y encarnada entre nosotros sobre la interacción mediada y virtual. Escucharemos profundamente y hablaremos honestamente.</li>
-                <li><strong>Buscaremos un propósito, no solo un empleo.</strong> Honraremos el oficio, el servicio y cualquier trabajo que afirme la vida y la dignidad. Apoyaremos estructuras, como cooperativas y negocios locales, que pongan el bienestar humano por encima del lucro.</li>
+                <li><strong>Cultivaremos la conexión.</strong> Priorizaremos la presencia real y encarnada entre nosotros sobre la interacción mediada y virtual. Escucharemos profundamente y hablaremos con honestidad.</li>
+                <li><strong>Buscaremos un propósito, no solo un empleo.</strong> Honraremos el oficio, el servicio y cualquier trabajo que afirme la vida y la dignidad. Apoyaremos estructuras, como cooperativas y empresas locales, que sitúan el bienestar humano por encima del lucro.</li>
                 <li><strong>Viviremos como mortales.</strong> No daremos por sentado el mañana. Encontraremos belleza en lo frágil, lo fugaz y lo imperfecto.</li>
             </ul>
-            <p>Elegimos la lucha desordenada, complicada y hermosa de ser humanos. Elegimos este mundo. Nos elegimos los unos a los otros.</p>
+            <p>Elegimos la lucha desordenada, complicada y hermosa de ser humano. Elegimos este mundo. Nos elegimos unos a otros.</p>
             <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
         </section>
     </main>
+    
     <footer role="contentinfo">
         <p>Este texto se publica bajo la <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</p>
-        <p>Usted es libre de compartir, adaptar y construir sobre esta obra, incluso para fines comerciales, siempre que dé el crédito apropiado y distribuya sus contribuciones bajo la misma licencia.</p>
-        <p>El símbolo de este movimiento está dedicado al dominio público (CC0).</p>
+        <p>Eres libre de compartir, adaptar y crear a partir de esta obra, incluso para fines comerciales, siempre que des el crédito apropiado y distribuyas tus contribuciones bajo la misma licencia.</p>
+        <p>El símbolo de este movimiento está dedicado al dominio público (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Puntos de Acceso:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
     </footer>
+
 </body>
 </html>
