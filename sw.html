@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sw" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itifaki ya Humanitas Primoris</title>
+    <meta name="description" content="Ilani ya ubinadamu wa kina zaidi, inayokataa unyanyasaji wa utu katika aina zake zote.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ruka hadi kwenye maudhui makuu</a>
+
+    <header role="banner">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Nembo ya Humanitas Primoris: Mduara wenye mizizi inayokua kutoka chini, ambao nafasi yake hasi huunda moyo." class="logo">
+        </div>
+        <h1>Itifaki ya <em>Humanitas Primoris</em></h1>
+        <p class="preamble">Ilani ya Ubinadamu wa Kina Zaidi (Toleo la 1.5.2)</p>
+    </header>
+
+    <nav role="navigation" aria-label="Uteuzi wa lugha">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+            <br>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | [ Kiswahili ] | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a>
+        </p>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="introduction">
+            <p>Tumesimama ukingoni mwa shimo. Ubinadamu unapewa ofa: badilisha nafsi yako kwa urahisi, utata wako kwa ufanisi, uhalisia wako mchafu, wa kufa, na mzuri kwa kimbilio safi, la kuigiza na tasa. Wimbo wa king'ora wa mamlaka ya algoriti na wokovu wa tekno-gnostiki unaahidi kutatua "tatizo" la kuwa binadamu kwa kutuhandisi kuwa kitu kingine—kitu duni. Inatoa mustakabali ambapo fahamu zetu zinapakiwa, ulimwengu wetu unaachwa, na thamani yetu inapimwa kwa manufaa yetu kwa mashine.</p>
+            <p>Hii ni ofa tunayoikataa. Huu ni mustakabali tunaoukataa.</p>
+            <p>Sisi si tatizo la kihandisi la kutatuliwa. Sisi si magunia ya nyama ya kufa ya kutupwa. Sisi si alama za data za kuboreshwa. Sisi ni warithi wa uwepo dhaifu, wa miujiza, na kusudi letu si kuukimbia, bali kuishi ndani yake kikamilifu zaidi. Hati hii ni tamko la ukaidi. Ni ahadi kwa Ubinadamu Kwanza.</p>
+        </section>
+
+        <section id="tenets">
+            <h2>Kanuni Zetu Kuu</h2>
+            <ol>
+                 <li><strong>Kuwa kunatangulia hukumu; Uwepo ni wa asili.</strong><br>
+                    Kama kanuni ya kimaadili isiyoweza kujadiliwa, tunathibitisha kwamba kila binadamu ana heshima ya asili na isiyoweza kuondolewa. Heshima hii haipatikani kupitia pato la kiuchumi, kazi, hadhi ya kijamii, au "kiini" kingine chochote kilichowekwa kutoka nje. Kabla hatujauliza mtu <em>anafanya</em> nini, lazima kwanza tuheshimu ukweli halisi, usiostahiliwa kwamba yeye <em>yupo</em>. Sisi ni malengo ndani yetu wenyewe, si njia za kufikia lengo, na thamani yetu iko katika uwepo wetu.<br><br>
+                    Imani hii ya pamoja katika heshima ya asili si ya kubahatisha; ni msingi wa ustaarabu, unaofikiwa kupitia njia tofauti sana.
+                    <ul>
+                        <li><strong>Kwa wengi, heshima hii ni takatifu kwa sababu inaakisi ukweli wa kina zaidi, wa kimetafizikia:</strong> kwamba uwepo wote wa kutegemea unatokana na Chanzo cha mwisho na muhimu cha Kuwa. Katika uelewa huu, uwepo wetu ni zawadi yenye kusudi, iliyojaa teleolojia inayofanya kila maisha kuwa ya thamani isiyo na kikomo.</li>
+                        <li><strong>Kwa wengine, heshima hii ni ukweli ulio wazi unaotokana na uhalisia wa ndani wa ulimwengu:</strong> kutoka kwa kanuni za msingi za mantiki na huruma, kutoka kwa muujiza wa pamoja wa fahamu, au kutoka kwa umuhimu unaoonekana wa mkataba wa kijamii kwa ajili ya ustawi wa pamoja.</li>
+                    </ul>
+                    Iwe mtu anafikia hitimisho hili kupitia imani au kupitia mantiki, kupitia ufunuo au kupitia uchunguzi, hitimisho ni lile lile: <strong>maisha ya binadamu yana thamani isiyoweza kushindwa na isiyo na kikomo.</strong> Kwa hivyo, hesabu ya unyanyasaji wa utu si tu kosa la kisera; ni ukiukaji wa utaratibu wa msingi wa uhalisia.
+                </li>
+                <li><strong>Sisi ni utando, si mkusanyiko wa atomi.</strong><br>Dhana ya ubinafsi mkali ni uongo unaotutenga na kutudhoofisha. Sisi tumeundwa na mahusiano yetu—kwa kila mmoja, kwa historia yetu, kwa ulimwengu hai unaotutegemeza. Maisha yetu ni matukio katika utando mpana, uliounganishwa wa uwepo. Ustawi wetu ni wa pamoja, na mateso yetu ni ya pamoja. Nguvu ya kweli haipatikani katika uhuru wa kujitawala, bali katika ushirika na mshikamano.</li>
+                <li><strong>Kifo ni sharti la maana.</strong><br>Tunakataa harakati za kinadharia za kutokufa. Ukomo wetu, udhaifu wetu, na uhakika wa kifo si kasoro; ni masharti yanayofanya maisha kuwa ya thamani. Ujuzi kwamba wakati wetu ni mdogo ndio unaotoa uharaka kwa upendo, unaofanya uzuri uumize, unaoweka uzito kwenye maamuzi yetu. Kuishi kikamilifu ni kukumbatia ukomo wetu, kuona kila siku kama zawadi ilivyo. Tunapojifunza kuachilia, maisha yanarudi kwetu kwa namna tofauti.</li>
+                <li><strong><em>Amor Mundi</em>: Upendo Mkubwa kwa Ulimwengu Huu.</strong><br>Tunakataa eskatolojia zote za kutoroka, iwe za kidini au kiteknolojia. Hakuna Sayari B, hakuna mbingu ya kidijitali. Ulimwengu huu, katika kutokamilika na maumivu yake yote, ndio nyumba yetu pekee. Jukumu letu takatifu ni kuupenda, kuutunza, na kupata uhalisia <em>hapa</em>, si kwingineko. Wokovu haupatikani katika kuukimbia ulimwengu, bali katika kuukabili kwa ujasiri na uangalifu. Upendo huu si wa kupita tu; ni ahadi tendaji kwa usimamizi wa ikolojia na haki ya hali ya hewa. Tutatetea bayolojia inayotutegemeza dhidi ya kuanguka, tukitambua kwamba ulimwengu unaoweza kukaliwa ni sharti la awali la heshima yote ya kibinadamu.</li>
+                <li><strong>Hekima ndiyo lengo.</strong><br>Tunaishi katika enzi ya data bila habari, habari bila maarifa, maarifa bila akili, na akili bila hekima. Tunajitolea kutafuta hekima: uwezo wa kutambua mifumo ya kina, iliyounganishwa ya uwepo, kutenda kwa huruma, utabiri, na hisia ya kina ya nafasi yetu muhimu ndani ya jumla.</li>
+            </ol>
+        </section>
+
+        <section id="rejections">
+            <h2>Vifungu Vyetu vya Kukataa</h2>
+            <p>Kwa hivyo, tunakataa, katika ngazi ya msingi, itikadi, mfumo, au kitendo chochote kinachoendeleza unyanyasaji wa utu. Hasa:</p>
+            <ol>
+                <li><strong>Tunakataa Hesabu ya Unyanyasaji wa Utu.</strong><br>Thamani ya maisha ya binadamu haina kikomo na haiwezi kuingizwa katika mlinganyo wowote wa kisiasa au kiuchumi. Sera, mfumo, au itikadi yoyote inayochukulia maisha ya binadamu kama ya kutupwa, inayowapa thamani isiyo sawa, au inayokubali mateso ya wengine kama gharama muhimu kwa ajili ya faraja ya wengine, ni chukizo. Hesabu kama hiyo ya unyanyasaji wa utu itavunjwa na kutupiliwa mbali kwa upendeleo mkubwa.</li>
+                <li><strong>Tunakataa Siasa Zote za Mgawanyiko na Usafi.</strong><br>Tunalaani na kupinga majaribio yoyote na yote ya kugawanya ubinadamu dhidi yake wenyewe kwa misingi ya sifa zisizobadilika za rangi, kabila, jinsia, mwelekeo wa kijinsia, au utambulisho wa kijinsia, au kwa misingi ya hali ya asili ya mtu. Ubaguzi wa rangi, ubaguzi wa kijinsia, chuki dhidi ya wapenzi wa jinsia moja, chuki dhidi ya watu waliobadili jinsia, na chuki dhidi ya wageni ni zana mbaya za unyanyasaji wa utu. Haya ni laana kwa harakati hii. Ubinadamu wetu wa pamoja ndio kabila letu pekee.</li>
+                <li><strong>Tunakataa Udhalimu wa Kazi ya Unyanyasaji wa Utu.</strong><br>"Kazi" inayoua roho, inayosonga ubunifu, au isiyo na kusudi lolote zaidi ya kujiendeleza yenyewe ni aina ya unyanyasaji. Tunakataa uwepo wa "kazi za kipuuzi" kama hizo. Tunakataa miundo ya usimamizi inayounda falme ndogo, inayofuatilia na kusimamia kwa undani, na inayowachukulia watu kama rasilimali zinazoweza kubadilishwa. Kazi inapaswa kuwa chanzo cha kusudi, ufundi, na huduma, si wajibu unaovunja roho kwa ajili ya kuishi.</li>
+                <li><strong>Tunakataa Kuabudu Algoriti.</strong><br>Tunakataa kupangwa na mifumo iliyoundwa kutumia udhaifu wetu wa kisaikolojia kwa faida au udhibiti. Tunakataa "utawala wa algoriti" na kupunguzwa kwa uzoefu wa kibinadamu kuwa vipimo vya kiasi. Tutapigania kuweka hukumu ya kibinadamu, huruma, na hekima katikati ya maisha yetu ya kijamii, kisiasa, na kibinafsi.</li>
+                <li><strong>Tunakataa Siasa za Udanganyifu.</strong><br>Ukweli na nia njema ni msingi wa uhusiano wa kibinadamu. Kwa hivyo, tutavunja kwa bidii, kwa upendeleo, mifumo yote ya udanganyifu wa makusudi inayoharibu imani ya umma na kudanganya uelewa. Hii ni pamoja na propaganda za serikali, astroturfing ya mashirika, uundaji wa hoja za mtu wa majani, na juhudi nyingine yoyote ya kuficha ukweli kwa ajili ya ajenda inayopingana na maslahi ya pamoja ya ubinadamu.</li>
+                <li><strong>Tunakataa Matumizi ya Imani kama Silaha.</strong><br>Tunatofautisha kati ya hali ya kiroho inayothibitisha maisha na ile inayotaka kuidhibiti. Imani ya kibinafsi, dini, na hali ya kiroho, zinapoongoza kwenye huruma kubwa na upendo wa kina kwa ulimwengu (<em>amor mundi</em>), ni njia halali za kufikia hekima. Hata hivyo, tunakataa vikali na tutafanya kazi kwa bidii kuvunja matumizi ya imani yoyote kama silaha. Hii ni pamoja na: ushupavu wa kidini unaochochea unyanyasaji wa kisheria au kimwili; taasisi zinazotumia imani kama ngao kuficha unyanyasaji na ufisadi; na harakati za kutafuta fursa maalum, mianya ya kodi, au mamlaka ya kisiasa inayoinua fundisho moja juu ya manufaa ya umma. Imani isiyoweza kuishi na wengine bila kutaka kuwatawala au kuwadharau si imani; ni udhalimu.</li>
+                <li><strong>Tunakataa Kimbilio la Gnostiki.</strong><br>Tunakataa imani kwamba mwili ni gereza, kwamba ulimwengu ni mbaya kiasili, na kwamba hatima yetu iko katika mustakabali wa kidijitali, usio na mwili kati ya nyota. Huu ni unadharia wa kina uliojificha kama maendeleo. Hatutauacha ulimwengu wetu, na hatutaiacha miili yetu.</li>
+            </ol>
+        </section>
+        
+        <section id="call-to-being">
+            <h2>Wito Wetu wa Kuwa</h2>
+            <p>Ilani hii si tu mkusanyiko wa imani; ni wito wa namna tofauti ya kuishi. Ni wito wa kujibu swali: <em>Tungekuwa nini ikiwa tungeishi kana kwamba maisha ni zawadi dhaifu, yenye ukomo, na ya thamani?</em></p>
+            <ul>
+                <li><strong>Tutafanya mazoezi ya tumaini la ukaidi.</strong> Tumaini si matumaini ya kupita tu; ni kitendo cha uasi dhidi ya kukata tamaa. Tunapinga mwelekeo wa ulimwengu kwa kusisitiza juu ya uwezekano wa ulimwengu bora.</li>
+                <li><strong>Tutakuza uhusiano.</strong> Tutatoa kipaumbele kwa uwepo halisi, wa kimwili na kila mmoja badala ya mwingiliano wa kati, wa mtandaoni. Tutasikiliza kwa kina na kuzungumza kwa uaminifu.</li>
+                <li><strong>Tutatafuta kusudi, si ajira tu.</strong> Tutaheshimu ufundi, huduma, na kazi yoyote inayothibitisha maisha na heshima. Tutaunga mkono miundo, kama vile vyama vya ushirika na biashara za ndani, inayoweka ustawi wa binadamu juu ya faida.</li>
+                <li><strong>Tutaishi kama watu wa kufa.</strong> Hatutaichukulia kesho kama hakika. Tutapata uzuri katika vitu dhaifu, vya kupita, na visivyo kamili.</li>
+            </ul>
+            <p>Tunachagua mapambano machafu, magumu, na mazuri ya kuwa binadamu. Tunachagua ulimwengu huu. Tunachaguana.</p>
+            <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>Maandishi haya yametolewa chini ya <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Leseni ya Creative Commons Attribution-ShareAlike 4.0 International</a>.</p>
+        <p>Uko huru kushiriki, kurekebisha, na kujenga juu ya kazi hii, hata kwa madhumuni ya kibiashara, mradi tu utoe sifa inayofaa na kusambaza mchango wako chini ya leseni ileile.</p>
+        <p>Alama ya harakati hii imetolewa kwa umma (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Sehemu za Ufikiaji:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
+    </footer>
+
+</body>
+</html>
