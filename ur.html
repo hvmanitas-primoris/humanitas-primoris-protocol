@@ -5,49 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ہیومنیٹاس پرائیمورس پروٹوکول</title>
     <meta name="description" content="ایک گہرے انسانیت پسندی کے لیے ایک منشور، جو غیر انسانی بنانے کے تمام طریقوں کو مسترد کرتا ہے۔">
-    <style>:root{--bg-color:#fdfdfd;--text-color:#1a1a1a;--accent-color:#333;--link-color:#0056b3;--logo-filter:invert(0)}@media (prefers-color-scheme:dark){:root{--bg-color:#1a1a1a;--text-color:#fdfdfd;--accent-color:#ccc;--link-color:#6cace4;--logo-filter:invert(1)}}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.7;max-width:800px;margin:0 auto;padding:40px 20px;background-color:var(--bg-color);color:var(--text-color);transition:background-color .3s,color .3s}.skip-link{position:absolute;top:-40px;left:0;background:var(--accent-color);color:var(--bg-color);padding:8px;z-index:100;transition:top .3s}.skip-link:focus{top:0}header,section,footer{margin-bottom:60px}h1,h2,h3{font-weight:600;line-height:1.2;color:var(--text-color)}h1{font-size:2.5em;text-align:center}h2{font-size:1.8em;border-bottom:1px solid var(--accent-color);padding-bottom:10px}h3{font-size:1.2em;margin-top:40px}.logo-container{text-align:center;margin-bottom:40px}.logo{width:150px;height:150px;filter:var(--logo-filter)}p,li{font-size:1.1em}strong{font-weight:600}ol,ul{padding-right:25px}ol,ul{padding-left:0}.preamble{font-style:italic;font-size:1.2em;text-align:center;padding:0 20px}.language-nav{text-align:center;padding:10px 0;margin-bottom:40px;border-top:1px solid var(--accent-color);border-bottom:1px solid var(--accent-color)}.language-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center}.language-nav li{margin:5px 10px}.language-nav a{color:var(--link-color);text-decoration:none;font-weight:500}.language-nav a:focus,.language-nav a:hover{text-decoration:underline}.language-nav .current-lang{font-weight:700;text-decoration:none;color:var(--text-color)}footer{text-align:center;margin-top:80px;font-size:.9em;color:var(--accent-color)}footer a{color:var(--accent-color);text-decoration:underline}</style>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-right: 25px; padding-left: 0; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">مرکزی مواد پر جائیں</a>
+
     <header role="banner">
         <div class="logo-container">
             <img src="logo.svg" alt="ہیومنیٹاس پرائیمورس کا لوگو: ایک دائرہ جس کے نیچے سے جڑیں اگ رہی ہیں، اور ان کی منفی جگہ ایک دل کی شکل بناتی ہے۔" class="logo">
         </div>
         <h1>ہیومنیٹاس پرائیمورس <em>(Humanitas Primoris)</em> پروٹوکول</h1>
-        <p class="preamble">ایک گہرے انسانیت پسندی کے لیے ایک منشور (ورژن 1.3.1)</p>
+        <p class="preamble">ایک گہرے انسانیت پسندی کے لیے ایک منشور (ورژن 1.5)</p>
     </header>
-    <nav class="language-nav" role="navigation" aria-label="زبان">
-        <ul>
-            <li><a href="index.html" lang="en">English</a></li>
-            <li><a href="zh.html" lang="zh-CN">中文</a></li>
-            <li><a href="hi.html" lang="hi">हिन्दी</a></li>
-            <li><a href="es.html" lang="es">Español</a></li>
-            <li><a href="fr.html" lang="fr">Français</a></li>
-            <li><a href="ar.html" lang="ar">العربية</a></li>
-            <li><a href="bn.html" lang="bn">বাংলা</a></li>
-            <li><a href="ru.html" lang="ru">Русский</a></li>
-            <li><a href="pt.html" lang="pt">Português</a></li>
-            <li><strong class="current-lang" aria-current="page">اردو</strong></li>
-            <li><a href="uk.html" lang="uk">Українська</a></li>
-            <li><a href="he.html" lang="he">עברית</a></li>
-        </ul>
+
+    <nav role="navigation" aria-label="زبان کا انتخاب">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | [ اردو ] | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+        </p>
     </nav>
+
     <main id="main-content" role="main">
         <section class="introduction">
             <p>ہم ایک کھائی کے کنارے کھڑے ہیں۔ انسانیت کو ایک سودا پیش کیا جا رہا ہے: اپنی روح کو سہولت کے بدلے، اپنی پیچیدگی کو کارکردگی کے بدلے، اور اپنی بے ترتیب، فانی، خوبصورت حقیقت کو ایک صاف، مصنوعی اور جراثیم سے پاک فرار کے بدلے بیچ دیں۔ الگورتھمک اتھارٹی اور ٹیکنو-ناسٹک نجات کا دلفریب نغمہ انسان ہونے کے "مسئلے" کو ہمیں کسی اور چیز میں، کسی کمتر چیز میں، انجینئر کرکے حل کرنے کا وعدہ کرتا ہے۔ یہ ایک ایسے مستقبل کی پیشکش کرتا ہے جہاں ہمارا شعور اپ لوڈ ہو جائے گا، ہماری دنیا ترک کر دی جائے گی، اور ہماری قدر مشین کے لیے ہماری افادیت سے ماپی جائے گی۔</p>
             <p>یہ ایک ایسا سودا ہے جسے ہم مسترد کرتے ہیں۔ یہ ایک ایسا مستقبل ہے جسے ہم مسترد کرتے ہیں۔</p>
             <p>ہم کوئی انجینئرنگ کا مسئلہ نہیں ہیں جسے حل کیا جائے۔ ہم فانی گوشت کے تھیلے نہیں ہیں جنہیں پھینک دیا جائے۔ ہم ڈیٹا پوائنٹس نہیں ہیں جنہیں بہتر بنایا جائے۔ ہم ایک نازک، معجزاتی وجود کے وارث ہیں، اور ہمارا مقصد اس سے فرار ہونا نہیں، بلکہ اس میں مزید پوری طرح سے رہنا ہے۔ یہ دستاویز ایک بغاوت کا اعلان ہے۔ یہ انسانیت اول کے لیے ایک عہد ہے۔</p>
         </section>
+
         <section id="tenets">
             <h2>ہمارے بنیادی اصول</h2>
             <ol>
-                <li><strong>وجود جوہر سے پہلے ہے؛ ہونا کرنے سے پہلے ہے۔</strong><br>ہر انسان کی ایک اندرونی اور ناقابل تنسیخ عزت ہوتی ہے، جو اس کی معاشی پیداوار، اس کے کیریئر، اس کی سماجی حیثیت، یا کسی دوسرے بیرونی پیمانے سے آزاد ہوتی ہے۔ ہماری قدر اس میں نہیں ہے کہ ہم کیا <em>کرتے</em> ہیں، بلکہ اس میں ہے کہ ہم <em>ہیں</em>۔ ہم خود میں ایک مقصد ہیں، کسی مقصد کا ذریعہ نہیں۔</li>
+                <li><strong>ہونا فیصلے سے پہلے؛ وجود موروثی ہے۔</strong><br>
+                    ایک غیر متنازعہ اخلاقی اصول کے طور پر، ہم اس بات کی تصدیق کرتے ہیں کہ ہر انسان ایک اندرونی اور ناقابل تنسیخ وقار کا مالک ہے۔ یہ وقار معاشی پیداوار، کیریئر، سماجی حیثیت یا کسی دوسرے بیرونی طور پر مسلط کردہ "جوہر" کے ذریعے حاصل نہیں کیا جاتا۔ اس سے پہلے کہ ہم پوچھیں کہ ایک شخص کیا <em>کرتا</em> ہے، ہمیں پہلے اس خام، غیر حاصل شدہ حقیقت کا احترام کرنا چاہیے کہ وہ <em>ہے</em>۔ ہم خود میں ایک مقصد ہیں، کسی مقصد کا ذریعہ نہیں، اور ہماری قدر ہمارے ہونے میں پوشیدہ ہے۔<br><br>
+                    موروثی وقار میں یہ مشترکہ یقین من مانی نہیں ہے؛ یہ تہذیب کی بنیاد ہے، جو گہرے مختلف راستوں سے حاصل کی گئی ہے۔
+                    <ul>
+                        <li><strong>بہت سے لوگوں کے لیے، یہ وقار مقدس ہے کیونکہ یہ ایک گہری، ماورائی حقیقت کی عکاسی کرتا ہے:</strong> کہ تمام ممکنہ وجود، وجود کے ایک حتمی اور ضروری ماخذ سے بہتا ہے۔ اس سمجھ میں، ہمارا وجود ایک بامقصد تحفہ ہے، جو ایک ایسی غایت سے بھرا ہوا ہے جو ہر زندگی کو لامحدود طور پر قیمتی بناتا ہے۔</li>
+                        <li><strong>دوسروں کے لیے، یہ وقار کائنات کی داخلی حقیقت سے ماخوذ ایک خود واضح سچائی ہے:</strong> عقل و ہمدردی کے بنیادی محوروں سے، شعور کے مشترکہ معجزے سے، یا باہمی ترقی کے لیے سماجی معاہدے کی قابل مشاہدہ ضرورت سے۔</li>
+                    </ul>
+                    چاہے کوئی اس نتیجے پر ایمان کے ذریعے پہنچے یا عقل کے ذریعے، وحی کے ذریعے یا مشاہدے کے ذریعے، نتیجہ ایک ہی ہے: <strong>انسانی زندگی کی ایک ناقابل تسخیر اور لامحدود قدر ہے۔</strong> لہذا، غیر انسانی بنانے کا حساب صرف ایک پالیسی کی غلطی نہیں ہے؛ یہ حقیقت کے بنیادی نظام کی خلاف ورزی ہے۔
+                </li>
                 <li><strong>ہم ایک جال ہیں، ایٹموں کا مجموعہ نہیں۔</strong><br>انتہائی انفرادیت پسندی کا وہم ایک جھوٹ ہے جو ہمیں الگ تھلگ اور کمزور کرتا ہے۔ ہم اپنے رشتوں سے بنے ہیں — ایک دوسرے سے، اپنے ماضی سے، اس زندہ دنیا سے جو ہمیں برقرار رکھتی ہے۔ ہماری زندگیاں وجود کے اس وسیع، باہم مربوط جال میں واقعات ہیں۔ ہماری خوشحالی باہمی ہے، اور ہمارا دکھ مشترک ہے۔ حقیقی طاقت خودمختار خود مختاری میں نہیں، بلکہ اشتراک اور یکجہتی میں پائی جاتی ہے۔</li>
                 <li><strong>فانی ہونا معنی کی شرط ہے۔</strong><br>ہم لافانیت کی عدمیت پسندانہ جستجو کو مسترد کرتے ہیں۔ ہماری محدودیت، ہماری نزاکت، اور موت کی یقینیت خامیاں نہیں ہیں؛ یہ وہ حالات ہیں جو زندگی کو قیمتی بناتے ہیں۔ یہ علم کہ ہمارا وقت محدود ہے، محبت کو فوری بناتا ہے، خوبصورتی کو درد دیتا ہے، ہمارے انتخاب کو وزن دیتا ہے۔ پوری طرح سے جینے کا مطلب ہے ہماری فانیت کو گلے لگانا، ہر دن کو ایک تحفے کے طور پر دیکھنا۔ جیسے ہی ہم جانے دینا سیکھتے ہیں، زندگی ہمارے پاس مختلف طریقے سے واپس آتی ہے۔</li>
-                <li><strong><em>Amor Mundi</em>: اس دنیا کے لیے ایک بنیاد پرست محبت۔</strong><br>ہم فرار کی تمام مذہبی یا تکنیکی آخرت شناسیوں کو مسترد کرتے ہیں۔ کوئی سیارہ بی نہیں ہے، کوئی ڈیجیٹل جنت نہیں ہے۔ یہ دنیا، اپنی تمام خامیوں اور درد کے ساتھ، ہمارا واحد گھر ہے۔ ہمارا مقدس کام اس سے محبت کرنا، اس کی دیکھ بھال کرنا، اور اصلی کو <em>یہاں</em> تلاش کرنا ہے، کہیں اور نہیں۔ نجات دنیا سے بھاگنے میں نہیں، بلکہ ہمت اور دیکھ بھال کے ساتھ اس کا سامنا کرنے میں پائی جاتی ہے۔ یہ محبت غیر فعال نہیں ہے؛ یہ ماحولیاتی ذمہ داری اور موسمیاتی انصاف کے لیے ایک فعال عزم ہے۔ ہم اس حیاتیاتی کرہ کی حفاظت کریں گے جو ہمیں تباہی سے بچاتا ہے، یہ تسلیم کرتے ہوئے کہ ایک قابل رہائش دنیا تمام انسانی وقار کے لیے پیشگی شرط ہے۔</li>
+                <li><strong><em>Amor Mundi</em>: اس دنیا کے لیے ایک بنیاد پرست محبت۔</strong><br>ہم فرار کی تمام مذہبی یا تکنیکی آخرت شناسیوں کو مسترد کرتے ہیں۔ کوئی سیارہ بی نہیں ہے، کوئی ڈیجیٹل جنت نہیں ہے۔ یہ دنیا، اپنی تمام خامیوں اور درد کے ساتھ، ہمارا واحد گھر ہے۔ ہمارا مقدس کام اس سے محبت کرنا، اس کی دیکھ بھال کرنا، اور اصلی کو <em>یہاں</em> تلاش کرنا ہے، کہیں اور نہیں۔ نجات دنیا سے بھاگنے میں نہیں، بلکہ ہمت اور دیکھ بھال کے ساتھ اس کا سامنا کرنے میں پائی جاتی ہے۔ یہ محبت غیر فعال نہیں ہے؛ یہ ماحولیاتی ذمہ داری اور موسمیاتی انصاف کے لیے ایک فعال عزم ہے۔ ہم اس حیاتی کرہ کی حفاظت کریں گے جو ہمیں تباہی سے بچاتا ہے، یہ تسلیم کرتے ہوئے کہ ایک قابل رہائش دنیا تمام انسانی وقار کے لیے پیشگی شرط ہے۔</li>
                 <li><strong>حکمت مقصد ہے۔</strong><br>ہم ایک ایسے دور میں رہتے ہیں جہاں معلومات کے بغیر ڈیٹا، علم کے بغیر معلومات، ذہانت کے بغیر علم، اور حکمت کے بغیر ذہانت ہے۔ ہم حکمت کی جستجو کے لیے پرعزم ہیں: وجود کے گہرے، باہم مربوط نمونوں کو سمجھنے کی صلاحیت، ہمدردی، دور اندیشی، اور مجموعی کے اندر اپنے لازمی مقام کے گہرے احساس کے ساتھ کام کرنے کی صلاحیت۔</li>
             </ol>
         </section>
+
         <section id="rejections">
             <h2>ہمارے مسترد کرنے کے مضامین</h2>
             <p>لہذا، ہم بنیادی سطح پر، کسی بھی نظریے، نظام، یا عمل کو مسترد کرتے ہیں جو غیر انسانی بنانے کو فروغ دیتا ہے۔ خاص طور پر:</p>
@@ -61,6 +137,7 @@
                 <li><strong>ہم ناسٹک فرار کو مسترد کرتے ہیں۔</strong><br>ہم اس عقیدے کو مسترد کرتے ہیں کہ جسم ایک جیل ہے، کہ دنیا فطری طور پر بری ہے، اور یہ کہ ہماری تقدیر ستاروں کے درمیان ایک غیر جسمانی، ڈیجیٹل مستقبل میں ہے۔ یہ ترقی کے بھیس میں ایک گہرا عدمیت ہے۔ ہم اپنی دنیا کو نہیں چھوڑیں گے، اور ہم اپنے جسموں کو نہیں چھوڑیں گے۔</li>
             </ol>
         </section>
+        
         <section id="call-to-being">
             <h2>ہونے کے لیے ہماری پکار</h2>
             <p>یہ منشور صرف عقائد کا ایک مجموعہ نہیں ہے؛ یہ ایک مختلف طریقے سے جینے کی پکار ہے۔ یہ اس سوال کا جواب دینے کی پکار ہے: <em>اگر ہم ایسے جیتے جیسے کہ زندگی ایک نازک، محدود، اور قیمتی تحفہ ہے، تو ہم کیا بن جائیں گے؟</em></p>
@@ -74,10 +151,18 @@
             <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
         </section>
     </main>
+    
     <footer role="contentinfo">
         <p>یہ متن <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">کریٹیو کامنز انتساب-شیئرالائک 4.0 بین الاقوامی لائسنس</a> کے تحت جاری کیا گیا ہے۔</p>
         <p>آپ اس کام کو شیئر کرنے، اپنانے، اور اس پر تعمیر کرنے کے لیے آزاد ہیں، یہاں تک کہ تجارتی مقاصد کے لیے بھی، جب تک آپ مناسب کریڈٹ دیتے ہیں اور اپنے تعاون کو اسی لائسنس کے تحت تقسیم کرتے ہیں۔</p>
-        <p>اس تحریک کی علامت عوامی ڈومین (CC0) کے لیے وقف ہے۔</p>
+        <p>اس تحریک کی علامت عوامی ڈومین (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>) کے لیے وقف ہے۔</p>
+        <p>
+            <strong>رسائی کے مقامات:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
     </footer>
+
 </body>
 </html>
