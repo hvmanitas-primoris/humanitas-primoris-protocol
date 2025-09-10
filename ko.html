@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴머니타스 프리모리스 프로토콜</title>
+    <meta name="description" content="더 깊은 인본주의를 위한 선언문, 모든 형태의 비인간화를 거부합니다.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+
+    <header role="banner">
+        <div class="logo-container">
+            <img src="logo.svg" alt="휴머니타스 프리모리스 로고: 아래에서 뿌리가 자라나는 원, 그 부정적인 공간이 하트를 형성합니다." class="logo">
+        </div>
+        <h1><em>휴머니타스 프리모리스</em> 프로토콜</h1>
+        <p class="preamble">더 깊은 인본주의를 위한 선언문 (버전 1.5.2)</p>
+    </header>
+
+    <nav role="navigation" aria-label="언어 선택">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+            <br>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | [ 한국어 ] | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a>
+        </p>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="introduction">
+            <p>우리는 벼랑 끝에 서 있습니다. 인류는 거래를 제안받고 있습니다: 당신의 영혼을 편리함과, 당신의 복잡성을 효율성과, 당신의 어수선하고 필멸하며 아름다운 현실을 깨끗하고 시뮬레이션된 무균의 탈출구와 맞바꾸라는 것입니다. 알고리즘적 권위와 테크노-영지주의적 구원의 사이렌 노래는 인간이라는 "문제"를 우리를 다른 것, 즉 더 열등한 존재로 공학적으로 만들어 해결하겠다고 약속합니다. 그것은 우리의 의식이 업로드되고, 우리의 세계는 버려지며, 우리의 가치는 기계에 대한 우리의 유용성으로 측정되는 미래를 제공합니다.</p>
+            <p>이것은 우리가 거부하는 거래입니다. 이것은 우리가 거부하는 미래입니다.</p>
+            <p>우리는 해결해야 할 공학적 문제가 아닙니다. 우리는 버려야 할 필멸의 고기 자루가 아닙니다. 우리는 최적화해야 할 데이터 포인트가 아닙니다. 우리는 깨지기 쉽고 기적적인 존재의 상속자이며, 우리의 목적은 그것으로부터 탈출하는 것이 아니라 그 안에서 더 온전히 거주하는 것입니다. 이 문서는 저항의 선언입니다. 이것은 인류 우선주의에 대한 헌신입니다.</p>
+        </section>
+
+        <section id="tenets">
+            <h2>우리의 핵심 신조</h2>
+            <ol>
+                 <li><strong>존재는 판단에 앞서며, 존재는 내재적이다.</strong><br>
+                    협상 불가능한 윤리 원칙으로서, 우리는 모든 인간이 내재적이고 양도할 수 없는 존엄성을 지니고 있음을 확인합니다. 이 존엄성은 경제적 생산량, 직업, 사회적 지위 또는 기타 외부에서 부과된 "본질"을 통해 얻어지는 것이 아닙니다. 어떤 사람이 무엇을 <em>하는가</em>를 묻기 전에, 우리는 먼저 그들이 <em>존재한다</em>는 날것의, 획득되지 않은 사실을 존중해야 합니다. 우리는 우리 자신 안의 목적이며, 목적을 위한 수단이 아니며, 우리의 가치는 우리의 존재에 내재되어 있습니다.<br><br>
+                    내재적 존엄성에 대한 이 공유된 신념은 임의적인 것이 아닙니다; 그것은 문명의 기반이며, 심오하게 다른 경로를 통해 도달된 것입니다.
+                    <ul>
+                        <li><strong>많은 이들에게 이 존엄성은 더 깊고 초월적인 진실을 반영하기 때문에 신성합니다:</strong> 모든 우발적 존재는 궁극적이고 필연적인 존재의 근원으로부터 흘러나옵니다. 이러한 이해 속에서, 우리의 존재는 목적 있는 선물이며, 각 생명을 무한히 귀중하게 만드는 목적론으로 가득 차 있습니다.</li>
+                        <li><strong>다른 이들에게 이 존엄성은 우주의 내재적 현실에서 파생된 자명한 진실입니다:</strong> 이성과 공감의 기본 공리로부터, 의식의 공유된 기적으로부터, 또는 상호 번영을 위한 사회 계약의 관찰 가능한 필연성으로부터.</li>
+                    </ul>
+                    신앙을 통해든 이성을 통해든, 계시를 통해든 관찰을 통해든, 이 결론에 도달하든, 결론은 동일합니다: <strong>인간의 생명은 불가침하고 무한한 가치를 지닙니다.</strong> 따라서 비인간화의 계산은 단지 정책적 실수가 아니라, 현실의 근본적인 질서에 대한 위반입니다.
+                </li>
+                <li><strong>우리는 원자의 집합이 아닌, 거미줄이다.</strong><br>급진적 개인주의의 환상은 우리를 고립시키고 약화시키는 거짓말입니다. 우리는 우리의 관계에 의해 구성됩니다 — 서로, 우리의 과거, 우리를 지탱하는 살아있는 세계와. 우리의 삶은 광대하고 상호 연결된 존재의 거미줄 속의 사건들입니다. 우리의 번영은 상호적이며, 우리의 고통은 공유됩니다. 진정한 힘은 주권적 자율성에서가 아니라, 교감과 연대에서 발견됩니다.</li>
+                <li><strong>필멸성은 의미의 조건이다.</strong><br>우리는 불멸에 대한 허무주의적 추구를 거부합니다. 우리의 유한성, 취약성, 그리고 죽음의 확실성은 결함이 아니라, 삶을 귀중하게 만드는 조건들입니다. 우리의 시간이 유한하다는 지식이야말로 사랑에 긴급성을 부여하고, 아름다움을 아프게 하며, 우리의 선택에 무게를 실어줍니다. 온전히 산다는 것은 우리의 필멸성을 받아들이고, 매일을 그것이 가진 선물로 보는 것입니다. 우리가 놓아주는 법을 배우면서, 삶은 우리에게 다르게 돌아옵니다.</li>
+                <li><strong><em>아모르 문디</em>: 이 세계에 대한 급진적인 사랑.</strong><br>우리는 종교적이든 기술적이든, 모든 탈출의 종말론을 거부합니다. 제2의 행성은 없으며, 디지털 천국도 없습니다. 이 세계는, 모든 불완전함과 고통에도 불구하고, 우리의 유일한 집입니다. 우리의 신성한 임무는 그것을 사랑하고, 돌보며, <em>여기에서</em> 진짜를 찾는 것이지, 다른 곳이 아닙니다. 구원은 세상을 떠나는 데 있는 것이 아니라, 용기와 보살핌으로 그것에 맞서는 데 있습니다. 이 사랑은 수동적이지 않습니다; 그것은 생태적 관리와 기후 정의에 대한 적극적인 헌신입니다. 우리는 우리를 지탱하는 생물권을 붕괴로부터 보호할 것이며, 거주 가능한 세계가 모든 인간 존엄성의 전제 조건임을 인식할 것입니다.</li>
+                <li><strong>지혜가 목표이다.</strong><br>우리는 정보 없는 데이터, 지식 없는 정보, 지능 없는 지식, 그리고 지혜 없는 지능의 시대에 살고 있습니다. 우리는 지혜의 추구에 헌신합니다: 존재의 깊고 상호 연결된 패턴을 인지하고, 연민, 선견지명, 그리고 전체 속에서 우리의 통합적 위치에 대한 깊은 감각으로 행동하는 능력.</li>
+            </ol>
+        </section>
+
+        <section id="rejections">
+            <h2>우리의 거부 조항</h2>
+            <p>따라서, 우리는 근본적인 수준에서, 비인간화를 영속시키는 어떠한 이념, 체계, 또는 행위도 거부합니다. 구체적으로:</p>
+            <ol>
+                <li><strong>우리는 비인간화의 계산을 거부한다.</strong><br>인간 생명의 가치는 무한하며 어떠한 정치적 또는 경제적 방정식에도 포함될 수 없다. 인간의 생명을 소모품으로 취급하거나, 불평등한 가치를 부여하거나, 타인의 안락을 위해 일부의 고통을 필요한 대가로 받아들이는 어떠한 정책, 체계, 또는 이념도 혐오스러운 것이다. 이러한 비인간화의 계산은 극단적인 편견으로 해체되고 기각될 것이다.</li>
+                <li><strong>우리는 모든 분열과 순수의 정치를 거부한다.</strong><br>우리는 인종, 민족, 성별, 성적 지향, 또는 성 정체성의 불변하는 특성이나 출신 환경을 근거로 인류를 분열시키려는 어떠한 시도도 규탄하고 반대한다. 인종차별, 성차별, 동성애 혐오, 트랜스젠더 혐오, 그리고 외국인 혐오는 비인간화의 비열한 도구들이다. 그것들은 이 운동에 저주스러운 것이다. 우리의 공유된 인류애가 우리의 유일한 부족이다.</li>
+                <li><strong>우리는 비인간적인 노동의 폭정을 거부한다.</strong><br>정신을 죽이고, 창의성을 억압하며, 자신의 영속 외에는 아무런 목적도 없는 "일"은 폭력의 한 형태이다. 우리는 그러한 "헛소리 직업"의 존재를 거부한다. 우리는 사소한 봉건 영지를 만들고, 감시하고 미세 관리하며, 사람들을 대체 가능한 자원으로 취급하는 관리 구조를 거부한다. 일은 목적, 기술, 그리고 봉사의 원천이어야 하며, 생존을 위한 영혼을 짓밟는 의무가 아니어야 한다.</li>
+                <li><strong>우리는 알고리즘의 우상숭배를 거부한다.</strong><br>우리는 이익이나 통제를 위해 우리의 심리적 약점을 이용하도록 설계된 시스템에 의해 프로그래밍되기를 거부한다. 우리는 "알고리즘적 권위주의"와 인간 경험을 정량적 지표로 축소하는 것을 거부한다. 우리는 우리의 사회적, 정치적, 개인적 삶의 중심에 인간의 판단, 공감, 그리고 지혜를 유지하기 위해 싸울 것이다.</li>
+                <li><strong>우리는 기만의 정치를 거부한다.</strong><br>진실과 선의는 인간 관계의 기반이다. 따라서, 우리는 대중의 신뢰를 잠식하고 이해를 조작하는 모든 고의적인 기만 메커니즘을 편견을 가지고 적극적으로 해체할 것이다. 여기에는 국가 선전, 기업의 여론 조작, 허수아비 논증의 생성, 그리고 인류의 공동 이익에 반하는 의제를 위해 현실을 흐리는 다른 모든 노력이 포함된다.</li>
+                <li><strong>우리는 신념의 무기화를 거부한다.</strong><br>우리는 생명을 긍정하는 영성과 그것을 통제하려는 영성을 구별한다. 개인적인 신념, 종교, 그리고 영성은 더 큰 연민과 세상에 대한 더 깊은 사랑(<em>아모르 문디</em>)으로 이어질 때, 지혜로 가는 유효한 길이다. 그러나, 우리는 어떠한 신조를 무기로 사용하는 것을 격렬하게 거부하고 적극적으로 해체하기 위해 노력할 것이다. 여기에는 법적 또는 물리적 폭력을 선동하는 종교적 근본주의; 학대와 부패를 은폐하기 위한 방패로 신념을 사용하는 기관; 그리고 하나의 교리를 공동선 위에 두는 특별한 특권, 세금 허점, 또는 정치적 권력의 추구가 포함된다. 타인을 지배하거나 폄하하려는 시도 없이 타인과 공존할 수 없는 신념은 신념이 아니다; 그것은 폭정이다.</li>
+                <li><strong>우리는 영지주의적 탈출을 거부한다.</strong><br>우리는 육체가 감옥이고, 세상은 본질적으로 악하며, 우리의 운명은 별들 사이의 비물질적, 디지털 미래에 있다는 믿음을 거부한다. 이것은 진보로 위장한 심오한 허무주의이다. 우리는 우리의 세계를 버리지 않을 것이며, 우리의 육체를 버리지 않을 것이다.</li>
+            </ol>
+        </section>
+        
+        <section id="call-to-being">
+            <h2>존재에 대한 우리의 부름</h2>
+            <p>이 선언문은 단지 믿음의 집합이 아닙니다; 그것은 다른 삶의 방식에 대한 부름입니다. 그것은 이 질문에 답하라는 부름입니다: <em>만약 우리가 삶이 깨지기 쉽고, 유한하며, 귀중한 선물인 것처럼 산다면, 우리는 무엇이 될까요?</em></p>
+            <ul>
+                <li><strong>우리는 저항적인 희망을 실천할 것이다.</strong> 희망은 수동적인 낙관주의가 아닙니다; 그것은 절망에 대한 반역 행위입니다. 우리는 더 나은 세상의 가능성을 주장함으로써 세상의 궤적에 저항합니다.</li>
+                <li><strong>우리는 연결을 키울 것이다.</strong> 우리는 중재되고 가상적인 상호작용보다 서로와의 실제적이고 구체적인 존재를 우선시할 것입니다. 우리는 깊이 듣고 정직하게 말할 것입니다.</li>
+                <li><strong>우리는 단지 고용이 아닌, 목적을 추구할 것이다.</strong> 우리는 기술, 봉사, 그리고 생명과 존엄성을 긍정하는 모든 일을 존중할 것입니다. 우리는 이익보다 인간의 복지를 우선시하는 협동조합이나 지역 사업과 같은 구조를 지원할 것입니다.</li>
+                <li><strong>우리는 필멸의 존재로 살 것이다.</strong> 우리는 내일을 당연하게 여기지 않을 것입니다. 우리는 깨지기 쉽고, 덧없고, 불완전한 것에서 아름다움을 찾을 것입니다.</li>
+            </ul>
+            <p>우리는 인간이라는 어수선하고, 복잡하며, 아름다운 투쟁을 선택합니다. 우리는 이 세계를 선택합니다. 우리는 서로를 선택합니다.</p>
+            <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>아모르 문디.</em></p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>이 텍스트는 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 공개되었습니다.</p>
+        <p>귀하는 적절한 출처를 밝히고 동일한 라이선스 하에 귀하의 기여를 배포하는 한, 상업적 목적을 포함하여 이 저작물을 공유, 개작 및 재창작할 수 있습니다.</p>
+        <p>이 운동의 상징은 퍼블릭 도메인(<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>)에 헌정되었습니다.</p>
+        <p>
+            <strong>접근 지점:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
+    </footer>
+
+</body>
+</html>
