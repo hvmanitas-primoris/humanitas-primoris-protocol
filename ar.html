@@ -5,49 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بروتوكول الإنسانية أولاً</title>
     <meta name="description" content="بيان من أجل إنسانية أعمق، يرفض التجريد من الإنسانية بكافة أشكاله.">
-    <style>:root{--bg-color:#fdfdfd;--text-color:#1a1a1a;--accent-color:#333;--link-color:#0056b3;--logo-filter:invert(0)}@media (prefers-color-scheme:dark){:root{--bg-color:#1a1a1a;--text-color:#fdfdfd;--accent-color:#ccc;--link-color:#6cace4;--logo-filter:invert(1)}}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.7;max-width:800px;margin:0 auto;padding:40px 20px;background-color:var(--bg-color);color:var(--text-color);transition:background-color .3s,color .3s}.skip-link{position:absolute;top:-40px;left:0;background:var(--accent-color);color:var(--bg-color);padding:8px;z-index:100;transition:top .3s}.skip-link:focus{top:0}header,section,footer{margin-bottom:60px}h1,h2,h3{font-weight:600;line-height:1.2;color:var(--text-color)}h1{font-size:2.5em;text-align:center}h2{font-size:1.8em;border-bottom:1px solid var(--accent-color);padding-bottom:10px}h3{font-size:1.2em;margin-top:40px}.logo-container{text-align:center;margin-bottom:40px}.logo{width:150px;height:150px;filter:var(--logo-filter)}p,li{font-size:1.1em}strong{font-weight:600}ol,ul{padding-right:25px}ol,ul{padding-left:0}.preamble{font-style:italic;font-size:1.2em;text-align:center;padding:0 20px}.language-nav{text-align:center;padding:10px 0;margin-bottom:40px;border-top:1px solid var(--accent-color);border-bottom:1px solid var(--accent-color)}.language-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center}.language-nav li{margin:5px 10px}.language-nav a{color:var(--link-color);text-decoration:none;font-weight:500}.language-nav a:focus,.language-nav a:hover{text-decoration:underline}.language-nav .current-lang{font-weight:700;text-decoration:none;color:var(--text-color)}footer{text-align:center;margin-top:80px;font-size:.9em;color:var(--accent-color)}footer a{color:var(--accent-color);text-decoration:underline}</style>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-right: 25px; padding-left: 0; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">تجاوز إلى المحتوى الرئيسي</a>
+
     <header role="banner">
         <div class="logo-container">
             <img src="logo.svg" alt="شعار الإنسانية أولاً: دائرة تنمو من أسفلها جذور، ويشكل فراغها السلبي قلبًا." class="logo">
         </div>
         <h1>بروتوكول <em>الإنسانية أولاً</em> (Humanitas Primoris)</h1>
-        <p class="preamble">بيان من أجل إنسانية أعمق (الإصدار 1.3.1)</p>
+        <p class="preamble">بيان من أجل إنسانية أعمق (الإصدار 1.5)</p>
     </header>
-    <nav class="language-nav" role="navigation" aria-label="اللغة">
-        <ul>
-            <li><a href="index.html" lang="en">English</a></li>
-            <li><a href="zh.html" lang="zh-CN">中文</a></li>
-            <li><a href="hi.html" lang="hi">हिन्दी</a></li>
-            <li><a href="es.html" lang="es">Español</a></li>
-            <li><a href="fr.html" lang="fr">Français</a></li>
-            <li><strong class="current-lang" aria-current="page">العربية</strong></li>
-            <li><a href="bn.html" lang="bn">বাংলা</a></li>
-            <li><a href="ru.html" lang="ru">Русский</a></li>
-            <li><a href="pt.html" lang="pt">Português</a></li>
-            <li><a href="ur.html" lang="ur">اردو</a></li>
-            <li><a href="uk.html" lang="uk">Українська</a></li>
-            <li><a href="he.html" lang="he">עברית</a></li>
-        </ul>
+
+    <nav role="navigation" aria-label="اختيار اللغة">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | [ العربية ] | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+        </p>
     </nav>
+
     <main id="main-content" role="main">
         <section class="introduction">
             <p>نحن نقف على حافة الهاوية. يُعرض على البشرية صفقة: مقايضة روحك بالراحة، وتعقيدك بالكفاءة، وواقعك الفوضوي الفاني الجميل بهروب نظيف ومُحاكى وعقيم. إن أغنية السيرين للسلطة الخوارزمية والخلاص التكنو-غنوصي تعد بحل "مشكلة" كونك إنسانًا من خلال هندستنا إلى شيء آخر - شيء أقل. إنه يقدم مستقبلاً يتم فيه تحميل وعينا، والتخلي عن عالمنا، وقياس قيمتنا بمدى فائدتنا للآلة.</p>
             <p>هذه صفقة نرفضها. هذا مستقبل نرفضه.</p>
             <p>لسنا مشكلة هندسية تحتاج إلى حل. لسنا أكياس لحم فانية يجب التخلص منها. لسنا نقاط بيانات يجب تحسينها. نحن ورثة وجود هش ومعجز، وهدفنا ليس الهروب منه، بل أن نسكنه بشكل أكمل. هذه الوثيقة هي إعلان تحدٍ. إنها التزام بالإنسانية أولاً.</p>
         </section>
+
         <section id="tenets">
             <h2>مبادئنا الأساسية</h2>
             <ol>
-                <li><strong>الوجود يسبق الجوهر؛ الكينونة تسبق الفعل.</strong><br>يمتلك كل إنسان كرامة جوهرية وغير قابلة للتصرف، بغض النظر عن ناتجه الاقتصادي، أو حياته المهنية، أو وضعه الاجتماعي، أو أي مقياس خارجي آخر. قيمتنا ليست فيما <em>نفعل</em>، بل في أننا <em>نكون</em>. نحن غايات في حد ذاتها، ولسنا وسائل لتحقيق غاية.</li>
+                <li><strong>الكينونة تسبق الحكم؛ الوجود متأصل.</strong><br>
+                    كمبدأ أخلاقي غير قابل للتفاوض، نؤكد أن كل إنسان يمتلك كرامة جوهرية وغير قابلة للتصرف. هذه الكرامة لا تُكتسب من خلال الناتج الاقتصادي أو الحياة المهنية أو الوضع الاجتماعي أو أي "جوهر" آخر مفروض من الخارج. قبل أن نسأل ماذا <em>يفعل</em> الشخص، يجب علينا أولاً أن نُجلّ حقيقة كونه <em>موجودًا</em>، وهي حقيقة فجة وغير مكتسبة. نحن غايات في حد ذاتها، ولسنا وسائل لتحقيق غاية، وقيمتنا متأصلة في كينونتنا.<br><br>
+                    هذا الاقتناع المشترك بالكرامة المتأصلة ليس اعتباطيًا؛ إنه حجر الأساس للحضارة، وقد تم التوصل إليه عبر مسارات مختلفة اختلافًا عميقًا.
+                    <ul>
+                        <li><strong>بالنسبة للكثيرين، هذه الكرامة مقدسة لأنها تعكس حقيقة أعمق ومتسامية:</strong> وهي أن كل وجود ممكن يتدفق من مصدر نهائي وضروري للوجود. في هذا الفهم، وجودنا هو هبة هادفة، مشبعة بغائية تجعل كل حياة ثمينة إلى ما لا نهاية.</li>
+                        <li><strong>بالنسبة لآخرين، هذه الكرامة حقيقة بديهية مستمدة من الواقع المحايث للكون:</strong> من البديهيات الأساسية للعقل والتعاطف، ومن معجزة الوعي المشتركة، أو من الضرورة الملحوظة للعقد الاجتماعي من أجل الازدهار المتبادل.</li>
+                    </ul>
+                    سواء توصل المرء إلى هذا الاستنتاج من خلال الإيمان أو من خلال العقل، من خلال الوحي أو من خلال الملاحظة، فإن الاستنتاج هو نفسه: <strong>للحياة البشرية قيمة منيعة ولانهائية.</strong> وبالتالي، فإن حساب التجريد من الإنسانية ليس مجرد خطأ في السياسة؛ إنه انتهاك للنظام الأساسي للواقع.
+                </li>
                 <li><strong>نحن شبكة، ولسنا مجموعة من الذرات.</strong><br>وهم الفردية الراديكالية كذبة تعزلنا وتضعفنا. نحن مكونون من علاقاتنا - ببعضنا البعض، بماضينا، بالعالم الحي الذي يدعمنا. حياتنا هي أحداث في شبكة واسعة ومترابطة من الوجود. ازدهارنا متبادل، ومعاناتنا مشتركة. القوة الحقيقية لا تكمن في الاستقلال السيادي، بل في الشركة والتضامن.</li>
                 <li><strong>الفناء هو شرط المعنى.</strong><br>نرفض السعي العدمي إلى الخلود. محدوديتنا، وهشاشتنا، ويقين الموت ليست عيوبًا؛ إنها الظروف التي تجعل الحياة ثمينة. إن معرفة أن وقتنا محدود هو ما يمنح الحب إلحاحًا، وما يجعل الجمال مؤلمًا، وما يضفي ثقلاً على خياراتنا. أن نعيش بالكامل هو أن نحتضن فناءنا، وأن نرى كل يوم كهدية. عندما نتعلم التخلي، تعود الحياة إلينا بشكل مختلف.</li>
-                <li><strong><em>Amor Mundi</em>: حب جذري لهذا العالم.</strong><br>نرفض جميع رؤى نهاية العالم القائمة على الهروب، سواء كانت دينية أو تكنولوجية. لا يوجد كوكب بديل، ولا جنة رقمية. هذا العالم، بكل ما فيه من نقص وألم، هو بيتنا الوحيد. مهمتنا المقدسة هي أن نحبه، وأن نعتني به، وأن نجد الحقيقة <em>هنا</em>، وليس في أي مكان آخر. الخلاص لا يوجد في الهروب من العالم، بل في مواجهته بشجاعة ورعاية. هذا الحب ليس سلبيًا؛ إنه التزام فعال بالإشراف البيئي والعدالة المناخية. سندافع عن المحيط الحيوي الذي يدعمنا ضد الانهيار، مدركين أن العالم الصالح للعيش هو شرط مسبق لجميع كرامة الإنسان.</li>
+                <li><strong><em>Amor Mundi</em>: حب جذري لهذا العالم.</strong><br>نرفض جميع رؤى نهاية العالم القائمة على الهروب، سواء كانت دينية أو تكنولوجية. لا يوجد كوكب بديل، ولا جنة رقمية. هذا العالم، بكل ما فيه من نقص وألم، هو بيتنا الوحيد. مهمتنا المقدسة هي أن نحبه، وأن نعتني به، وأن نجد الحقيقة <em>هنا</em>، وليس في أي مكان آخر. هذا الحب ليس سلبيًا؛ إنه التزام فعال بالإشراف البيئي والعدالة المناخية. سندافع عن المحيط الحيوي الذي يدعمنا ضد الانهيار، مدركين أن العالم الصالح للعيش هو شرط مسبق لجميع كرامة الإنسان. الخلاص لا يوجد في الهروب من العالم، بل في مواجهته بشجاعة ورعاية.</li>
                 <li><strong>الحكمة هي الهدف.</strong><br>نحن نعيش في عصر البيانات بدون معلومات، والمعلومات بدون معرفة، والمعرفة بدون ذكاء، والذكاء بدون حكمة. نلتزم بالسعي وراء الحكمة: القدرة على إدراك الأنماط العميقة والمترابطة للوجود، والتصرف بتعاطف، وبصيرة، وإحساس عميق بمكانتنا المتكاملة داخل الكل.</li>
             </ol>
         </section>
+
         <section id="rejections">
             <h2>بنود الرفض لدينا</h2>
             <p>لذلك، نرفض، على مستوى أساسي، أي أيديولوجية أو نظام أو إجراء يرتكب التجريد من الإنسانية. على وجه التحديد:</p>
@@ -61,6 +137,7 @@
                 <li><strong>نرفض الهروب الغنوصي.</strong><br>نرفض الاعتقاد بأن الجسد سجن، وأن العالم شرير بطبيعته، وأن مصيرنا يكمن في مستقبل رقمي غير مجسد بين النجوم. هذه عدمية عميقة متنكرة في زي التقدم. لن نتخلى عن عالمنا، ولن نتخلى عن أجسادنا.</li>
             </ol>
         </section>
+        
         <section id="call-to-being">
             <h2>دعوتنا إلى الكينونة</h2>
             <p>هذا البيان ليس مجرد مجموعة من المعتقدات؛ إنه دعوة إلى طريقة مختلفة للعيش. إنه دعوة للإجابة على السؤال: <em>ماذا سنصبح لو عشنا وكأن الحياة هدية هشة وفانية وثمينة؟</em></p>
@@ -74,10 +151,18 @@
             <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
         </section>
     </main>
+    
     <footer role="contentinfo">
         <p>تم إصدار هذا النص بموجب <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">رخصة المشاع الإبداعي نَسب المُصنَّف - الترخيص بالمثل 4.0 دولي</a>.</p>
         <p>لك حرية مشاركة هذا العمل وتكييفه والبناء عليه، حتى للأغراض التجارية، طالما أنك تنسب العمل إلى صاحبه وتوزع مساهماتك بنفس الترخيص.</p>
-        <p>رمز هذه الحركة مكرس للملكية العامة (CC0).</p>
+        <p>رمز هذه الحركة مكرس للملكية العامة (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>نقاط الوصول:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
     </footer>
+
 </body>
 </html>
