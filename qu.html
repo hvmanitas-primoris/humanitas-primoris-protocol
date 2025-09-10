@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="qu" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitas Primoris Kamachina</title>
+    <meta name="description" content="Aswan ukhu runa kaypaq qillqa, tukuy runa kayninta chinkachiyta qichuspa.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #1a1a1a;
+            --accent-color: #333;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ccc;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header, section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        
+        h1 { font-size: 2.5em; text-align: center; }
+        h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2em; margin-top: 40px; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
+        nav a { margin: 0 5px; color: var(--link-color); }
+
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        p, li { font-size: 1.1em; }
+        strong { font-weight: 600; }
+        ol, ul { padding-left: 25px; }
+
+        .preamble { font-style: italic; font-size: 1.2em; text-align: center; padding: 0 20px; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
+        footer a { color: var(--link-color); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hatun kaqman riy</a>
+
+    <header role="banner">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Humanitas Primoris sananpa: Huk muyu, saphinkuna uraymanta wiñaq, chay ch'usaq k'itiqa sunquta ruwan." class="logo">
+        </div>
+        <h1><em>Humanitas Primoris</em> Kamachina</h1>
+        <p class="preamble">Aswan Ukhu Runa Kaypaq Qillqa (Musuqchasqa 1.5.2)</p>
+    </header>
+
+    <nav role="navigation" aria-label="Simi akllay">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+            <br>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | [ Runasimi ]
+        </p>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="introduction">
+            <p>Huk qaqap patanpi sayashanchik. Runakunaman huk rantikuyta qushankichik: almaykita saminchaypaq, sasa kayniykita atipaypaq, qanra, wañuq, sumaq kayniykita ch'uya, unanchasqa, ch'usaq ayqikuypaq. Algoritmo kamachiypa, tecno-gnóstico qispichiypa sirena takinqa "runa kay" sasachakuyta allichanapaq nispa, huk imaman — aswan pisi imaman — tikraspa. Huk hamuq pacha quwanchik, chaypi yuyayninchik apkatasqa kanqa, pachanchik saqisqa kanqa, chaynallataq chaninchik maquinapaq allin kayninchikmanhina yupasqa kanqa.</p>
+            <p>Kay rantikuyta mana munanchikchu. Kay hamuq pachata mana munanchikchu.</p>
+            <p>Manam allichanapaq ingeniería sasachakuychu kanchik. Manam wañuq aycha wayaqakunachu kanchik wikch'unapaq. Manam allichanapaq willay k'itikunachu kanchik. Ñuqanchikqa llamp'u, musphay kawsaypa herederon kanchik, chaynallataq kamayninchikqa manam chaymanta ayqikuychu, aswanpas aswan hunt'asqata chaypi kawsay. Kay qillqaqa huk defiance willakuymi. Runa Ñawpaqta nisqapaq huk compromiso.</p>
+        </section>
+
+        <section id="tenets">
+            <h2>Hatun Kamachinanchikkuna</h2>
+            <ol>
+                 <li><strong>Kay ñawpaqta taripaymanta; Kayqa ruwaymanta ñawpaqta.</strong><br>
+                    Mana negocianapaq ética kamachiy hina, nispanchik sapa runa huk sapankama, mana qichunapaq dignidadniyuq. Kay dignidadqa manam qullqi ruruyninwan, llamk'ayninwan, sociedadpi kayninwan, nitaq ima huk hawa "esencia" nisqawanpas taripakunchu. Manaraq tapukushaspa imatataq huk runa <em>ruwan</em>, ñawpaqtaqa yupaychananchikmi chay mana ganasqa, crudo kaqninta, payqa <em>kan</em>. Ñuqanchikqa kikinchikpi tukukuy kanchik, manam huk tukukuypaq mediochu, chaynallataq chaninchikqa kayninchikpi kashan.<br><br>
+                    Kay dignidad innata nisqapi hukllachasqa convicciónqa manam arbitrariochu; civilizaciónpa cimientonmi, sapaq ñankunawanmi taripakun.
+                    <ul>
+                        <li><strong>Askha runapaqqa, kay dignidadqa sagradon, huk aswan ukhu, trascendente cheqaqta rikuchisqanrayku:</strong> tukuy contingente kaqqa huk tukukuy, Necesario Kaypa Pukyunmantam lluqsin. Kay hamut'aypiqa, kawsayninchikqa huk propósito nisqayuq regalomi, huk teleología nisqayuqmi, chaymi sapa kawsayta mana tukukuq chaninniyuqta ruwan.</li>
+                        <li><strong>Wakinpaqqa, kay dignidadqa cosmos nisqapa inmanente cheqaqninmantam sut'inchaq cheqaq:</strong> razón nisqapa, empatía nisqapa cimiento axiomankunamanta, conciencia nisqapa rakisqa milagronmanta, otaq hukllapi allin kanankupaq social contrato nisqapa observable necesidadninmanta.</li>
+                    </ul>
+                    Huk runa kay tukukuyta iñiywan, razón nisqawan, revelación nisqawan, observación nisqawan taripaptinpas, tukukuyninqa kaqllam: <strong>runapa kawsayninqa mana atipanapaq, mana tukukuq chaninniyuqmi.</strong> Chayrayku, runa kayninta chinkachiy yupayqa manam político pantayllachu; cheqaq kaypa cimiento ordenninpa violacionninmi.
+                </li>
+                <li><strong>Ñuqanchikqa huk Llikam, manam Átomokunap Huñunchu.</strong><br>Radical individualismo nisqapa llulla yuyayninqa huk llullakuymi, chaymi sapanchaspa, irqichaspa. Ñuqanchikqa hukllachasqa kanchik — hukwan hukwan, ñawpaq kawsayninchikwan, kawsachiq pachanchikwan. Kawsayninchikqa kay hatun, hukllachasqa kawsay llikapi sucesokunam. Allin kayninchikqa hukllapaqmi, ñak'ariyninchikpas rakisqam. Cheqaq kallpaqa manam soberano autonomía nisqapichu tarikun, aswanpas hukllachakuypi, yanapanakuypim.</li>
+                <li><strong>Wañuyqa Significado nisqapa Condicionninmi.</strong><br>Mana tukukuq kawsaypa nihilista mask'ayninta mana munanchikchu. Tukukuq kayninchik, llamp'u kayninchik, wañuy yachayninchikpas manam pantaykunachu; kawsayta chaninniyuqta ruwaq condicionkunam. Pachan limitado kasqanta yachaymi munakuyta apurayman churan, sumaq kayta nanachin, akllayninchikta llasayniyuqta ruwan. Hunt'asqata kawsayqa wañuq kayninchikta abrazaymi, sapa p'unchawta huk regalo hina qhawaymi. Saqiyta yachaspaqa, kawsayqa huknirayta kutimuwanchik.</li>
+                <li><strong><em>Amor Mundi</em>: Kay Pachapaq Huk Radical Munakuy.</strong><br>Tukuy ayqikuy esjatologiakunata mana munanchikchu, religioso, tecnológico kaptinpas. Manam Planeta B kanchu, manam digital paraíso kanchu. Kay pacha, tukuy mana allin kayninwan, nanayninwan, sapallan wasinchikmi. Sagrado kamayninchikqa munakuymi, qhawaymi, cheqaqta <em>kaypi</em> tariymi, manam hukpipaschu. Qispikuyqa manam pachamanta ayqikuypichu tarikun, aswanpas kallpawan, qhawaywanpas uywanakuypim. Kay munakuyqa manam pasivochu; ecología nisqapaq, clima justicia nisqapaqpas huk activo compromisom. Kawsachiq biosferanchikta thunikuymanta amachasunchik, yachaspa huk kawsanapaq pachaqa tukuy runapa dignidadninpaq ñawpaq condicion kasqanta.</li>
+                <li><strong>Yachayqa Kamayninmi.</strong><br>Huk pachapi kawsanchik, chaypi willay mana willayniyuq, yachay mana willayniyuq, inteligencia mana yachayniyuq, sabiduría mana inteligenciayuq. Sabiduría mask'ayman compromisota ruwanchik: kawsaypa ukhu, hukllachasqa patinankunata rikuy atiy, compasión nisqawan, previsión nisqawan, tukuy ukhupi integral kayninchikpa ukhu yuyayninwanpas ruway.</li>
+            </ol>
+        </section>
+
+        <section id="rejections">
+            <h2>Mana Munaq Kamachinanchikkuna</h2>
+            <p>Chayrayku, cimiento nivelpi, ima ideología, sistema, ruwaypas runa kayninta chinkachiyta perpetuaqta mana munanchikchu. Sut'inmanta:</p>
+            <ol>
+                <li><strong>Runa Kayninta Chinkachiy Yupayta Mana Munanchikchu.</strong><br>Huk runapa kawsayninpa chaninqa mana tukukuqmi, manam ima político, económico ecuacionmanpas yaykuchiy atikunchu. Ima política, sistema, ideología runapa kawsayninta wikch'unapaq hina qhawaq, mana kaqlla chaninta quq, otaq wakinkunap allin kayninpaq wakinpa ñak'ariyninta necesario costo hina chaskiq, huk abominaciónmi. Runa kayninta chinkachiy yupayqa extremo prejuicio nisqawanmi thunisqa, qichusqa kanqa.</li>
+                <li><strong>Tukuy T'aqanakuy, Ch'uyanchay Políticakunata Mana Munanchikchu.</strong><br>Tukuy runakunata kikinkupa contrampi t'aqanaypaq ima intentotapas condenanchik, contrapipas kanchik, mana kuyuchinapaq raza, etnia, sexo, sexualidad, género identidad nisqakunapi, otaq maymanta kasqankupi. Racismo, sexismo, homofobia, transfobia, xenofobia nisqakunaqa runa kayninta chinkachiypaq millay herramientakunam. Kay movimientopaqqa anatema kanku. Hukllachasqa runa kayninchikqa sapallan ayllunchikmi.</li>
+                <li><strong>Runa Kayninta Chinkachiq Llamk'aypa Tiraníanta Mana Munanchikchu.</strong><br>Huk "llamk'ay" alma wañuchiq, creatividad ñit'iq, otaq kikinta perpetuaymanta huk propósito mana serviq, huk violencia formam. Kay "mana allin llamk'aykuna" kayninta mana munanchikchu. Huch'uy feudo ruwaq, qhawaq, microgestión ruwaq, runakunata truequeable recurso hina trataq gestión estructurakunata mana munanchikchu. Llamk'ayqa propósito, artesanía, servicio nisqakunap pukyunmi kanan, manam kawsaypaq alma ñit'iq obligacionchu.</li>
+                <li><strong>Algoritmo nisqapa Idolatríanta Mana Munanchikchu.</strong><br>Ganancia, controlpaqpas psicológico debilidadninchikta explotaq sistemakunawan programayta mana munanchikchu. "Autoritarismo algorítmico" nisqata, runapa experiencian cuantitativo métrica nisqaman pisiyachiyta mana munanchikchu. Runa juicio, empatía, sabiduría nisqakunata social, político, personal kawsayninchikpa chawpinpi hap'inapaq maqanakusunchik.</li>
+                <li><strong>Llullakuy Políticakunata Mana Munanchikchu.</strong><br>Cheqaq kay, allin iñiy runapura hukllachakuypa cimientonmi. Chayrayku, prejuicio nisqawan, tukuy deliberado llullakuy mecanismokunata activo thunisunchik, chaykunan público confianzata ismuchin, hamut'aytapas manipulan. Kaypiqa estado propaganda, corporativo astroturfing, hombre de paja argumento ruway, ima huk esfuerzopas cheqaqta pakaypaq, chay agendaqa runakunap común interesninpa contrampi llamk'an.</li>
+                <li><strong>Iñiyta Arma Hina servichikuyta Mana Munanchikchu.</strong><br>Kawsayta afirmaq espiritualidadwan, controlay munaq espiritualidadwan t'aqanchik. Personal iñiy, religión, espiritualidad, aswan hatun compasiónman, pachapaq aswan ukhu munakuyman (<em>amor mundi</em>) apaptin, sabiduría nisqapaqqa válido ñankunam. Ichaqa, ima creenciapas arma hina servichikuytaqa vehementemente mana munanchikchu, activamente thuniyta llamk'asunchik. Kaypiqa: legal, físico violencia yachachiq fundamentalismo religioso; abuso, corrupción pakaypaq iñiyta escudo hina servichikuq institucionkuna; especial privilegio, impuesto laguna, poder político mask'aypas, chaykunan huk doctrinata común allin kaymanta aswan hatunman hoqarin. Huk iñiy hukwan mana kawsay atiq, mana dominar, pisiyachiy munaywan, manam iñiychu; tiraníam.</li>
+                <li><strong>Gnóstico Ayqikuyta Mana Munanchikchu.</strong><br>Cuerpo carcel kasqanta, pacha naturalmanta mana allin kasqanta, destinonchik ch'askakuna chawpipi mana aychayuq, digital hamuq pachapi kasqanta iñiyta mana munanchikchu. Kayqa huk ukhu nihilismom, progreso hina disfrazasqa. Manam pachanchikta saqisunchu, manam aychanchikta saqisunchu.</li>
+            </ol>
+        </section>
+        
+        <section id="call-to-being">
+            <h2>Kayninchikpaq Qayakuyninchik</h2>
+            <p>Kay manifiestoqa manam creenciakuna huñullachu; hukniray kawsaypaq qayakuymi. Kay tapukuyman kutichinapaq qayakuymi: <em>¿Imataq kapuyman karqan kawsay llamp'u, tukukuq, chaninniyuq regalo hina kaptin?</em></p>
+            <ul>
+                <li><strong>Defiante suyakuyta practicasunchik.</strong> Suyakuyqa manam pasivo optimismuchu; desesperación nisqapa contrampi huk rebelión ruwaymi. Pachap trayectoria nisqanta desafianchik, aswan allin pachap posibilidadninpi insistispa.</li>
+                <li><strong>Hukllachakuyta cultivasunchik.</strong> Hukwan hukwan cheqaq, encarnado presencia nisqata priorizasunchik, mediado, virtual interacción nisqamantaqa. Ukhumanta uyarisunchik, cheqaqta rimasunchik.</li>
+                <li><strong>Propósito nisqata mask'asunchik, manam llamk'ayllachu.</strong> Artesanía, servicio, ima kawsayta, dignidadta afirmaq llamk'aytapas yupaychasunchik. Cooperativa, local negocio hina estructurakunata yanapasunchik, chaykunan runapa allin kayninta gananciamanta ñawpaqman churan.</li>
+                <li><strong>Wañuq hina kawsasunchik.</strong> Paqarinta manam seguro hinachu hap'isunchik. Llamp'upi, fugazpi, mana perfecto kaqpipas sumaq kayta tarisunchik.</li>
+            Льянка, саса, сумак руна кай маканакуйта аклланчик. Кай пачата аклланчик. Хук хукта аклланчик.
+            <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>Kay qillqaqa <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a> nisqawanmi lluqsichisqa.</p>
+        <p>Qamqa libre kanki kay llamk'ayta rakispa, adaptaspa, ruwaspapas, comercial finespaqpas, siempre y cuando adecuado crédito quptiyki, contribucionniykikunatapas kaqlla licencia ukhupi distribuiptiyki.</p>
+        <p>Kay movimientop sananpanqa dominio público nisqapaqmi (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
+        <p>
+            <strong>Yaykuna K'itikuna:</strong> 
+            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+        </p>
+    </footer>
+
+</body>
+</html>
