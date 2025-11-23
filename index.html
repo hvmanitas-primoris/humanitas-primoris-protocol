@@ -65,8 +65,12 @@
         h2 { font-size: 1.8em; border-bottom: 1px solid var(--accent-color); padding-bottom: 10px; }
         h3 { font-size: 1.2em; margin-top: 40px; }
         
-        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; }
-        nav a { margin: 0 5px; color: var(--link-color); }
+        /* Navigation Styles */
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
+        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .nav-group { margin-bottom: 10px; display: block; }
+        .nav-label { font-weight: bold; opacity: 0.7; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 5px; }
 
         .logo-container { text-align: center; margin-bottom: 40px; }
         .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
@@ -79,6 +83,18 @@
 
         footer { text-align: center; margin-top: 80px; font-size: 0.9em; color: var(--accent-color); }
         footer a { color: var(--link-color); text-decoration: underline; }
+        
+        .zine-link { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            border: 1px solid var(--text-color); 
+            color: var(--text-color); 
+            text-decoration: none; 
+            font-family: "Courier New", monospace; 
+            font-weight: bold;
+        }
+        .zine-link:hover { background: var(--text-color); color: var(--bg-color); }
     </style>
 </head>
 <body>
@@ -93,11 +109,18 @@
     </header>
 
     <nav role="navigation" aria-label="Language selection">
-        <p>
-            [ English ] | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
-            <br>
-            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a>
-        </p>
+        <div class="nav-group">
+            <span class="nav-label">Global / Standard</span>
+            [ English ] | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a> | <a href="eo.html">Esperanto</a>
+        </div>
+        <div class="nav-group">
+            <span class="nav-label">Indigenous / Specific</span>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | <a href="chr.html">ᏣᎳᎩ</a> | <a href="oj.html">Anishinaabemowin</a> | <a href="del.html">Lënape</a> | <a href="tno.html">Taíno</a>
+        </div>
+        <div class="nav-group">
+            <span class="nav-label">Accessibility</span>
+            <a href="brl.html" aria-label="Braille Version">⠃⠗⠁⠊⠇⠇⠑</a>
+        </div>
     </nav>
 
     <main id="main-content" role="main">
@@ -151,6 +174,10 @@
             </ul>
             <p>We choose the messy, complicated, and beautiful struggle of being human. We choose this world. We choose each other.</p>
             <p style="text-align:center; font-weight: bold; font-size: 1.3em; margin-top: 40px;"><em>Amor Mundi.</em></p>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="zine.html" class="zine-link">[ 🖨️ PRINTABLE ZINE EDITION ]</a>
+            </div>
         </section>
     </main>
     
@@ -160,9 +187,9 @@
         <p>The symbol of this movement is dedicated to the public domain (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>).</p>
         <p>
             <strong>Access Points:</strong> 
-            <a href="https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
-            <a href="https://hvmanitas-primoris.codeberg.page/hvmanitas-primoris/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
-            <a href="https://hvmanitas-primoris.pages.dev" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+            <a href="https://hvmanitas-primoris.github.io/" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://hvmanitas-primoris.codeberg.page/" target="_blank" rel="noopener noreferrer">Codeberg</a> |
+            <a href="https://humanitas-primoris-protocol.pages.dev" target="_blank" rel="noopener noreferrer">Cloudflare</a>
         </p>
     </footer>
 
