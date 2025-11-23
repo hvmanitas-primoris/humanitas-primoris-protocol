@@ -1,116 +1,95 @@
 <!DOCTYPE html>
-<html lang="chr">
+<html lang="chr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ᏴᏫ ᎢᎬᏱ (Humanitas Primoris)</title>
+    <meta name="description" content="Humanity First. A manifesto for a deeper humanism.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
     <style>
         :root {
-            --bg-color: #f4f4f0;
+            --bg-color: #fdfdfd;
             --text-color: #1a1a1a;
             --accent-color: #cc0000;
+            --link-color: #0056b3;
+            --logo-filter: invert(0);
             --font-main: 'Noto Sans Cherokee', 'Plantagenet Cherokee', 'Gadugi', sans-serif;
         }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #fdfdfd;
+                --accent-color: #ff6666;
+                --link-color: #66a3ff;
+                --logo-filter: invert(1);
+            }
+        }
+
         body {
             font-family: var(--font-main);
-            line-height: 1.6;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            line-height: 1.7;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            border-bottom: 2px solid var(--text-color);
-            padding-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .note {
-            font-size: 0.9rem;
-            border: 1px solid var(--text-color);
-            padding: 10px;
-            display: inline-block;
-            margin-top: 20px;
-            background: #e8e8e8;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 15px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 25px;
-            padding-left: 20px;
-            position: relative;
-        }
-        li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        .tsalagi {
-            font-weight: bold;
-            font-size: 1.3rem;
-            display: block;
-            color: #2c2c2c;
-            margin-bottom: 4px;
-        }
-        .translation {
-            font-style: italic;
-            color: #555;
-            font-size: 1rem;
-            display: block;
-        }
-        .nav-home {
-            display: block;
-            margin-top: 50px;
-            text-align: center;
-            text-decoration: none;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
             color: var(--text-color);
-            border: 1px solid var(--text-color);
-            padding: 10px 20px;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.2s ease;
+            transition: background-color 0.3s, color 0.3s;
         }
-        .nav-home:hover {
-            background-color: var(--text-color);
-            color: var(--bg-color);
-        }
+
+        header, section { margin-bottom: 60px; }
+
+        h1 { font-size: 2.5em; text-align: center; font-weight: 600; }
+        h2 { font-size: 1.8em; border-left: 4px solid var(--accent-color); padding-left: 15px; margin-top: 2rem; }
+        
+        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
+        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        
+        .logo-container { text-align: center; margin-bottom: 40px; }
+        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
+        
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
+        li::before { content: "•"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
+        
+        .tsalagi { font-weight: bold; font-size: 1.3rem; display: block; color: var(--text-color); margin-bottom: 4px; }
+        .translation { font-style: italic; opacity: 0.8; font-size: 1rem; display: block; }
+        
+        .note { font-size: 0.9rem; border: 1px solid var(--accent-color); padding: 15px; background: rgba(0,0,0,0.05); margin: 20px auto; max-width: 90%; }
+
+        footer { text-align: center; margin-top: 80px; font-size: 0.9em; opacity: 0.8; }
+        footer a { color: var(--link-color); }
     </style>
 </head>
 <body>
 
-    <header>
+    <header role="banner">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Humanitas Primoris Logo" class="logo">
+        </div>
         <h1>ᏴᏫ ᎢᎬᏱ</h1>
-        <p>Humanitas Primoris</p>
+        <p style="text-align: center; font-style: italic;">Humanitas Primoris / Humanity First</p>
         
         <div class="note">
             <strong>Note:</strong> This is a foundational translation. Core tenets are presented in Tsalagi (Cherokee); philosophical expansions remain in English to ensure accuracy.
         </div>
     </header>
 
-    <section class="manifesto-section">
+    <nav role="navigation" aria-label="Language selection">
+        <p>
+            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
+            <br>
+            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | [ ᏣᎳᎩ ] | <a href="oj.html">Anishinaabemowin</a> | <a href="del.html">Lënape</a> | <a href="tno.html">Taíno</a>
+        </p>
+    </nav>
+
+    <section>
         <h2>ᎢᏗᎦᎪᏘ (Core Tenets)</h2>
         <ul>
             <li>
                 <span class="tsalagi">ᎡᎭ ᎢᎬᏱ ᎨᏒᎢ.</span>
-                <span class="translation">Being Precedes Judgment; Existence is Inherent. We affirm that human dignity is not earned through metrics, labor, or algorithm, but is inherent to existence itself.</span>
+                <span class="translation">Being Precedes Judgment; Existence is Inherent. We affirm that human dignity is not earned through metrics or labor, but is inherent to existence itself.</span>
             </li>
             <li>
                 <span class="tsalagi">ᏴᏫ ᏌᏊ ᎢᎩ.</span>
@@ -131,7 +110,7 @@
         </ul>
     </section>
 
-    <section class="manifesto-section">
+    <section>
         <h2>ᏗᏲᎯᏍᏗ (Articles of Rejection)</h2>
         <p>We reject the following conditions:</p>
         <ul>
@@ -166,13 +145,16 @@
         </ul>
     </section>
 
-    <section class="manifesto-section">
+    <section>
         <h2>ᏙᎢ (Conclusion)</h2>
         <p><span class="tsalagi">ᎠᏂ ᎡᎶᎯ ᎢᏕᎭ. ᎠᏂ ᎡᎶᎯ ᎢᏗᏍᏕᎵᏍᎩ. ᏴᏫ ᎢᎬᏱ.</span></p>
         <p class="translation">We are here. We are stewards of this world. Humanity First.</p>
     </section>
 
-    <a href="index.html" class="nav-home">Ꮧ परत (Return)</a>
+    <footer>
+        <p>Published under CC BY-SA 4.0. Logo is CC0.</p>
+        <p><a href="index.html">Return to Hub</a></p>
+    </footer>
 
 </body>
 </html>
