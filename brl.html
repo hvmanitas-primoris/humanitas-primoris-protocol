@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⠓⠥⠍⠁⠝⠊⠞⠁⠎ ⠏⠗⠊⠍⠋⠗⠊⠎ (Humanitas Primoris)</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --dot-color: #ffffff;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            line-height: 2.0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px dashed var(--text-color);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 3px;
+        }
+        .braille-line {
+            font-size: 1.5rem;
+            cursor: help;
+            transition: color 0.2s;
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* The Reveal Effect */
+        .braille-line:hover {
+            color: #00ffcc; /* Cyberpunk Cyan on hover */
+        }
+        /* Tooltip trick to show translation on hover */
+        .braille-line:hover::after {
+            content: attr(aria-label);
+            display: block;
+            font-size: 1rem;
+            color: #888;
+            font-family: sans-serif;
+            margin-top: 5px;
+            border-top: 1px solid #333;
+            padding-top: 5px;
+            pointer-events: none;
+        }
+        
+        .nav-home {
+            display: block; margin-top: 50px; text-align: center;
+            text-decoration: none; color: var(--text-color);
+            border: 1px solid var(--text-color); padding: 10px 20px;
+            width: fit-content; margin-left: auto; margin-right: auto;
+            transition: all 0.2s ease;
+        }
+        .nav-home:hover { background-color: var(--text-color); color: var(--bg-color); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 aria-label="HUMANITAS PRIMORIS">⠓⠥⠍⠁⠝⠊⠞⠁⠎ ⠏⠗⠊⠍⠋⠗⠊⠎</h1>
+        <p aria-label="Humanity First">⠓⠥⠍⠁⠝⠊⠞⠽ ⠋⠊⠗⠎⠞</p>
+    </header>
+
+    <section class="manifesto-section">
+        <h2 aria-label="CORE TENETS">⠆⠗⠑ ⠞⠑⠝⠑⠞⠎</h2>
+        
+        <div class="braille-line" aria-label="1. Being Precedes Judgment.">
+            ⠼⠁ ⠃⠑⠊⠝⠛ ⠏⠗⠑⠉⠑⠙⠑⠎ ⠚⠥⠙⠛⠍⠑⠝⠞
+        </div>
+        <div class="braille-line" aria-label="2. We Are a Web.">
+            ⠼⠃ ⠺⠑ ⠁⠗⠑ ⠁ ⠺⠑⠃
+        </div>
+        <div class="braille-line" aria-label="3. Mortality Is Meaning.">
+            ⠼⠉ ⠍⠋⠗⠞⠁⠇⠊⠞⠽ ⠊⠎ ⠍⠑⠁⠝⠊⠝⠛
+        </div>
+        <div class="braille-line" aria-label="4. Amor Mundi (Love of World).">
+            ⠼⠙ ⠁⠍⠋⠗ ⠍⠥⠝⠙⠊
+        </div>
+        <div class="braille-line" aria-label="5. Wisdom Is the Goal.">
+            ⠼⠑ ⠺⠊⠎⠙⠋⠍ ⠊⠎ ⠞⠓⠑ ⠛⠋⠁⠇
+        </div>
+    </section>
+
+    <br><hr><br>
+
+    <section class="manifesto-section">
+        <h2 aria-label="REJECTIONS">⠗⠑⠚⠑⠉⠞⠊⠋⠝⠎</h2>
+        
+        <div class="braille-line" aria-label="We reject Dehumanization.">
+            ⠺⠑ ⠗⠑⠚⠑⠉⠞ ⠙⠑⠓⠥⠍⠁⠝⠊⠵⠁⠞⠊⠋⠝
+        </div>
+        <div class="braille-line" aria-label="We reject Algorithm Worship.">
+            ⠺⠑ ⠗⠑⠚⠑⠉⠞ ⠁⠇⠛⠋⠗⠊⠞⠓⠍ ⠺⠋⠗⠎⠓⠊⠏
+        </div>
+        <div class="braille-line" aria-label="We reject Escaping Earth.">
+            ⠺⠑ ⠗⠑⠚⠑⠉⠞ ⠑⠎⠉⠁⠏⠊⠝⠛ ⠑⠁⠗⠞⠓
+        </div>
+    </section>
+
+    <a href="index.html" class="nav-home" aria-label="RETURN">⠗⠑⠞⠥⠗⠝</a>
+
+</body>
+</html>
