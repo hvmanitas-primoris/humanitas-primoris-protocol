@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="oj">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anishinaabe Nitam (Humanitas Primoris)</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f0;
+            --text-color: #1a1a1a;
+            --accent-color: #006699; /* Water/Sky blue for Ojibwe */
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid var(--text-color);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .note {
+            font-size: 0.9rem;
+            border: 1px solid var(--text-color);
+            padding: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            background: #e8e8e8;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
+        li::before { content: "•"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold;}
+        
+        .ojibwe { font-weight: bold; font-size: 1.2rem; display: block; margin-bottom: 4px; }
+        .translation { font-style: italic; color: #555; font-size: 1rem; display: block; }
+        
+        .nav-home {
+            display: block; margin-top: 50px; text-align: center;
+            text-decoration: none; color: var(--text-color);
+            border: 1px solid var(--text-color); padding: 10px 20px;
+            width: fit-content; margin-left: auto; margin-right: auto;
+            transition: all 0.2s ease;
+        }
+        .nav-home:hover { background-color: var(--text-color); color: var(--bg-color); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anishinaabe Nitam</h1>
+        <p>Humanitas Primoris / Humanity First</p>
+        
+        <div class="note">
+            <strong>Note:</strong> This is a foundational translation using the Double Vowel system. Core tenets are in Anishinaabemowin; expansions remain in English.
+        </div>
+    </header>
+
+    <section class="manifesto-section">
+        <h2>The Core Tenets</h2>
+        <ul>
+            <li>
+                <span class="ojibwe">Bimaadiziwin Nitam.</span>
+                <span class="translation">Being Precedes Judgment. Life comes first. We exist before we are measured.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Gakina Indinawemaaganidog.</span>
+                <span class="translation">We are a Web (Literally: "All my relations"). We are connected to every living thing, not isolated individuals.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Nibwaakaawin.</span>
+                <span class="translation">Wisdom is the Goal. Not just knowledge, but the right use of knowledge.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Zaagi'idiwin Aki.</span>
+                <span class="translation">Amor Mundi: Love of the Earth/Land. We cherish the physical world we inhabit.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Aakde'ewin.</span>
+                <span class="translation">Bravery. To face mortality without fear is the condition of meaning.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="manifesto-section">
+        <h2>Articles of Rejection</h2>
+        <p>We reject the following:</p>
+        <ul>
+            <li>
+                <span class="ojibwe">Gego Bimaadiziwin Ga-gikendaagwad.</span>
+                <span class="translation">The Calculus of Dehumanization. We reject treating life as a number.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Baké-iziwin.</span>
+                <span class="translation">Politics of Division. We reject being split apart by hatred.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Anokiiwin ga-bwanaawit.</span>
+                <span class="translation">Tyranny of Dehumanizing Labor. Work that weakens the spirit.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Mazinigan-Ogimaa.</span>
+                <span class="translation">Idolatry of the Algorithm (The "Paper Boss"). We do not bow to machines.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Gwiinawi-doodowin.</span>
+                <span class="translation">Politics of Deception. The confusion caused by lies.</span>
+            </li>
+            <li>
+                <span class="ojibwe">Babaamaadiziwin.</span>
+                <span class="translation">Gnostic Escape. Wandering away from reality; the fantasy of leaving Earth.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="manifesto-section">
+        <h2>Conclusion</h2>
+        <p><span class="ojibwe">Omaa Akiing. Omaa Gidaa-yami.</span></p>
+        <p class="translation">We are here on Earth. We stay here.</p>
+    </section>
+
+    <a href="index.html" class="nav-home">Azhe-giiwe (Return)</a>
+
+</body>
+</html>
