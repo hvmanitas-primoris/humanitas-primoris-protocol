@@ -16,7 +16,7 @@ This site is cloud-balanced for resilience and censorship resistance. If one acc
 
 - Codeberg Pages: [https://hvmanitas-primoris.codeberg.page/](https://hvmanitas-primoris.codeberg.page/hvmanitas-primoris/)
 
-- Cloudflare Pages: [https://humanitas-primoris-protocol.pages.dev/](https://hvmanitas-primoris.pages.dev/)
+- Cloudflare Pages: [https://hvmanitas-primoris.pages.dev/](https://hvmanitas-primoris.pages.dev/)
 
 
 
