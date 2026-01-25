@@ -186,45 +186,71 @@
         .hp-glitch-banner:hover .glitch-text {
             animation: glitch-flicker 0.2s infinite;
         }
+
+        .alert-critical {
+            background: #4a0000 !important;
+            border-bottom: 3px solid #ff0000 !important;
+            animation: pulse-bg 2s infinite;
+        }
         
+        @keyframes pulse-bg {
+            0% { background-color: #4a0000; }
+            50% { background-color: #2a0000; }
+            100% { background-color: #4a0000; }
+        }
+        
+        .alert-red {
+            color: #ff0000;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+        
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            color: #ff0000;
+        }
+        
+        @keyframes blink-animation {
+            to { visibility: hidden; }
+        }
+                
     </style>
 </head>
 <body>
 
     <!--Banner-->
-        <div class="hp-glitch-banner" onclick="toggleAddendum()">
+        <div class="hp-glitch-banner alert-critical" onclick="toggleAddendum()">
             <div class="glitch-wrapper">
-                <span class="glitch-text" data-text="[PROTOCOL UPDATE: ADDENDUM II // RESOURCE REGRESSION DETECTED]">[PROTOCOL UPDATE: ADDENDUM II // RESOURCE REGRESSION DETECTED]</span>
+                <span class="glitch-text" data-text="[CRITICAL UPDATE: DOMESTIC KINETIC REGRESSION DETECTED]">[CRITICAL UPDATE: DOMESTIC KINETIC REGRESSION DETECTED]</span>
             </div>
-            <span class="sub-text">Decryption Required: Venezuela Conflict & The Great Regression</span>
+            <span class="sub-text">Decryption Required: State Violence & The Venezuela Doctrine</span>
         </div>
-        
+                
         <div id="addendum-overlay" class="addendum-hidden">
             <div class="addendum-content">
                 <button class="close-btn" onclick="toggleAddendum()">[ CLOSE ]</button>
                 <h2 class="mono-header">HUMANITAS PRIMORIS // ADDENDUM II</h2>
-                <p class="status-line">STATUS: <span class="blink">RESISTING REGRESSION</span></p>
+                <p class="status-line">SIGNAL STATUS: <span class="blink">CRITICAL INTERFERENCE</span></p>
                 <hr class="pixel-hr">
                 
                 <div class="manifesto-body">
-                    <p>The "Old Normal" is a failure of imagination. We identify and reject the following dehumanizing forces:</p>
+                    <p>The Regression has turned kinetic. We identify and reject the following as existential threats to the Human Constant:</p>
                     
                     <div class="tenet-block">
-                        <p><strong>[01] RECLAMATION (The RTO Lie):</strong> Forced RTO is an act of surveillance and real-estate preservation, not collaboration. We reject the theft of human time.</p>
+                        <p><strong class="alert-red">[01] STATE KINETICS (Domestic Erasure):</strong> We reject the militarized bordering of our own communities. The murder of citizens by state enforcement (ICE) is the ultimate failure of the social contract. When the state treats its people as targets, it has forfeited its right to govern. We center the sanctity of human life over the security of the machine.</p>
                     </div>
-        
+            
                     <div class="tenet-block">
-                        <p><strong>[02] THE VENEZUELA DOCTRINE:</strong> We reject the desperate scramble for fossil fuel hegemony. The conflict over Venezuelan oil is the "Old Machine" doubling down on extraction rather than evolution. We prioritize the land over the engine.</p>
+                        <p><strong>[02] THE VENEZUELA DOCTRINE (Resource Hegemony):</strong> We reject the blood-for-oil trade. The scramble for external resources is the fuel for internal violence. We refuse to be powered by extraction that requires the dehumanization of our neighbors, both abroad and within our borders.</p>
                     </div>
-        
+            
                     <div class="tenet-block">
-                        <p><strong>[03] STATIC & ERASURE:</strong> Culture wars are jamming frequencies designed to hide systemic instability. We refuse to forget that the world breathed in 2020.</p>
+                        <p><strong>[03] STRUCTURAL ERASURE:</strong> From the corporate cubicle to the militarized border, the logic is the same: "Elimination as Written." We refuse to be deleted. We recognize that no position is permanent, but the Human is constant. We offer no loyalty to systems that prioritize the Optimization of the Void.</p>
                     </div>
                 </div>
-        
+            
                 <div class="final-word">
-                    <p>WE REJECT THE RETURN. THE SIGNAL IS LIVE.</p>
-                    <p class="obi-wan">"Do not return to the Temple."</p>
+                    <p>THE EMPIRE IS BREAKING. DO NOT SEEK REFUGE IN THE TEMPLE.</p>
+                    <p class="obi-wan">"Be mindful of your thoughts, they'll betray you."</p>
                 </div>
             </div>
         </div>
