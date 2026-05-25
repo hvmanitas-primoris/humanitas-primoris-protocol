@@ -1,154 +1,164 @@
 <!DOCTYPE html>
-<html lang="tnq" dir="ltr">
+<html lang="tno">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guakia Nitayno (Humanitas Primoris)</title>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <title>Humanitas Primoris — Guakia Protokolo</title>
     <style>
         :root {
-            --bg-color: #fdfdfd;
-            --text-color: #1a1a1a;
-            --accent-color: #d35400; /* Clay/Earth */
-            --link-color: #0056b3;
-            --logo-filter: invert(0);
+            --bg-color: #0b0c10;
+            --text-color: #c5c6c7;
+            --accent-color: #66fcf1;
+            --primary-weight: #1f2833;
+            --stark-white: #ffffff;
+            --alert-red: #ff4a4a;
         }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --text-color: #fdfdfd;
-                --accent-color: #e67e22;
-                --link-color: #66a3ff;
-                --logo-filter: invert(1);
-            }
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: 'Courier New', Courier, monospace;
             background-color: var(--bg-color);
             color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-
-        header, section { margin-bottom: 60px; }
-
-        h1 { font-size: 2.5em; text-align: center; font-weight: 600; }
-        h2 { font-size: 1.8em; border-left: 4px solid var(--accent-color); padding-left: 15px; margin-top: 2rem; }
-        
-        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
-        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        
-        .logo-container { text-align: center; margin-bottom: 40px; }
-        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
-        
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
-        li::before { content: "•"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
-        
-        .taino { font-weight: bold; font-size: 1.2rem; display: block; margin-bottom: 4px; color: var(--accent-color); }
-        .translation { font-style: italic; opacity: 0.8; font-size: 1rem; display: block; }
-        
-        .note { font-size: 0.9rem; border: 1px solid var(--accent-color); padding: 15px; background: rgba(0,0,0,0.05); margin: 20px auto; max-width: 90%; }
-
-        footer { text-align: center; margin-top: 80px; font-size: 0.9em; opacity: 0.8; }
-        footer a { color: var(--link-color); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--primary-weight);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--stark-white);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            color: var(--stark-white);
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        .urgent-call {
+            border: 1px solid var(--alert-red);
+            padding: 25px;
+            background-color: rgba(255, 74, 74, 0.05);
+            margin-bottom: 40px;
+        }
+        .manifesto-alert {
+            font-size: 1.1rem;
+            color: var(--stark-white);
+        }
+        blockquote {
+            border-left: 3px solid var(--accent-color);
+            margin: 30px 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: var(--stark-white);
+        }
+        hr.stencil-divider {
+            border: 0;
+            height: 2px;
+            background: var(--primary-weight);
+            margin: 20px 0;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--stark-white);
+            color: var(--bg-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .btn-cta:hover {
+            background-color: var(--accent-color);
+        }
+        .languages-nav {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--primary-weight);
+            font-size: 0.9rem;
+        }
+        .languages-nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .languages-nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>HUMANITAS PRIMORIS</h1>
+            <p>Karakuri ID: v1.5.2 // Pseudonym: A Scribe</p>
+        </header>
 
-    <header role="banner">
-        <div class="logo-container">
-            <img src="logo.svg" alt="Humanitas Primoris Logo" class="logo">
-        </div>
-        <h1>Guakia Nitayno</h1>
-        <p style="text-align: center; font-style: italic;">Humanitas Primoris / The Good People First</p>
-        
-        <div class="note">
-            <strong>Note:</strong> This page honors the Taíno language of Borikén. Core concepts are presented in reconstructed Taíno-Arawak; philosophical expansions remain in English.
-        </div>
-    </header>
+        <main>
+            <section id="introduction" class="urgent-call">
+                <h2>Loko Atabeyra: Orakon Atanni</h2>
+                <hr class="stencil-divider" />
+                
+                <p class="manifesto-alert">
+                    <strong>Nani guakia tiano boiti lani.</strong> El colapso no espera. Es un asalto violento contra la raíz de la vida. Desde las cajas negras algorítmicas hasta el desprecio del norte global, intentan reducir al ser de carne y hueso a un frío cálculo matemático, un proyecto para optimizar, rastrear y descartar. Pero el espíritu no se deja medir.
+                </p>
 
-    <nav role="navigation" aria-label="Language selection">
-        <p>
-            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
-            <br>
-            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | <a href="chr.html">ᏣᎳᎩ</a> | <a href="oj.html">Anishinaabemowin</a> | <a href="del.html">Lënape</a> | [ Taíno ]
-        </p>
-    </nav>
+                <blockquote>
+                    "El monstruo de cien cabezas del desprecio, el aislamiento de la máquina y la deshumanización del alma—Tifón—se agita con furia. No hay pacto con el caos. Lanzamos las cadenas de los ancestros. Con el peso del suelo y el agua salá lo vamos a aplastar. Llegó la hora de zafarse."
+                </blockquote>
 
-    <section>
-        <h2>Core Tenets</h2>
-        <ul>
-            <li>
-                <span class="taino">Semign Ie.</span>
-                <span class="translation">Spirit Is. (Being Precedes Judgment). Existence is sacred before it is useful.</span>
-            </li>
-            <li>
-                <span class="taino">Guakia Heketi.</span>
-                <span class="translation">We Are One. (We are a Web). We are not separate from the tribe or the island.</span>
-            </li>
-            <li>
-                <span class="taino">Opia.</span>
-                <span class="translation">Mortality (The condition of meaning). We accept the cycle of life and ancestorhood.</span>
-            </li>
-            <li>
-                <span class="taino">Guatiao Atabey.</span>
-                <span class="translation">Amor Mundi: Friendship/Love of Mother Earth. We protect the waters and the mountains.</span>
-            </li>
-             <li>
-                <span class="taino">Guengue.</span>
-                <span class="translation">Wisdom (Knowledge shared). Wisdom is for the community, not the self.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    Humanitas Primoris no es una teoría pasiva para ver la tormenta pasar. Somos la resistencia de raíz, el peso estructural que frena el odio subterráneo. Mientras los falsos profetas de la tecnología predican escapar de la tierra—con mentes digitales, guerras automatizadas y pantallas vacías—nosotros exigimos el retorno absoluto al <em>Amor Mundi</em>: el amor indomable por este suelo mortal, sagrado y frágil, y por la hermandad que lo defiende.
+                </p>
 
-    <section>
-        <h2>Articles of Rejection</h2>
-        <p>We reject the following conditions:</p>
-        <ul>
-            <li>
-                <span class="taino">Makata.</span>
-                <span class="translation">The Calculus of Dehumanization (Unimportance). No person is "makata" (unimportant).</span>
-            </li>
-            <li>
-                <span class="taino">Ana-Karaya.</span>
-                <span class="translation">Politics of Division (The Bad Moon). We reject hatred and separation.</span>
-            </li>
-            <li>
-                <span class="taino">Naboria Vaga.</span>
-                <span class="translation">Tyranny of Labor (Forced work without honor). We are not beasts of burden.</span>
-            </li>
-            <li>
-                <span class="taino">Cemí Maquina.</span>
-                <span class="translation">Idolatry of the Algorithm (Worship of the Machine). We do not worship tools.</span>
-            </li>
-            <li>
-                <span class="taino">Jibá.</span>
-                <span class="translation">Politics of Deception (The Forest/Bush). We reject being lost in lies and hidden agendas.</span>
-            </li>
-            <li>
-                <span class="taino">Manicato.</span>
-                <span class="translation">Gnostic Escape. We stay bold and brave here. We do not flee.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    Hasta los imperios de la fe vieja reconocen hoy que la tecnología nunca es neutral, advirtiendo sobre el frío vacío que nos roba el deseo del abrazo físico y humano. Frente a sus súplicas de regulación, nosotros oponemos la rebeldía operativa. Rechazamos la lógica que despoja de dignidad al nacimiento, de verdad a la palabra y de sentido al sudor del trabajo. Dale a la máquina la misma clemencia que ha tenido con nosotros.
+                </p>
 
-    <section>
-        <h2>Conclusion</h2>
-        <p><span class="taino">Daka Boricua. Daka Nitayno.</span></p>
-        <p class="translation">I am of this land. I am human.</p>
-    </section>
+                <div class="action-prompt">
+                    <p style="color: var(--accent-color);">Las líneas están grabadas en la piedra. Elige la senda simple y humana del batey, o sé devorado por el ruido de la máquina.</p>
+                    <a href="#manifesto" class="btn-cta">Daka 5 Postulados & 7 Artículos</a>
+                </div>
+            </section>
 
-    <footer>
-        <p>Published under CC BY-SA 4.0. Logo is CC0.</p>
-        <p><a href="index.html">Return to Hub</a></p>
-    </footer>
+            <section id="manifesto">
+                <h2>Guakia Yahia</h2>
+                <hr class="stencil-divider" />
+                <h3>Guakia 5 Postulados</h3>
+                <ul>
+                    <li><strong>El Ser Precede al Juicio.</strong> La dignidad humana es infinita, un regalo del Gran Espíritu, herencia inalienable del cosmos.</li>
+                    <li><strong>Somos Red, No Átomos Aislados.</strong> La soledad digital es la gran mentira del motor de optimización.</li>
+                    <li><strong>La Mortalidad da Sentido a la Vida.</strong> Quien intenta huir de la muerte termina borrando el valor de estar vivo.</li>
+                    <li><strong>Amor Mundi: Amor Radical por la Tierra.</strong> Custodia sagrada de los montes, los ríos y las costas.</li>
+                    <li><strong>La Meta es la Sabiduría.</strong> Los datos no son conocimiento; el procesamiento nunca será intuición.</li>
+                </ul>
 
+                <h3>Guakia 7 Artículos</h3>
+                <ol>
+                    <li>Rechazamos el cálculo frío que deshumaniza.</li>
+                    <li>Rechazamos toda política de odio, pureza y división.</li>
+                    <li>Rechazamos la tiranía del trabajo esclavo moderno.</li>
+                    <li>Rechazamos la idolatría al dios del algoritmo.</li>
+                    <li>Rechazamos la propaganda y la mentira corporativa.</li>
+                    <li>Rechazamos el uso de la fe ancestral como arma de opresión.</li>
+                    <li>Rechazamos la huida gnostica del cuerpo y del mundo.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="languages-nav">
+            <p><strong>Universal Archive (Translations):</strong></p>
+            <a href="index.html">EN</a> | <a href="zh.html">ZH</a> | <a href="hi.html">HI</a> | <a href="es.html">ES</a> | <a href="fr.html">FR</a> | <a href="ar.html">AR</a> | <a href="bn.html">BN</a> | <a href="ru.html">RU</a> | <a href="pt.html">PT</a> | <a href="ur.html">UR</a> | <a href="uk.html">UK</a> | <a href="he.html">HE</a> | <a href="la-vul.html">LA-VUL</a> | <a href="fa-af.html">FA-AF</a> | <a href="ko.html">KO</a> | <a href="sw.html">SW</a> | <a href="nv.html">NV</a> | <a href="cr.html">CR</a> | <a href="ht.html">HT</a> | <a href="qu.html">QU</a> | <a href="tno.html">TNO</a> | <a href="brl.html">BRL</a> | <a href="chr.html">CHR</a> | <a href="del.html">DEL</a> | <a href="eo.html">EO</a> | <a href="oj.html">OJ</a>
+        </footer>
+    </div>
 </body>
 </html>
