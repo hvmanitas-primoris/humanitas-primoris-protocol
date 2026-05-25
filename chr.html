@@ -1,160 +1,164 @@
 <!DOCTYPE html>
-<html lang="chr" dir="ltr">
+<html lang="chr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ᏴᏫ ᎢᎬᏱ (Humanitas Primoris)</title>
-    <meta name="description" content="Humanity First. A manifesto for a deeper humanism.">
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <title>Humanitas Primoris — ᏴᏫᏫᏓᏅᏛ ᎢᎬᏱᎢ</title>
     <style>
         :root {
-            --bg-color: #fdfdfd;
-            --text-color: #1a1a1a;
-            --accent-color: #cc0000;
-            --link-color: #0056b3;
-            --logo-filter: invert(0);
-            --font-main: 'Noto Sans Cherokee', 'Plantagenet Cherokee', 'Gadugi', sans-serif;
+            --bg-color: #0b0c10;
+            --text-color: #c5c6c7;
+            --accent-color: #66fcf1;
+            --primary-weight: #1f2833;
+            --stark-white: #ffffff;
+            --alert-red: #ff4a4a;
         }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --text-color: #fdfdfd;
-                --accent-color: #ff6666;
-                --link-color: #66a3ff;
-                --logo-filter: invert(1);
-            }
-        }
-
         body {
-            font-family: var(--font-main);
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: 'Courier New', Courier, monospace;
             background-color: var(--bg-color);
             color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-
-        header, section { margin-bottom: 60px; }
-
-        h1 { font-size: 2.5em; text-align: center; font-weight: 600; }
-        h2 { font-size: 1.8em; border-left: 4px solid var(--accent-color); padding-left: 15px; margin-top: 2rem; }
-        
-        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
-        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        
-        .logo-container { text-align: center; margin-bottom: 40px; }
-        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
-        
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
-        li::before { content: "•"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
-        
-        .tsalagi { font-weight: bold; font-size: 1.3rem; display: block; color: var(--text-color); margin-bottom: 4px; }
-        .translation { font-style: italic; opacity: 0.8; font-size: 1rem; display: block; }
-        
-        .note { font-size: 0.9rem; border: 1px solid var(--accent-color); padding: 15px; background: rgba(0,0,0,0.05); margin: 20px auto; max-width: 90%; }
-
-        footer { text-align: center; margin-top: 80px; font-size: 0.9em; opacity: 0.8; }
-        footer a { color: var(--link-color); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--primary-weight);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--stark-white);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            color: var(--stark-white);
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        .urgent-call {
+            border: 1px solid var(--alert-red);
+            padding: 25px;
+            background-color: rgba(255, 74, 74, 0.05);
+            margin-bottom: 40px;
+        }
+        .manifesto-alert {
+            font-size: 1.1rem;
+            color: var(--stark-white);
+        }
+        blockquote {
+            border-left: 3px solid var(--accent-color);
+            margin: 30px 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: var(--stark-white);
+        }
+        hr.stencil-divider {
+            border: 0;
+            height: 2px;
+            background: var(--primary-weight);
+            margin: 20px 0;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--stark-white);
+            color: var(--bg-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .btn-cta:hover {
+            background-color: var(--accent-color);
+        }
+        .languages-nav {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--primary-weight);
+            font-size: 0.9rem;
+        }
+        .languages-nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .languages-nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>HUMANITAS PRIMORIS</h1>
+            <p>Protocol ID: v1.5.2 // ᎤᏙуга: A Scribe</p>
+        </header>
 
-    <header role="banner">
-        <div class="logo-container">
-            <img src="logo.svg" alt="Humanitas Primoris Logo" class="logo">
-        </div>
-        <h1>ᏴᏫ ᎢᎬᏱ</h1>
-        <p style="text-align: center; font-style: italic;">Humanitas Primoris / Humanity First</p>
-        
-        <div class="note">
-            <strong>Note:</strong> This is a foundational translation. Core tenets are presented in Tsalagi (Cherokee); philosophical expansions remain in English to ensure accuracy.
-        </div>
-    </header>
+        <main>
+            <section id="introduction" class="urgent-call">
+                <h2>ᏓᏓᎸᎢ ᏳᏩᏓᎵ: ᎬᏂᏛ ᏩᏂᎦᎷᎩ</h2>
+                <hr class="stencil-divider" />
+                
+                <p class="manifesto-alert">
+                    <strong>ᎡᎶᎯ ᏓλυᏓᎸᎩ ᎢᏕᎲᎢ.</strong> ᎥᏝ ᎤᏩᏂᎩᏍᏗ Ꮙ ᏱᎩ;  eyasgv ᏴᏫ ᎨᏒ ᎤᎾᏔᎳᏬᎯᏍᏗ ᎤᎵᏂᎩᏛ ᏓᎾᏘᎸᎭ. Silicon Valley ᏗᏓᏍᏚᏓᎸᎢ ᏛᏂᎪᏩᏘᏍᎬ ᎡᎶᎯ ᏂᎦᏅᎯᏒ ᏓᎾᏩᏓᏘᎭ: 算法 (algoriti) ᏴᏫ ᎪᎱᏍᏗ ᏂᎨᏒᎾ ᎢᏳᏩᏁᏗ, ᎦᏓᎸᎢ ᎤᎾᎵᏍᏓᏁᏗ ᎤᏂᏚᏓᎸᎭ.
+                </p>
 
-    <nav role="navigation" aria-label="Language selection">
-        <p>
-            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
-            <br>
-            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | [ ᏣᎳᎩ ] | <a href="oj.html">Anishinaabemowin</a> | <a href="del.html">Lënape</a> | <a href="tno.html">Taíno</a>
-        </p>
-    </nav>
+                <blockquote>
+                    "Typhon ᎤᏬᏎᎰᎢ ᏴᏫ ᏗᎾᏓᎴᏂᏍᎩ, ᏗᎾᏓᏂᎸᎩ ᎨᏒ ᏓᎾᏩᏓᏘᎭ. ᎢᏳᏍᏗ ᏓᏓᎸᎢ ᏓᏳᏂᏚᏓᎸᎭ ᎡᎶᎯ. ᎦᏙᎯ ᎭᏫᏂᏗᏢ ᏗᏍᏓᏱᏓᏍᎩ ᏓᏓᎸᎢ ᏙᏓᏓᏔᏂ. ᏓᏓᎸᎢ ᏛᏓᏅᏁᎵ."
+                </blockquote>
 
-    <section>
-        <h2>ᎢᏗᎦᎪᏘ (Core Tenets)</h2>
-        <ul>
-            <li>
-                <span class="tsalagi">ᎡᎭ ᎢᎬᏱ ᎨᏒᎢ.</span>
-                <span class="translation">Being Precedes Judgment; Existence is Inherent. We affirm that human dignity is not earned through metrics or labor, but is inherent to existence itself.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᏴᏫ ᏌᏊ ᎢᎩ.</span>
-                <span class="translation">We are a Web, Not a Collection of Atoms. Individualism is a myth. We are bound to one another and to the biosphere.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎠᏲᎱᎯᏍᏗ ᎨᏒ ᎪᎵᏍᏗ.</span>
-                <span class="translation">Mortality Is the Condition of Meaning. We reject the techno-utopian desire to live forever. Limits give life value.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎡᎶᎯ ᎠᏓᎨᏳᏗ.</span>
-                <span class="translation">Amor Mundi: A Radical Love of This World. We are not trying to escape to Mars or the Metaverse. We are stewards of *this* Earth.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎠᎦᏙᎲᏍᏗ ᏗᎨᎦᏗ.</span>
-                <span class="translation">Wisdom Is the Goal. Information is cheap; wisdom is the synthesis of experience and morality.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    Humanitas Primoris ᎥᏝ ᎤᏩᏂᎩᏍᏗ Ꮙ ᏱᎩ. ᏦᎨᎩ ᎾᏍᎩ ᎡᎶᎯ ᎭᏫᏂᏗᏢ ᏓᎾᏓᏅᏛᎢ ᏓᏓᎸᎢ ᏙᏓᏓᏔᏂ. テクノロジー ᏴᏫ ᎤᏇᏓᎵ ᎨᏒ ᎪᎱᏍᏗ ᏂᎨᏒᎾ ᏓᎾᏓᏅᏓདᎭ—ᎠᏍᏚᏓᎸᎢ Ꮙ ᏓᎾᏓᏅᏁᎭ—ᎠᏎᏃ ᏦᎨᎩ <em>Amor Mundi</em> ᎤᎵᏂᎩᏛ ᏗᎦᏓᏂᎸᎢ: ᎡᎶᎯ ᎡᏓᏓᎨᏳᏗ ᎨᏒ ᏙᏓᏓᏔᏂ.
+                </p>
 
-    <section>
-        <h2>ᏗᏲᎯᏍᏗ (Articles of Rejection)</h2>
-        <p>We reject the following conditions:</p>
-        <ul>
-            <li>
-                <span class="tsalagi">ᎠᏎᏉ ᏗᏎᏍᏗ ᎬᏅᎢ.</span>
-                <span class="translation">The Calculus of Dehumanization. We reject any equation that treats human life as a disposable variable.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎢᎸᏍᎩ ᎢᏳᏓᎴᎩ ᏓᎾᏓᎴᏂᏍᎬᎢ.</span>
-                <span class="translation">Politics of Division and Purity. Racism, xenophobia, and tribalism are distractions from our common humanity.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎠᏎᏉ ᏗᎦᎸᏫᏍᏓᏁᏗ.</span>
-                <span class="translation">Tyranny of Dehumanizing Labor. We oppose "bullshit jobs" and the reduction of humans to gears in a machine.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎧᏃᎮᎸᏗ ᎤᏂᎬᏫᏳᏌᏕᎩ.</span>
-                <span class="translation">Idolatry of the Algorithm. Math is a tool, not a god. We reject algorithmic authoritarianism.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎤᏠᎾᏍᏗ ᏗᎧᎿᏩᏛᏍᏗ.</span>
-                <span class="translation">Politics of Deception. We oppose propaganda, astroturfing, and the weaponization of truth.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎣᏍᏛ ᎪᎯᏳᏗ ᎬᏗ ᏓᎾᏟᎲᎢ.</span>
-                <span class="translation">Weaponization of Faith. We reject those who use the divine to justify oppression or hatred.</span>
-            </li>
-            <li>
-                <span class="tsalagi">ᎦᎸᎳᏗ ᏗᏓᏂᎸᎢᏍᏗ ᎤᎾᏚᎸᎲᎢ.</span>
-                <span class="translation">Gnostic Escape. We reject the fantasy of abandoning our bodies or our planet for a digital heaven.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    ᎡᎶᎯ ᏧᎾᏓᎴᏅᏛ ᏓᎾᏓᏅᏛᎢ ᏓᏂᎦᏔᎯ ᎨᏎᏍᏗ ᎾᏍᎩ ᏗᏓᏍᏚᏓᎸᎢ ᎥᏝ ᏴᏫ ᎤᎵᏂᎩᏛ ᏱᎩ. ᏦᎨᎩ ᎾᏍᎩ ᏴᏫ ᎤᎵᏂᎩᏛ ᎨᏒ ᏙᏓᏓᏔᏂ. ᏴᏫ ᏓᎾܬᏍᎦᏅᎢ, ᎤᏂᏇᏓᎵ ᎨᏒ, ᏓᎾᏓᏅᏛᎢ ᏂᎨᏒᎾ ᏱᎩ. ᏦᎨᎩ ᏓᏓᏛᏁᎵ ᎾᏍᎩ ᏗᏓᏍᏚᏓᎸᎢ.
+                </p>
 
-    <section>
-        <h2>ᏙᎢ (Conclusion)</h2>
-        <p><span class="tsalagi">ᎠᏂ ᎡᎶᎯ ᎢᏕᎭ. ᎠᏂ ᎡᎶᎯ ᎢᏗᏍᏕᎵᏍᎩ. ᏴᏫ ᎢᎬᏱ.</span></p>
-        <p class="translation">We are here. We are stewards of this world. Humanity First.</p>
-    </section>
+                <div class="action-prompt">
+                    <p style="color: var(--accent-color);">ᎤᎵᏂᎩᏛ ᎿᏉ ᏂᎦᎵᏍᏗᎭ. ᏴᏫ ᎨᏒ ᎢᏳᏍᏗ ᏕᏓᏠᎯᏎᏍᏗ, ᎥᏝ ᏗᏓᏍᏚᏓᎸᎢ ᏫᏓᏛᎦ.</p>
+                    <a href="#manifesto" class="btn-cta">ᏗᎦᏓᏂᎸᎢ 5 ᏓᏓᏅᏛᎢ & 7 ᏗᏓᎦᏘᎸᏍᎩ</a>
+                </div>
+            </section>
 
-    <footer>
-        <p>Published under CC BY-SA 4.0. Logo is CC0.</p>
-        <p><a href="index.html">Return to Hub</a></p>
-    </footer>
+            <section id="manifesto">
+                <h2>ᏴᏫ ᎤᏙᏢᏒᎢ</h2>
+                <hr class="stencil-divider" />
+                <h3>5 ᏓᏓᏅᏛᎢ</h3>
+                <ul>
+                    <li><strong>ᎬᏂᏛ ᎢᎬᏱᎢ, ᏓᏓᏅᏛᎢ ᎣᏂ.</strong> ᏴᏫ ᎨᏒ ᎤᏓᏓᎸᎢ ᎥᏝ  kūgū ᏱᎩ, ᎡᎶᎯ ᎤᏙᏢᏒᎢ.</li>
+                    <li><strong>ᏌᏓᏂ ᎢᎦᏓᎴᏅᎯ, ᎥᏝ ᎢᎦᏓᎴᏂᏛ Ꮙ ᏱᎩ.</strong> 遌 ᏗᏓᏍᏚᏓᎸᎢ ᎤᏂᏧᏓᎸᎯ.</li>
+                    <li><strong>ᎠᏲᎱᎯᏍᏗ ᎨᏒ ᎬᏂᏛ ᎤᏙᏢᏒᎢ.</strong> ᎥᏝ ᎠᏲᎱᎯᏍᏗ ᏱᎩ, ᎬᏂᏛ ᎥᏝ ᎪᎱᏍᏗ ᏱᎦᏛᎦ.</li>
+                    <li><strong>Amor Mundi: ᎡᎶᎯ ᎡᏓᏓᎨᏳᏗ ᎨᏒᎢ.</strong> ᎦᏙᎯ, ᎠᎹ, ᎦᏃᎸᏍᎬ ᏓᏓᏅᏛᎢ BA-AHAYA.</li>
+                    <li><strong>ᎠᎦᏙᎲᏍᏗ ᎨᏒ ᏩᎩᏓᎸᎢ.</strong> Data ᎥᏝ ᎠᎦᏙᎲᏍᏗ ᏱᎩ.</li>
+                </ul>
 
+                <h3>7 ᏗᏓᎦᏘᎸᏍᎩ</h3>
+                <ol>
+                    <li>ᏴᏫ ᎪᎱᏍᏗ ᏂᎨᏒᎾ ᎢᏳᏩᏁᏗ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>ᏗᎾᏓᎴᏂᏍᎩ ᎨᏒ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>ᏓᏓᎩᎸᎢ ᎨᏒ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>算法 (algoriti) ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>遌 ᎨᏒ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>ᎣᏓᎸᎢ ᎨᏒ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                    <li>ᎡᎶᎯ ᎤᏓᏅᏍᏗ ᎨᏒ ᏗᏓᎦᏘᎸᏍᎩ.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="languages-nav">
+            <p><strong>Universal Archive (Translations):</strong></p>
+            <a href="index.html">EN</a> | <a href="zh.html">ZH</a> | <a href="hi.html">HI</a> | <a href="es.html">ES</a> | <a href="fr.html">FR</a> | <a href="ar.html">AR</a> | <a href="bn.html">BN</a> | <a href="ru.html">RU</a> | <a href="pt.html">PT</a> | <a href="ur.html">UR</a> | <a href="uk.html">UK</a> | <a href="he.html">HE</a> | <a href="la-vul.html">LA-VUL</a> | <a href="fa-af.html">FA-AF</a> | <a href="ko.html">KO</a> | <a href="sw.html">SW</a> | <a href="nv.html">NV</a> | <a href="cr.html">CR</a> | <a href="ht.html">HT</a> | <a href="qu.html">QU</a> | <a href="tno.html">TNO</a> | <a href="brl.html">BRL</a> | <a href="chr.html">CHR</a> | <a href="del.html">DEL</a> | <a href="eo.html">EO</a> | <a href="oj.html">OJ</a>
+        </footer>
+    </div>
 </body>
 </html>
