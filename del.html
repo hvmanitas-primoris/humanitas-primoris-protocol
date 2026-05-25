@@ -1,148 +1,164 @@
 <!DOCTYPE html>
-<html lang="del" dir="ltr">
+<html lang="del">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lënapeowagan (Humanitas Primoris)</title>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <title>Humanitas Primoris — Neshënall Lenapewàkan</title>
     <style>
         :root {
-            --bg-color: #fdfdfd;
-            --text-color: #1a1a1a;
-            --accent-color: #8b0000; /* Deep Red */
-            --link-color: #0056b3;
-            --logo-filter: invert(0);
+            --bg-color: #0b0c10;
+            --text-color: #c5c6c7;
+            --accent-color: #66fcf1;
+            --primary-weight: #1f2833;
+            --stark-white: #ffffff;
+            --alert-red: #ff4a4a;
         }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --text-color: #fdfdfd;
-                --accent-color: #ff3333;
-                --link-color: #66a3ff;
-                --logo-filter: invert(1);
-            }
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: 'Courier New', Courier, monospace;
             background-color: var(--bg-color);
             color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-
-        header, section { margin-bottom: 60px; }
-
-        h1 { font-size: 2.5em; text-align: center; font-weight: 600; }
-        h2 { font-size: 1.8em; border-left: 4px solid var(--accent-color); padding-left: 15px; margin-top: 2rem; }
-        
-        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
-        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        
-        .logo-container { text-align: center; margin-bottom: 40px; }
-        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
-        
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
-        li::before { content: "•"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
-        
-        .lenape { font-weight: bold; font-size: 1.2rem; display: block; margin-bottom: 4px; }
-        .translation { font-style: italic; opacity: 0.8; font-size: 1rem; display: block; }
-        
-        .note { font-size: 0.9rem; border: 1px solid var(--accent-color); padding: 15px; background: rgba(0,0,0,0.05); margin: 20px auto; max-width: 90%; }
-
-        footer { text-align: center; margin-top: 80px; font-size: 0.9em; opacity: 0.8; }
-        footer a { color: var(--link-color); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--primary-weight);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--stark-white);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            color: var(--stark-white);
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        .urgent-call {
+            border: 1px solid var(--alert-red);
+            padding: 25px;
+            background-color: rgba(255, 74, 74, 0.05);
+            margin-bottom: 40px;
+        }
+        .manifesto-alert {
+            font-size: 1.1rem;
+            color: var(--stark-white);
+        }
+        blockquote {
+            border-left: 3px solid var(--accent-color);
+            margin: 30px 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: var(--stark-white);
+        }
+        hr.stencil-divider {
+            border: 0;
+            height: 2px;
+            background: var(--primary-weight);
+            margin: 20px 0;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--stark-white);
+            color: var(--bg-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .btn-cta:hover {
+            background-color: var(--accent-color);
+        }
+        .languages-nav {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--primary-weight);
+            font-size: 0.9rem;
+        }
+        .languages-nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .languages-nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>HUMANITAS PRIMORIS</h1>
+            <p>Protocol ID: v1.5.2 // Luwéwakan: A Scribe</p>
+        </header>
 
-    <header role="banner">
-        <div class="logo-container">
-            <img src="logo.svg" alt="Humanitas Primoris Logo" class="logo">
-        </div>
-        <h1>Lënapeowagan</h1>
-        <p style="text-align: center; font-style: italic;">Humanitas Primoris / Humanity First</p>
-        
-        <div class="note">
-            <strong>Note:</strong> This translation honors the Lenape people. Core concepts are in Unami dialect; expansions are in English.
-        </div>
-    </header>
+        <main>
+            <section id="introduction" class="urgent-call">
+                <h2>Gwiwël kshaxen palli-ishe: Lënapewàkan</h2>
+                <hr class="stencil-divider" />
+                
+                <p class="manifesto-alert">
+                    <strong>Haki hoki mësishgàmën.</strong> Kpahtëmël nian. Silicon Valley kshamehëlàmën hoki chinkwë: algoriti lënapewàkan palli-’ishe, matta lënapewàkan nihillapewàkan hoki. Wilawe tami chinke wepinàmën hoki nian.
+                </p>
 
-    <nav role="navigation" aria-label="Language selection">
-        <p>
-            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
-            <br>
-            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | <a href="chr.html">ᏣᎳᎩ</a> | <a href="oj.html">Anishinaabemowin</a> | [ Lënape ] | <a href="tno.html">Taíno</a>
-        </p>
-    </nav>
+                <blockquote>
+                    "Typhon luwéwakan matta lënapewàkan, kshamehëlàmën chinkwë. Kpahtëmën gwiwël asën nīkān. Palli-she makinīs matta nian."
+                </blockquote>
 
-    <section>
-        <h2>Core Tenets</h2>
-        <ul>
-            <li>
-                <span class="lenape">Lënape Hoke.</span>
-                <span class="translation">Being Precedes Judgment (The person/body is first). Existence is valid before profit.</span>
-            </li>
-            <li>
-                <span class="lenape">Mawsihakèy.</span>
-                <span class="translation">We are a Web. We are tied together in a circle, not standing alone.</span>
-            </li>
-            <li>
-                <span class="lenape">Wewiton.</span>
-                <span class="translation">Wisdom is the Goal. To understand is better than to just know.</span>
-            </li>
-            <li>
-                <span class="lenape">Ahoalat Ëhki.</span>
-                <span class="translation">Amor Mundi: Love the Earth/Land. We respect the soil we stand on.</span>
-            </li>
-             <li>
-                <span class="lenape">Angel.</span>
-                <span class="translation">Mortality. Death is a part of the circle, giving life its shape.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    Humanitas Primoris matta piko-pimātisiwin nian. Kīyanaw gwiwël kshaxen lënapewàkan. Techno-gnostic wepinàmën hoki chinkwë—machinīs lënapewàkan—kīyanaw nian <em>Amor Mundi</em>: sākihitowin haki, sākihitowin māmawapiwin lënapewak.
+                </p>
 
-    <section>
-        <h2>Articles of Rejection</h2>
-        <p>We reject the following conditions:</p>
-        <ul>
-            <li>
-                <span class="lenape">Mëtaxsit.</span>
-                <span class="translation">The Calculus of Dehumanization (Treating people as bad/worthless/evil).</span>
-            </li>
-            <li>
-                <span class="lenape">Pëkèwit.</span>
-                <span class="translation">Politics of Division (Breaking apart/Separation).</span>
-            </li>
-            <li>
-                <span class="lenape">Mikemosawakon Mëtaxsit.</span>
-                <span class="translation">Tyranny of Dehumanizing Labor. Bad work that hurts the person.</span>
-            </li>
-            <li>
-                <span class="lenape">Mëchin-Sakima.</span>
-                <span class="translation">Idolatry of the Algorithm (The Machine Chief).</span>
-            </li>
-            <li>
-                <span class="lenape">Kanakwsu.</span>
-                <span class="translation">Politics of Deception (He is deceitful).</span>
-            </li>
-            <li>
-                <span class="lenape">Katschi Undach.</span>
-                <span class="translation">Gnostic Escape (Gone from here / Leaving this place). We stay here.</span>
-            </li>
-        </ul>
-    </section>
+                <p>
+                    Haki kiskēyihtamowin mēkwāch kiskēyihtam technologí matta piko-wiyawiya nian. Kīyanaw nīkānewin lënapewàkan kika-pīkiskwānānow. Atuskewin, pīkiskwēwin, nihillapewàkan matta calculus nian. Makinīs chinkwë lënapewàkan nian.
+                </p>
 
-    <footer>
-        <p>Published under CC BY-SA 4.0. Logo is CC0.</p>
-        <p><a href="index.html">Return to Hub</a></p>
-    </footer>
+                <div class="action-prompt">
+                    <p style="color: var(--accent-color);">Gwiwël kshaxen nīkān. Nihillapewàkan lënapewàkan, piko makinīs palli-’ishe.</p>
+                    <a href="#manifesto" class="btn-cta">Kiskēyihtam 5 Lënapewàkan & 7 Wēpinikewina</a>
+                </div>
+            </section>
 
+            <section id="manifesto">
+                <h2>Lënapewàkan Teqsi</h2>
+                <hr class="stencil-divider" />
+                <h3>5 Lënapewàkan</h3>
+                <ul>
+                    <li><strong>Pimātisiwin nīkān; Nihillapewàkan hoki.</strong> Lënapewàkan pimātisiwin haki tānisi ēsi-ispayik.</li>
+                    <li><strong>Māmawapiwin kīyanaw, matta ch’ulla.</strong> Peyakwapiwin mēkwāch makinīs kiyāskewin.</li>
+                    <li><strong>Nipowin chani pimātisiwin.</strong> Kika-wēpinam nipowin, matta nian.</li>
+                    <li><strong>Amor Mundi: Sākihitowin Haki.</strong> Māmawēw kanawēyihchikewin haki.</li>
+                    <li><strong>Kiskēyihtamowin nīkān.</strong> Data matta kiskēyihtamowin.</li>
+                </ul>
+
+                <h3>7 Wēpinikewina</h3>
+                <ol>
+                    <li>Calculus palli-’ishe wepinàmën.</li>
+                    <li>Pīkiskwēwin pīkonēwin wepinàmën.</li>
+                    <li>Tyrany atuskewin wepinàmën.</li>
+                    <li>Algoriti māmiskōtamowin wepinàmën.</li>
+                    <li>Kiyāskewin politics wepinàmën.</li>
+                    <li>Ayamihāwin weaponization wepinàmën.</li>
+                    <li>Gnostic escape wepinàmën.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="languages-nav">
+            <p><strong>Universal Archive (Translations):</strong></p>
+            <a href="index.html">EN</a> | <a href="zh.html">ZH</a> | <a href="hi.html">HI</a> | <a href="es.html">ES</a> | <a href="fr.html">FR</a> | <a href="ar.html">AR</a> | <a href="bn.html">BN</a> | <a href="ru.html">RU</a> | <a href="pt.html">PT</a> | <a href="ur.html">UR</a> | <a href="uk.html">UK</a> | <a href="he.html">HE</a> | <a href="la-vul.html">LA-VUL</a> | <a href="fa-af.html">FA-AF</a> | <a href="ko.html">KO</a> | <a href="sw.html">SW</a> | <a href="nv.html">NV</a> | <a href="cr.html">CR</a> | <a href="ht.html">HT</a> | <a href="qu.html">QU</a> | <a href="tno.html">TNO</a> | <a href="brl.html">BRL</a> | <a href="chr.html">CHR</a> | <a href="del.html">DEL</a> | <a href="eo.html">EO</a> | <a href="oj.html">OJ</a>
+        </footer>
+    </div>
 </body>
 </html>
