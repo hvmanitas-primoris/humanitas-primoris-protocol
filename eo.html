@@ -1,115 +1,164 @@
 <!DOCTYPE html>
-<html lang="eo" dir="ltr">
+<html lang="eo">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homaro Unue (Humanitas Primoris)</title>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <title>Humanitas Primoris — La Ĉefa Protokolo</title>
     <style>
         :root {
-            --bg-color: #fdfdfd;
-            --text-color: #1a1a1a;
-            --accent-color: #009900; /* Esperanto Green */
-            --link-color: #0056b3;
-            --logo-filter: invert(0);
+            --bg-color: #0b0c10;
+            --text-color: #c5c6c7;
+            --accent-color: #66fcf1;
+            --primary-weight: #1f2833;
+            --stark-white: #ffffff;
+            --alert-red: #ff4a4a;
         }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --text-color: #fdfdfd;
-                --accent-color: #00cc00;
-                --link-color: #66a3ff;
-                --logo-filter: invert(1);
-            }
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: 'Courier New', Courier, monospace;
             background-color: var(--bg-color);
             color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-
-        header, section { margin-bottom: 60px; }
-
-        h1 { font-size: 2.5em; text-align: center; font-weight: 600; }
-        h2 { font-size: 1.8em; border-left: 4px solid var(--accent-color); padding-left: 15px; margin-top: 2rem; }
-        
-        nav { text-align: center; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; }
-        nav a { margin: 0 5px; color: var(--link-color); text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        
-        .logo-container { text-align: center; margin-bottom: 40px; }
-        .logo { width: 150px; height: 150px; filter: var(--logo-filter); }
-        
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 25px; padding-left: 20px; position: relative; }
-        li::before { content: "★"; position: absolute; left: 0; color: var(--accent-color); font-size: 0.8em; top: 5px; }
-        
-        strong { font-weight: 600; color: var(--text-color); }
-
-        footer { text-align: center; margin-top: 80px; font-size: 0.9em; opacity: 0.8; }
-        footer a { color: var(--link-color); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--primary-weight);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--stark-white);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            color: var(--stark-white);
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        .urgent-call {
+            border: 1px solid var(--alert-red);
+            padding: 25px;
+            background-color: rgba(255, 74, 74, 0.05);
+            margin-bottom: 40px;
+        }
+        .manifesto-alert {
+            font-size: 1.1rem;
+            color: var(--stark-white);
+        }
+        blockquote {
+            border-left: 3px solid var(--accent-color);
+            margin: 30px 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: var(--stark-white);
+        }
+        hr.stencil-divider {
+            border: 0;
+            height: 2px;
+            background: var(--primary-weight);
+            margin: 20px 0;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--stark-white);
+            color: var(--bg-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .btn-cta:hover {
+            background-color: var(--accent-color);
+        }
+        .languages-nav {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--primary-weight);
+            font-size: 0.9rem;
+        }
+        .languages-nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .languages-nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>HUMANITAS PRIMORIS</h1>
+            <p>Protokola ID: v1.5.2 // Sudaonomo: A Scribe</p>
+        </header>
 
-    <header role="banner">
-        <div class="logo-container">
-            <img src="logo.svg" alt="Humanitas Primoris Logo" class="logo">
-        </div>
-        <h1>Homaro Unue</h1>
-        <p style="text-align: center; font-style: italic;">Humanitas Primoris / Humanity First</p>
-        <p style="text-align: center; font-size: 0.9rem;">v1.5.2</p>
-    </header>
+        <main>
+            <section id="introduction" class="urgent-call">
+                <h2>La Horo de Katenado: Alvoko al Esto</h2>
+                <hr class="stencil-divider" />
+                
+                <p class="manifesto-alert">
+                    <strong>Ni vivas tra epoka rompiĝo.</strong> La krizo ne plu estas malrapida ramiĝo; ĝi estas rapida, centkapa atako kontraŭ la kerno de la homa ekzisto. De la nigra-skatoloj de Silicon Valley ĝis la frakturiĝantaj tutmondaj strukturoj, la alarmo sonas: la pliiĝo de senbrida algoritma absolutismo estas kalkulita kampanjo redukti la vivantan homon al nura projekto optimumigota, spurata, kaj forĵetota.
+                </p>
 
-    <nav role="navigation" aria-label="Language selection">
-        <p>
-            <a href="index.html">English</a> | <a href="zh.html">中文</a> | <a href="hi.html">हिन्दी</a> | <a href="es.html">Español</a> | <a href="fr.html">Français</a> | <a href="ar.html">العربية</a> | <a href="bn.html">বাংলা</a> | <a href="ru.html">Русский</a> | <a href="pt.html">Português</a> | <a href="ur.html">اردو</a> | <a href="uk.html">Українська</a> | <a href="he.html">עברית</a>
-            <br>
-            <a href="la-vul.html">Latine Vulgare</a> | <a href="fa-af.html">دری</a> | <a href="ko.html">한국어</a> | <a href="sw.html">Kiswahili</a> | <a href="nv.html">Diné Bizaad</a> | <a href="cr.html">Nēhiyawēwin</a> | <a href="ht.html">Kreyòl ayisyen</a> | <a href="qu.html">Runasimi</a> | <a href="chr.html">ᏣᎳᎩ</a> | <a href="oj.html">Anishinaabemowin</a> | <a href="del.html">Lënape</a> | [ Esperanto ]
-        </p>
-    </nav>
+                <blockquote>
+                    "La centkapa monstro de malakordo, algoritma izoliteco, kaj struktura senhumanigo — Tifono — perforte baraktas. Ni ne traktas kun monstro de kaoso. Ni ĵetas la katenojn. Ni konstruas la pezon por droni ĝin sub la tero."
+                </blockquote>
 
-    <section class="manifesto-section">
-        <h2>Kernaj Principoj (Core Tenets)</h2>
-        <ul>
-            <li><strong>La Esto Antaŭas la Juĝon.</strong> Ni asertas, ke homa digno ne estas gajnita per metrikoj, laboro aŭ algoritmoj, sed estas imanenta al la ekzisto mem.</li>
-            <li><strong>Ni Estas Reto, Ne Kolekto da Atomoj.</strong> Individuismo estas mito. Ni estas ligitaj unu al la alia kaj al la biosfero. Nia sorto estas komuna.</li>
-            <li><strong>Mortemeco Estas la Kondiĉo de Signifo.</strong> Ni malakceptas la tekno-utopian deziron vivi eterne. Limoj donas valoron al la vivo. Sen fino, nenio havus sencon.</li>
-            <li><strong>Amo al la Mondo (Amor Mundi).</strong> Ni ne provas fuĝi al Marso aŭ al la Metaverso. Ni estas gardantoj de *ĉi tiu* Tero. Ni devas ami la mondon sufiĉe por savi ĝin.</li>
-            <li><strong>Saĝeco Estas la Celo.</strong> Informo estas malmultekosta; saĝeco estas la sintezo de sperto kaj moraleco. Ni serĉas komprenon, ne nur datumojn.</li>
-        </ul>
-    </section>
+                <p>
+                    Humanitas Primoris ne estas pasiva filozofio de postvivado. Ni estas la struktura kaj kultura pezo aktive katenanta ĉi tiun subteran malamon. Kie la tekno-gnostika elito predikas fuĝon el la karno — ciferecajn alŝutojn, aŭtomatigitan militadon, kaj simulitajn rilatojn — ni postulas militan revenon al <em>Amor Mundi</em>: radikala, senfleksebla amo al ĉi tiu fragila, mortema mondo kaj al la homa solidareco kiu ĝin subtenas.
+                </p>
 
-    <section class="manifesto-section">
-        <h2>Artikoloj de Malakcepto (Articles of Rejection)</h2>
-        <p>Ni malakceptas la jenajn kondiĉojn:</p>
-        <ul>
-            <li><strong>La Kalkulo de Malhumanigo.</strong> Ni malakceptas ajnan ekvacion, kiu traktas homan vivon kiel forĵeteblan variablon por profito aŭ efikeco.</li>
-            <li><strong>Politiko de Divido kaj Pureco.</strong> Rasismo, ksenofobio, kaj tribismo estas distraĵoj de nia komuna homeco. Ni staras kontraŭ ĉiu formo de apartigo.</li>
-            <li><strong>La Tiraneco de Sensignifa Laboro.</strong> Ni kontraŭstaras "fekajn laborojn" (bullshit jobs) kaj la redukton de homoj al dentaĵoj en maŝino. Laboro devas servi la homon, ne inverse.</li>
-            <li><strong>Idolatrio de la Algoritmo.</strong> Matematiko estas ilo, ne dio. Ni malakceptas algoritman aŭtoritatismon kaj la kredon, ke komputiloj povas solvi etikajn problemojn.</li>
-            <li><strong>Politiko de Trompo.</strong> Ni kontraŭstaras propagandon, astroturfadon, kaj la armiligon de vero. Ni postulas honestecon en publika diskurso.</li>
-            <li><strong>Armiligo de Kredo.</strong> Ni malakceptas tiujn, kiuj uzas la dion por pravigi subpremon aŭ malamon. Kredo estu fonto de amo, ne de glavo.</li>
-            <li><strong>Gnostika Fuĝo.</strong> Ni malakceptas la fantazion forlasi niajn korpojn aŭ nian planedon por cifereca ĉielo. Ni restas ĉi tie.</li>
-        </ul>
-    </section>
+                <p>
+                    Eĉ la plej malnovaj instituciaj strukturoj sur la tero ekkomprenas, ke teknologio neniam estas neŭtrala, avertante pri kontraŭhoma vizio, kiu igas homojn perdi la deziron por efektiva, fizika homa ĉeesto. Sed kie institucioj petegas pri reguligo, ni deplojas operacian spiton. Ni rifuzas la kalkulon, kiu rabas sencon de laboro, veron de komunikado, kaj indon de naskiĝo. Montru al la maŝino la saman kompaton, kiun ĝi montris al ni.
+                </p>
 
-    <section class="manifesto-section">
-        <h2>Konkludo</h2>
-        <p>Ni estas ĉi tie. Ni estas gardantoj de ĉi tiu mondo. Homaro Unue.</p>
-    </section>
+                <div class="action-prompt">
+                    <p style="color: var(--accent-color);">La linioj estas desegnitaj. Elektu la pli simplan, homan vojon de konekto, aŭ estu glutita de la babelo de la maŝino.</p>
+                    <a href="#manifesto" class="btn-cta">Legu la 5 Dogmojn & 7 Artikolojn de Rifuzo</a>
+                </div>
+            </section>
 
-    <footer>
-        <p>Published under CC BY-SA 4.0. Logo is CC0.</p>
-        <p><a href="index.html">Return to Hub</a></p>
-    </footer>
+            <section id="manifesto">
+                <h2>La Kerna Kadro</h2>
+                <hr class="stencil-divider" />
+                <h3>La 5 Dogmoj</h3>
+                <ul>
+                    <li><strong>Esto Antaŭas Juĝon; Ekzisto estas Inhera.</strong> Homa digno estas senmerita kaj senfina, memevidenta vero de la kosmo.</li>
+                    <li><strong>Ni estas Teksaĵo, Ne Kolekto de Atomoj.</strong> Izoliteco estas la mensogo de la optimumiga motoro.</li>
+                    <li><strong>Mortemo estas la Kondiĉo de Senco.</strong> Fuĝi for de la morto signifas viŝi la valoron de la vivo.</li>
+                    <li><strong>Amor Mundi: Radikala Amo al Ĉi Tiu Mondo.</strong> Eksplicita devontigo al ekologia gvidado kaj klimata justeco.</li>
+                    <li><strong>Saĝeco estas la Celo.</strong> Datenoj ne estas scio; prilaborado ne estas kompreno.</li>
+                </ul>
 
+                <h3>La 7 Artikoloj de Rifuzo</h3>
+                <ol>
+                    <li>Ni Rifuzas la Kalkulon de Senhumanigo.</li>
+                    <li>Ni Rifuzas Ĉian Politikon de Divido kaj Pureco.</li>
+                    <li>Ni Rifuzas la Tiranecon de Senhumaniga Laboro.</li>
+                    <li>Ni Rifuzas la Idolismon de la Algoritmo.</li>
+                    <li>Ni Rifuzas la Politikon de Trompo.</li>
+                    <li>Ni Rifuzas la Armiligon de Fido.</li>
+                    <li>Ni Rifuzas la Gnostikan Fuĝon.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="languages-nav">
+            <p><strong>Universal Archive (Translations):</strong></p>
+            <a href="index.html">EN</a> | <a href="zh.html">ZH</a> | <a href="hi.html">HI</a> | <a href="es.html">ES</a> | <a href="fr.html">FR</a> | <a href="ar.html">AR</a> | <a href="bn.html">BN</a> | <a href="ru.html">RU</a> | <a href="pt.html">PT</a> | <a href="ur.html">UR</a> | <a href="uk.html">UK</a> | <a href="he.html">HE</a> | <a href="la-vul.html">LA-VUL</a> | <a href="fa-af.html">FA-AF</a> | <a href="ko.html">KO</a> | <a href="sw.html">SW</a> | <a href="nv.html">NV</a> | <a href="cr.html">CR</a> | <a href="ht.html">HT</a> | <a href="qu.html">QU</a> | <a href="tno.html">TNO</a> | <a href="brl.html">BRL</a> | <a href="chr.html">CHR</a> | <a href="del.html">DEL</a> | <a href="eo.html">EO</a> | <a href="oj.html">OJ</a>
+        </footer>
+    </div>
 </body>
 </html>
