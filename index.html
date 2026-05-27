@@ -94,6 +94,61 @@
         .languages-nav a:hover {
             text-decoration: underline;
         }
+        /* Tactical Callout for Physical Propagation */
+        .tactical-callout {
+            border: 2px double var(--accent-color);
+            background-color: rgba(102, 252, 241, 0.02);
+            margin: 40px 0;
+            padding: 0;
+            font-size: 0.95rem;
+        }
+        .callout-header {
+            background-color: var(--primary-weight);
+            color: var(--stark-white);
+            padding: 8px 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--accent-color);
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+        .callout-body {
+            padding: 20px;
+        }
+        .tactical-specs {
+            font-size: 0.8rem;
+            border-top: 1px solid var(--primary-weight);
+            border-bottom: 1px solid var(--primary-weight);
+            padding: 6px 0;
+            margin: 15px 0;
+            color: var(--text-color);
+        }
+        .btn-tactical {
+            display: inline-block;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        .btn-tactical:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        .blink {
+            animation: blinker 1.5s linear infinite;
+            color: var(--alert-red);
+        }
     </style>
 </head>
 <body>
@@ -130,6 +185,27 @@
                 </div>
             </section>
 
+            <!-- OFFLINE PROPAGATION PROTOCOL -->
+            <section id="offline-protocol" class="tactical-callout">
+                <div class="callout-header">
+                    <span class="blink">[!] OFF-GRID DEPLOYMENT REQUIRED</span>
+                    <span class="protocol-id">PROP-DOC // v1.5.2</span>
+                </div>
+                <div class="callout-body">
+                    <p>
+                        The digital edge is a shield, but the streets are the terrain. Do not trust your security entirely to the machine. We have compiled the English Master Protocol into a single-sheet, 8-page pocket zine engineered to bypass surveillance architectures completely.
+                    </p>
+                    <div class="tactical-specs">
+                        <span><strong>ASSET:</strong> 8-Page Mini-Zine</span> | 
+                        <span><strong>MEDIA:</strong> 1x Letter/A4 Sheet</span> | 
+                        <span><strong>AUTH:</strong> Public Domain</span>
+                    </div>
+                    <div class="action-row">
+                        <a href="zine.html" target="_blank" class="btn-tactical">Execute Print Protocol (zine.html)</a>
+                    </div>
+                </div>
+            </section>
+            
             <section id="manifesto">
                 <h2>The Core Framework</h2>
                 <hr class="stencil-divider" />
