@@ -5,6 +5,14 @@
 
 ---
 
+    PRIMARY NODE: https://hvmanitas-primoris.pages.dev/
+
+    SECONDARY NODE: https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/
+
+    COLD MIRROR: https://hvmanitas-primoris.codeberg.page/
+
+---
+
 ## 1. Core Philosophy & The Typhon Metaphor
 
 Humanitas Primoris ("Humanity First") rejects all socioeconomic and technological conditions that seek to commodify, track, and hollow out human existence. We actively combat "bullshit jobs," algorithmic authoritarianism, and the techno-gnostic fantasy of escaping the flesh (digital uploads, simulated presence, and billionaire escapism). We embrace *Amor Mundi* (Radical Love of the World), human frailty, and mortality as the absolute conditions of meaning.
