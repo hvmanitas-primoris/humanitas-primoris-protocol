@@ -5,11 +5,11 @@
 
 ---
 
-    PRIMARY NODE: https://hvmanitas-primoris.pages.dev/
+PRIMARY NODE: https://hvmanitas-primoris.pages.dev/
 
-    SECONDARY NODE: https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/
+SECONDARY NODE: https://hvmanitas-primoris.github.io/humanitas-primoris-protocol/
 
-    COLD MIRROR: https://hvmanitas-primoris.codeberg.page/
+COLD MIRROR: https://hvmanitas-primoris.codeberg.page/
 
 ---
 
