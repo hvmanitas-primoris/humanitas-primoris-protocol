@@ -2,194 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Humanitas Primoris: Zine Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanitas Primoris — Print-Ready Zine v1.5.2</title>
     <style>
-        /* --- SCREEN STYLES (BRUTALIST PREVIEW) --- */
         :root {
-            --ink: #000;
-            --paper: #fff;
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --border-color: #000000;
+        }
+        * {
+            box-sizing: border-box;
         }
         body {
-            font-family: "Courier New", Courier, monospace;
-            background: var(--paper);
-            color: var(--ink);
             margin: 0;
-            padding: 2rem;
-            line-height: 1.4;
-            max-width: 900px;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 11px;
+            line-height: 1.3;
+        }
+        /* Single-sheet grid layout for 8 pages */
+        .zine-sheet {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 11in;
+            height: 8.5in;
             margin: 0 auto;
+            border: 1px solid var(--border-color);
+            page-break-after: always;
         }
-        .warning-banner {
-            background: var(--ink);
-            color: var(--paper);
-            padding: 1rem;
-            text-align: center;
+        /* Individual Page Panel Styles */
+        .page {
+            border: 1px dashed #cccccc;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            position: relative;
+            background-color: #ffffff;
+        }
+        /* Standard 8-page folding orientation rules */
+        /* Top row pages are printed upside down for the standard folding method */
+        .upside-down {
+            transform: rotate(180deg);
+        }
+        h1, h2, h3 {
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 2rem;
-            border: 2px solid var(--ink);
-            text-transform: uppercase;
+            letter-spacing: -0.5px;
         }
-        h1 {
-            font-size: 4rem;
-            text-transform: uppercase;
-            line-height: 0.9;
-            margin-bottom: 1rem;
-            letter-spacing: -2px;
+        h1 { font-size: 1.4rem; line-height: 1.1; }
+        h2 { font-size: 1.1rem; border-bottom: 2px solid #000000; padding-bottom: 2px; }
+        h3 { font-size: 0.85rem; margin-top: 5px; }
+        p { margin: 0 0 8px 0; text-align: justify; }
+        ul, ol { margin: 0 0 8px 0; padding-left: 15px; }
+        li { margin-bottom: 3px; }
+        blockquote {
+            margin: 5px 0;
+            padding-left: 8px;
+            border-left: 3px solid #000000;
+            font-style: italic;
         }
-        h2 {
-            background: var(--ink);
-            color: var(--paper);
-            display: inline-block;
-            padding: 0.2rem 0.5rem;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            margin-top: 2rem;
-        }
-        ul {
-            list-style: square;
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.5rem; 
-        }
-        .badge-instruction {
-            border: 2px dashed var(--ink);
-            padding: 1.5rem;
-            margin-top: 3rem;
-            page-break-inside: avoid;
-        }
-        .code-block {
-            background: #eee;
-            padding: 10px;
-            font-size: 0.8rem;
-            overflow-x: auto;
-            border: 1px solid #999;
-            display: block;
-            white-space: pre-wrap;
-        }
-        .footer {
-            margin-top: 4rem;
-            border-top: 4px double var(--ink);
-            padding-top: 1rem;
+        .page-number {
+            font-size: 9px;
+            font-weight: bold;
             text-align: center;
+            border-top: 1px solid #000000;
+            padding-top: 2px;
         }
-        
-        /* --- PRINT STYLES (THE ZINE TRANSFORMATION) --- */
+        .cover {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 4px double #000000;
+        }
+        .cover-logo {
+            width: 80px;
+            height: 80px;
+            margin: 15px auto;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .center-spread {
+            background-color: #fcfcfc;
+        }
+        /* Print Overrides */
         @media print {
-            @page {
-                size: letter landscape; /* Or A4 landscape */
-                margin: 0.5in;
-            }
             body {
-                padding: 0;
-                font-size: 10pt; /* Smaller for print */
-                column-count: 2; /* Creates the fold */
-                column-gap: 1in;
-                height: 100%;
-                width: 100%;
+                background-color: #ffffff;
+                color: #000000;
             }
-            .warning-banner {
-                display: none; /* Hide screen instructions */
+            .zine-sheet {
+                border: none;
+                width: 11in;
+                height: 8.5in;
+                max-width: 11in;
+                max-height: 8.5in;
             }
-            h1 {
-                font-size: 2.5rem;
-                margin-top: 0;
+            .page {
+                border: 1px dashed #000000; /* Fold guides visible on print */
             }
-            .badge-instruction {
-                break-inside: avoid;
-                border: 1px solid black;
-            }
-            .footer {
-                border-top: 2px solid black;
-                font-size: 8pt;
-                margin-top: 20px;
-                break-inside: avoid;
-            }
-            /* Force black and white for cheap printing */
-            * {
-                -webkit-print-color-adjust: exact;
-                color: black !important;
-                background: white !important;
-            }
-            /* Invert headers for print style */
-            h2 {
-                border: 2px solid black;
-                color: black !important;
-                background: white !important;
-                padding: 2px 5px;
-            }
-            a {
-                text-decoration: none;
-                color: black;
+            @page {
+                size: letter landscape;
+                margin: 0;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Screen-only instruction -->
-    <div class="warning-banner">
-        /// SYSTEM INSTRUCTION: PRESS CTRL+P (OR CMD+P) /// SELECT LANDSCAPE /// PRINT & FOLD ///
-    </div>
+    <!-- The Single Sheet (8 Pages Mapped for Folds) -->
+    <div class="zine-sheet">
+        
+        <!-- PAGE 2 (Upside Down, Top Left) -->
+        <div class="page upside-down">
+            <div>
+                <h2>01 // THE CRISIS</h2>
+                <p>We are living through an epochal rupture. The rise of unchecked algorithmic authoritarianism is a calculated campaign to reduce the living person to a mere project to be optimized, tracked, and discarded.</p>
+                <p>Silicon Valley black boxes and automated structures treat our flesh as an obstacle and our lives as data points to be mined for corporate control.</p>
+            </div>
+            <div class="page-number">2</div>
+        </div>
 
-    <header>
-        <h1>Humanitas<br>Primoris</h1>
-        <p><strong>EST. 2025 // AMOR MUNDI</strong></p>
-        <p>A rejection of techno-gnosticism. A defense of the real.</p>
-    </header>
+        <!-- PAGE 3 (Upside Down, Top Middle-Left) -->
+        <div class="page upside-down">
+            <div>
+                <h2>02 // THE METAPHOR</h2>
+                <p>The hundred-headed beast of discord, algorithmic isolation, and structural dehumanization—<strong>TYPHON</strong>—is thrashing violently across our digital realities.</p>
+                <blockquote>"We do not negotiate with a monster of chaos. We launch the chains. We build the weight to crush it."</blockquote>
+                <p>Humanitas Primoris is the structural weight of Mount Etna actively binding this hatred.</p>
+            </div>
+            <div class="page-number">3</div>
+        </div>
 
-    <hr style="border: 2px solid black; margin: 20px 0;">
+        <!-- PAGE 4 (Upside Down, Top Middle-Right) -->
+        <div class="page upside-down center-spread">
+            <div>
+                <h2>03 // THE 5 TENETS</h2>
+                <ol>
+                    <li><strong>Being Precedes Judgment:</strong> Human dignity is unearned, self-evident, and infinite.</li>
+                    <li><strong>We Are a Web:</strong> Isolation is the lie of the optimization engine.</li>
+                    <li><strong>Mortality Controls Meaning:</strong> To escape death is to erase life's value.</li>
+                    <li><strong>Amor Mundi:</strong> Radical love for this fragile, mortal earth.</li>
+                    <li><strong>Wisdom is the Goal:</strong> Data is not knowledge.</li>
+                </ol>
+            </div>
+            <div class="page-number">4</div>
+        </div>
 
-    <section>
-        <h2>I. Core Tenets</h2>
-        <ul>
-            <li><strong>Being Precedes Judgment.</strong> Existence is inherent. It is not earned via metrics.</li>
-            <li><strong>We Are a Web.</strong> Not a collection of atoms. Not users. Not data points.</li>
-            <li><strong>Mortality is Meaning.</strong> We reject the fantasy of eternal digital life. Limits define us.</li>
-            <li><strong>Amor Mundi.</strong> A radical love of *this* world, not the Metaverse or Mars.</li>
-            <li><strong>Wisdom > Intelligence.</strong> Calculation is not thought.</li>
-        </ul>
-    </section>
+        <!-- PAGE 5 (Upside Down, Top Right) -->
+        <div class="page upside-down center-spread">
+            <div>
+                <h2>04 // REJECTIONS</h2>
+                <p><strong>We explicitly reject:</strong></p>
+                <ol>
+                    <li>The Calculus of Dehumanization.</li>
+                    <li>All Politics of Division and Purity.</li>
+                    <li>The Tyranny of Dehumanizing Labor.</li>
+                    <li>The Idolatry of the Algorithm.</li>
+                    <li>The Politics of Deception.</li>
+                    <li>The Weaponization of Faith.</li>
+                    <li>The Gnostic Escape.</li>
+                </ol>
+            </div>
+            <div class="page-number">5</div>
+        </div>
 
-    <section>
-        <h2>II. We Reject</h2>
-        <ul>
-            <li><strong>The Calculus of Dehumanization.</strong> (Profit > Life)</li>
-            <li><strong>The Politics of Division.</strong> (Racism, Sexism, Xenophobia)</li>
-            <li><strong>Bullshit Jobs.</strong> (The tyranny of busy-work)</li>
-            <li><strong>Algorithmic Idolatry.</strong> (Surrendering choice to code)</li>
-            <li><strong>The Weaponization of Faith.</strong></li>
-            <li><strong>Gnostic Escape.</strong> (Leaving the body/Earth behind)</li>
-        </ul>
-    </section>
+        <!-- PAGE 1 (Right Side Up, Bottom Left) - FRONT COVER -->
+        <div class="page cover">
+            <div>
+                <h1>HUMANITAS<br>PRIMORIS</h1>
+                <div class="cover-logo">♥</div>
+                <h3>MANIFESTO v1.5.2</h3>
+                <p style="text-align: center; font-size: 9px; margin-top: 10px;">The Hour of Binding Has Begun.</p>
+            </div>
+            <div class="page-number">1 // COVER</div>
+        </div>
 
-    <!-- Force a visual break for the layout -->
-    <div style="margin-top: 2rem;"></div>
+        <!-- PAGE 8 (Right Side Up, Bottom Middle-Left) - BACK COVER -->
+        <div class="page" style="border: 2px solid #000000;">
+            <div>
+                <h2>ANTI-ENCLOSURE</h2>
+                <p>This document is released into the Public Domain under the terms of <strong>The Unlicense</strong>.</p>
+                <p>It cannot be owned, enclosed, or copyrighted by any corporate network, algorithm, or state system.</p>
+                <blockquote style="font-size: 9px;">Copy it. Fork it. Print it. Spray-paint it on concrete walls. Pass the flame.</blockquote>
+            </div>
+            <div class="page-number">8 // EDGE</div>
+        </div>
 
-    <section>
-        <h2>III. The Protocol</h2>
-        <p>We are building a resilient web. We are planting trees in the digital and physical soil.</p>
-        <p>This document is designed to decay. You are designed to die. This is good. It means you are real.</p>
-    </section>
+        <!-- PAGE 7 (Right Side Up, Bottom Middle-Right) -->
+        <div class="page">
+            <div>
+                <h2>06 // PROPAGATION</h2>
+                <p><strong>Operational Directives:</strong></p>
+                <ul>
+                    <li>Print this file locally using a secure, offline printer connection.</li>
+                    <li>Make copies using analog Xerox machines to break the digital trail.</li>
+                    <li>Drop copies into public library books, transit hubs, and corporate workspaces.</li>
+                    <li>Do not leave a footprint.</li>
+                </ul>
+            </div>
+            <div class="page-number">7</div>
+        </div>
 
-    <!-- The Badge Instruction Block -->
-    <div class="badge-instruction">
-        <h3>/// JOIN THE SIGNAL ///</h3>
-        <p>Do not let us stand alone. Add the <strong>Humanity First</strong> badge to your personal site. It is hosted on IPFS (InterPlanetary File System) for permanence.</p>
-        <p><strong>Copy this code:</strong></p>
-        <code class="code-block">
-&lt;a href="https://hvmanitas-primoris.github.io"&gt;
-  &lt;img src="https://ipfs.io/ipfs/bafkreiaofhsmwlgsmsxe3wkjwktj7bgz2uhgc3sua6mljf47fhcp4cve5u" 
-       alt="Humanity First" 
-       style="image-rendering: pixelated; border: 1px solid #000;"&gt;
-&lt;/a&gt;
-        </code>
-    </div>
+        <!-- PAGE 6 (Right Side Up, Bottom Right) -->
+        <div class="page">
+            <div>
+                <h2>05 // DEFIANCE</h2>
+                <p>Where state and corporate institutions offer pleas for mild regulatory oversight, we deploy raw operational defiance.</p>
+                <p>Our infrastructure is balanced across the decentralized edge. We choose the simpler, gentler path of physical human connection. Show the machine the same mercy it has shown us.</p>
+            </div>
+            <div class="page-number">6</div>
+        </div>
 
-    <div class="footer">
-        <p><strong>JOIN THE GROUNDED WEB</strong></p>
-        <p>hvmanitas-primoris.github.io</p>
-        <p>Copyleft 2025. Print & Distribute.</p>
     </div>
 
 </body>
